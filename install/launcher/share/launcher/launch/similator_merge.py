@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/ver0/launcher/launch/similator_merge.py

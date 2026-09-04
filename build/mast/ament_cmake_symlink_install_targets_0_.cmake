@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kazusa/kazusa/build/mast/mast_node" "/home/kazusa/kazusa/build/mast/hoju_node" "/home/kazusa/kazusa/build/mast/path_follow_node" "TARGETS" "mast_node" "hoju_node" "path_follow_node" "DESTINATION" "lib/mast")

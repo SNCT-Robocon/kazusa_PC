@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_msgs/action/Hoju.action
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Hoju_Goal {
+      string action_name;
+    };
+    struct Hoju_Result {
+      @verbatim (language="comment", text=
+        "Result")
+      boolean success;
+
+      string message;
+
+      uint8 arm_mode;
+    };
+    typedef boolean boolean__9[9];
+    struct Hoju_Feedback {
+      @verbatim (language="comment", text=
+        "Feedback")
+      float z;
+
+      float x;
+
+      float pitch;
+
+      boolean__9 hand;
+    };
+  };
+};

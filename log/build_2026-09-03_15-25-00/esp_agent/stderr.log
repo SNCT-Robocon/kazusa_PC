@@ -1,0 +1,4 @@
+[01m[K/home/kazusa/kazusa/ver0/esp_agent/src/usb_pub_sub.cpp:[m[K In lambda function:
+[01m[K/home/kazusa/kazusa/ver0/esp_agent/src/usb_pub_sub.cpp:40:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klength[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 |                 [this](const boost::system::error_code &ec, [01;35m[Kstd::size_t length[m[K) {
+      |                                                             [01;35m[K~~~~~~~~~~~~^~~~~~[m[K

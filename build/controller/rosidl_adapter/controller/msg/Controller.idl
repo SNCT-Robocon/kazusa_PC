@@ -1,0 +1,90 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from controller/msg/Controller.msg
+// generated code does not contain a copyright notice
+
+
+module controller {
+  module msg {
+    struct Controller {
+      float x;
+
+      float y;
+
+      float theta;
+
+      float hata_turn_x;
+
+      float hata_turn_y;
+
+      float hata_turn_theta;
+
+      float baketu_turn_x;
+
+      float baketu_turn_y;
+
+      float baketu_turn_theta;
+
+      float hoju_turn_x;
+
+      float hoju_turn_y;
+
+      float hoju_turn_theta;
+
+      float hata_speed;
+
+      float baketu_speed;
+
+      string fieldcolor;
+
+      boolean dengen;
+
+      string mode;
+
+      string column1;
+
+      string column2;
+
+      string column3;
+
+      boolean execute;
+
+      boolean refill;
+
+      boolean reload1;
+
+      boolean reload2;
+
+      boolean reload3;
+
+      boolean firehata;
+
+      boolean firebaketu;
+
+      boolean hojuposition;
+
+      boolean left;
+
+      boolean right;
+
+      boolean up;
+
+      boolean down;
+
+      boolean circle;
+
+      boolean triangle;
+
+      boolean square;
+
+      boolean cross;
+
+      boolean l1;
+
+      boolean l2;
+
+      boolean r1;
+
+      boolean r2;
+    };
+  };
+};

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/CanPacket.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    typedef uint8 uint8__32[32];
+    struct CanPacket {
+      uint16 id;
+
+      uint8__32 data;
+    };
+  };
+};

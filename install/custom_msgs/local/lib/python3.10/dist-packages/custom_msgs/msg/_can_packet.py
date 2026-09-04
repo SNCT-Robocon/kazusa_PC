@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_can_packet.py

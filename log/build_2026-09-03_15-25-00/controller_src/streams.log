@@ -1,0 +1,60 @@
+[0.010s] Invoking command in '/home/kazusa/kazusa/build/controller_src': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kazusa/kazusa/ver0/controller_src -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/controller_src
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.200s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.206s] -- Detecting C compile features
+[0.206s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.292s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.296s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.422s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.471s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.500s] -- Found controller: 0.0.0 (/home/kazusa/kazusa/install/controller/share/controller/cmake)
+[0.538s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.543s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.552s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.629s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.704s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.705s] -- Added test 'lint_cmake' to check CMake code style
+[0.705s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.706s] -- Added test 'xmllint' to check XML markup files
+[0.707s] -- Configuring done
+[0.709s] -- Generating done
+[0.710s] [33mCMake Warning:
+[0.710s]   Manually-specified variables were not used by the project:
+[0.710s] 
+[0.710s]     CMAKE_EXPORT_COMPILE_COMMANDS
+[0.710s] 
+[0.710s] [0m
+[0.711s] -- Build files have been written to: /home/kazusa/kazusa/build/controller_src
+[0.718s] Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kazusa/kazusa/ver0/controller_src -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/controller_src
+[0.720s] Invoking command in '/home/kazusa/kazusa/build/controller_src': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[0.759s] Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[0.761s] Invoking command in '/home/kazusa/kazusa/build/controller_src': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src
+[0.769s] -- Install configuration: ""
+[0.769s] -- Execute custom install script
+[0.769s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/lib/controller_src/con.py
+[0.777s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/lib/controller_src/launch_starter.py
+[0.785s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/package_run_dependencies/controller_src
+[0.794s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/parent_prefix_path/controller_src
+[0.801s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/environment/ament_prefix_path.sh
+[0.811s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/environment/ament_prefix_path.dsv
+[0.823s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/environment/path.sh
+[0.833s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/environment/path.dsv
+[0.843s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.bash
+[0.852s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.sh
+[0.862s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.zsh
+[0.872s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.dsv
+[0.879s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv
+[0.886s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/packages/controller_src
+[0.898s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/cmake/controller_srcConfig.cmake
+[0.908s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/cmake/controller_srcConfig-version.cmake
+[0.916s] -- Symlinking: /home/kazusa/kazusa/install/controller_src/share/controller_src/package.xml
+[0.925s] Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src

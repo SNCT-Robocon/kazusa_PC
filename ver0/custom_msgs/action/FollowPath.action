@@ -1,0 +1,19 @@
+# Goal
+string path_name
+
+---
+
+bool success
+string message
+
+---
+
+string path_name
+uint32 index
+float32 ref_x
+float32 ref_y
+float32 ref_yaw
+float32 now_x
+float32 now_y
+float32 now_yaw
+

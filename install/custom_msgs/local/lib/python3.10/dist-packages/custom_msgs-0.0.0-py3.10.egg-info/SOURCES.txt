@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/custom_msgs/ament_cmake_python/custom_msgs/custom_msgs.egg-info/SOURCES.txt

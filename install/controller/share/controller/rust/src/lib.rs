@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/src/lib.rs

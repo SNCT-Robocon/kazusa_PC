@@ -1,0 +1,86 @@
+[0.010s] Invoking command in '/home/kazusa/kazusa/build/mast': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kazusa/kazusa/ver0/mast -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/mast
+[0.061s] -- The C compiler identification is GNU 11.4.0
+[0.110s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.193s] -- Detecting C compiler ABI info - done
+[0.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.282s] -- Detecting CXX compile features
+[0.282s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.421s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.463s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.496s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.537s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.540s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.546s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.554s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.595s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.597s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.682s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.706s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.746s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.755s] -- Looking for pthread.h
+[0.822s] -- Looking for pthread.h - found
+[0.823s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.897s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.898s] -- Found Threads: TRUE  
+[0.947s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.973s] -- Found custom_msgs: 0.0.0 (/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake)
+[1.010s] -- Found controller: 0.0.0 (/home/kazusa/kazusa/install/controller/share/controller/cmake)
+[1.025s] -- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.041s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.141s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.142s] -- Configured cppcheck include dirs: /home/kazusa/kazusa/ver0/mast/include
+[1.142s] -- Configured cppcheck exclude dirs and/or files: 
+[1.143s] -- Added test 'lint_cmake' to check CMake code style
+[1.144s] -- Added test 'uncrustify' to check C / C++ code style
+[1.144s] -- Configured uncrustify additional arguments: 
+[1.145s] -- Added test 'xmllint' to check XML markup files
+[1.146s] -- Configuring done
+[1.167s] -- Generating done
+[1.174s] -- Build files have been written to: /home/kazusa/kazusa/build/mast
+[1.185s] Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kazusa/kazusa/ver0/mast -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/mast
+[1.187s] Invoking command in '/home/kazusa/kazusa/build/mast': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[1.243s] [ 16%] [32mBuilding CXX object CMakeFiles/path_follow_node.dir/src/path_follow.cpp.o[0m
+[1.244s] [ 33%] [32mBuilding CXX object CMakeFiles/hoju_node.dir/src/hoju.cpp.o[0m
+[1.244s] [ 50%] [32mBuilding CXX object CMakeFiles/mast_node.dir/src/mast.cpp.o[0m
+[6.535s] [ 66%] [32m[1mLinking CXX executable hoju_node[0m
+[6.769s] [ 66%] Built target hoju_node
+[9.737s] [ 83%] [32m[1mLinking CXX executable path_follow_node[0m
+[10.087s] [ 83%] Built target path_follow_node
+[12.173s] [100%] [32m[1mLinking CXX executable mast_node[0m
+[12.605s] [100%] Built target mast_node
+[12.616s] Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[12.618s] Invoking command in '/home/kazusa/kazusa/build/mast': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[12.625s] -- Install configuration: ""
+[12.625s] -- Execute custom install script
+[12.625s] -- Symlinking: /home/kazusa/kazusa/install/mast/lib/mast/mast_node
+[12.634s] -- Symlinking: /home/kazusa/kazusa/install/mast/lib/mast/hoju_node
+[12.644s] -- Symlinking: /home/kazusa/kazusa/install/mast/lib/mast/path_follow_node
+[12.652s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/path/bucket_to_flag.yaml
+[12.660s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/path/bucket_to_start.yaml
+[12.669s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/path/flag_to_start.yaml
+[12.678s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/path/start_to_bucket.yaml
+[12.685s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/path/start_to_flag.yaml
+[12.691s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/package_run_dependencies/mast
+[12.697s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/parent_prefix_path/mast
+[12.704s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/environment/ament_prefix_path.sh
+[12.710s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/environment/ament_prefix_path.dsv
+[12.717s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/environment/path.sh
+[12.726s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/environment/path.dsv
+[12.733s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/local_setup.bash
+[12.743s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/local_setup.sh
+[12.752s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/local_setup.zsh
+[12.759s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/local_setup.dsv
+[12.768s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/package.dsv
+[12.777s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/packages/mast
+[12.786s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/cmake/mastConfig.cmake
+[12.792s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/cmake/mastConfig-version.cmake
+[12.798s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/package.xml
+[12.807s] Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': AMENT_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/custom_msgs/lib:/home/kazusa/kazusa/install/controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages:/home/kazusa/kazusa/install/controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kazusa/kazusa/build/mast

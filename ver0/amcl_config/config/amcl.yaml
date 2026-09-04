@@ -1,0 +1,64 @@
+amcl:
+  ros__parameters:
+
+    ## --- 時間・TF ---
+    use_sim_time: false
+    tf_broadcast: true
+    transform_tolerance: 0.3
+
+    ## --- フレーム設定 ---
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    global_frame_id: "map"
+    scan_topic: "merged_scan"
+
+    ## --- パーティクルフィルタ ---
+    min_particles: 3000
+    max_particles: 7000
+    recovery_alpha_slow: 0.001
+    recovery_alpha_fast: 0.2
+    resample_interval: 1
+
+    ## --- オドメトリモデル ---
+    odom_model_type: "omni"   # diff / omni
+    alpha1: 0.01
+    alpha2: 0.04
+    alpha3: 0.01
+    alpha4: 0.01
+    alpha5: 0.01   # omni のとき使用
+
+    ## --- 更新間隔制御 ---
+    update_min_d: 0.01
+    update_min_a: 0.01
+
+    ## --- レーザモデル種別 ---
+    laser_model_type: "likelihood_field"   # beam / likelihood_field
+    ## ---共通
+    laser_z_hit: 0.99
+    laser_z_rand: 0.01
+    laser_sigma_hit: 0.03
+
+    ## --- Beam model 用 ---
+    laser_z_short: 0.1
+    laser_z_max: 0.05
+    laser_lambda_short: 0.1
+
+    ## --- Likelihood field model 用 ---
+    laser_likelihood_max_dist: 0.3
+    ## --- レーザースキャン共通 ---
+    laser_min_range: 0.2
+    laser_max_range: 14.0
+    max_beams: 240
+
+    ## --- 初期姿勢 ---
+    set_initial_pose: true
+    initial_pose_x: 4.0
+    initial_pose_y: 0.5
+    initial_pose_a: 0.0
+    initial_cov_xx: 5.0
+    initial_cov_yy: 5.0
+    initial_cov_aa: 2.0
+
+    ## --- 外部 initialpose トピック ---
+    always_reset_initial_pose: false
+    first_map_only: false

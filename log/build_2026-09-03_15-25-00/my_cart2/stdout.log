@@ -1,0 +1,43 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_merger_cpp.dir/scripts/merge_scan.cpp.o[0m
+[100%] [32m[1mLinking CXX executable laser_scan_merger_cpp[0m
+[100%] Built target laser_scan_merger_cpp
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer_static.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder_server.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/multi_map_builder.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/params.yaml
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/pose_graph.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_2d.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_3d.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_static.lua
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/laser_scan_merger_cpp
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/pose1_pub.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/imu_reader.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/i2c_pub.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter_static.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/odom_fusion.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan_cpu.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/noise_test.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/emcl_degree.py
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/package_run_dependencies/my_cart2
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/parent_prefix_path/my_cart2
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.sh
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.sh
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.dsv
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.bash
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.sh
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.zsh
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.dsv
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/packages/my_cart2
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config.cmake
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config-version.cmake
+-- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.xml

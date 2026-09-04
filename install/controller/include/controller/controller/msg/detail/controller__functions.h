@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/controller/rosidl_generator_c/controller/msg/detail/controller__functions.h

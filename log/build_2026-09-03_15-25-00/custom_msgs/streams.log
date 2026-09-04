@@ -1,0 +1,230 @@
+[0.032s] Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[0.079s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.085s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.095s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.104s] [  6%] Built target ament_cmake_python_symlink_custom_msgs
+[0.333s] running egg_info
+[0.333s] creating custom_msgs.egg-info
+[0.334s] writing custom_msgs.egg-info/PKG-INFO
+[0.334s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[0.334s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[0.334s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.336s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.337s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.368s] [  6%] Built target custom_msgs__rs
+[0.383s] [  6%] Built target ament_cmake_python_build_custom_msgs_egg
+[0.582s] [  8%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/action/detail/follow_path__functions.c.o[0m
+[0.582s] [ 10%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/can_packet__functions.c.o[0m
+[0.582s] [ 12%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/action/detail/hoju__functions.c.o[0m
+[0.671s] [ 12%] Built target custom_msgs__cpp
+[0.683s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.683s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.684s] [ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.701s] [ 20%] [32m[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so[0m
+[0.752s] [ 20%] Built target custom_msgs__rosidl_generator_c
+[0.764s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.764s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.766s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.124s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/action/hoju__type_support.cpp.o[0m
+[1.125s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/can_packet__type_support.cpp.o[0m
+[1.125s] [ 33%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/action/follow_path__type_support.cpp.o[0m
+[1.127s] [ 37%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/action/follow_path__type_support.cpp.o[0m
+[1.127s] [ 37%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/can_packet__type_support.cpp.o[0m
+[1.128s] [ 39%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/action/hoju__type_support.cpp.o[0m
+[1.203s] [ 41%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so[0m
+[1.277s] [ 41%] Built target custom_msgs__rosidl_typesupport_c
+[1.292s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/can_packet__type_support_c.cpp.o[0m
+[1.292s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/action/detail/follow_path__type_support_c.cpp.o[0m
+[1.292s] [ 47%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/action/detail/hoju__type_support_c.cpp.o[0m
+[1.414s] [ 50%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/can_packet__type_support.cpp.o[0m
+[1.417s] [ 52%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/action/detail/hoju__type_support.cpp.o[0m
+[1.422s] [ 54%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/action/detail/follow_path__type_support.cpp.o[0m
+[1.443s] [ 56%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/action/detail/follow_path__type_support.c.o[0m
+[1.443s] [ 58%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/can_packet__type_support.c.o[0m
+[1.449s] [ 60%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/action/detail/hoju__type_support.c.o[0m
+[1.581s] [ 62%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/action/detail/dds_fastrtps/follow_path__type_support.cpp.o[0m
+[1.582s] [ 64%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/can_packet__type_support.cpp.o[0m
+[1.592s] [ 68%] [32m[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.595s] [ 68%] [32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/action/detail/dds_fastrtps/hoju__type_support.cpp.o[0m
+[1.697s] [ 68%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[1.856s] [ 70%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so[0m
+[1.937s] [ 72%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.957s] [ 72%] Built target custom_msgs__rosidl_typesupport_cpp
+[2.082s] [ 72%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[2.362s] [ 75%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.451s] [ 77%] [32m[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.460s] [ 77%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[2.581s] [ 77%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[2.606s] [ 77%] Built target custom_msgs
+[2.635s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.547s] [ 79%] Built target custom_msgs__py
+[3.569s] [ 85%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/action/_hoju_s.c.o[0m
+[3.569s] [ 85%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_can_packet_s.c.o[0m
+[3.570s] [ 85%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/action/_follow_path_s.c.o[0m
+[3.703s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so[0m
+[3.774s] [ 87%] Built target custom_msgs__rosidl_generator_py
+[3.794s] [ 89%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.796s] [ 93%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.796s] [ 93%] [32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.903s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.946s] [ 95%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[3.947s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.949s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.986s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[3.992s] [100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.005s] Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[4.007s] Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs
+[4.014s] -- Install configuration: ""
+[4.015s] -- Execute custom install script
+[4.015s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[4.027s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__functions.h
+[4.035s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__struct.h
+[4.045s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__type_support.h
+[4.054s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__functions.h
+[4.063s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__struct.h
+[4.070s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__type_support.h
+[4.080s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/follow_path.h
+[4.090s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/hoju.h
+[4.104s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/can_packet.h
+[4.122s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__functions.h
+[4.133s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__struct.h
+[4.144s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__type_support.h
+[4.153s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.161s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[4.168s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[4.175s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__rosidl_typesupport_fastrtps_c.h
+[4.182s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__rosidl_typesupport_fastrtps_c.h
+[4.189s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_c.h
+[4.198s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.207s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__rosidl_typesupport_introspection_c.h
+[4.216s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__rosidl_typesupport_introspection_c.h
+[4.226s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_c.h
+[4.235s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.244s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__builder.hpp
+[4.253s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__struct.hpp
+[4.260s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__traits.hpp
+[4.267s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__type_support.hpp
+[4.274s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__builder.hpp
+[4.280s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__struct.hpp
+[4.287s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__traits.hpp
+[4.295s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__type_support.hpp
+[4.304s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/follow_path.hpp
+[4.312s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/hoju.hpp
+[4.320s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/can_packet.hpp
+[4.330s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__builder.hpp
+[4.339s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__struct.hpp
+[4.347s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__traits.hpp
+[4.356s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__type_support.hpp
+[4.365s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.375s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__rosidl_typesupport_fastrtps_cpp.hpp
+[4.384s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__rosidl_typesupport_fastrtps_cpp.hpp
+[4.393s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[4.402s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.412s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/follow_path__rosidl_typesupport_introspection_cpp.hpp
+[4.420s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/hoju__rosidl_typesupport_introspection_cpp.hpp
+[4.430s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_cpp.hpp
+[4.439s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[4.448s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[4.456s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[4.465s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.474s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.483s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[4.494s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[4.501s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[4.511s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.523s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.532s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/__init__.py
+[4.541s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_follow_path.py
+[4.551s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_follow_path_s.c
+[4.561s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_hoju.py
+[4.570s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_hoju_s.c
+[4.579s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.586s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.596s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.606s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[4.613s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[4.620s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_can_packet.py
+[4.629s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_can_packet_s.c
+[4.637s] -- Up-to-date symlink: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.638s] -- Up-to-date symlink: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.638s] -- Up-to-date symlink: /home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.638s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/ament_index/resource_index/rust_packages/custom_msgs
+[4.648s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/Cargo.toml
+[4.655s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/build.rs
+[4.665s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/src/action.rs
+[4.674s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/src/action/rmw.rs
+[4.683s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/src/lib.rs
+[4.692s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/src/msg.rs
+[4.701s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/rust/src/msg/rmw.rs
+[4.710s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/msg/CanPacket.idl
+[4.720s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/action/FollowPath.idl
+[4.729s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/action/Hoju.idl
+[4.740s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/msg/CanPacket.msg
+[4.749s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/action/FollowPath.action
+[4.757s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/action/Hoju.action
+[4.763s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[4.771s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[4.780s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[4.789s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[4.795s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/path.sh
+[4.802s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[4.811s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/local_setup.bash
+[4.820s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/local_setup.sh
+[4.829s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[4.836s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[4.845s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.dsv
+[4.855s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[4.865s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[4.874s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.884s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.894s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.903s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.912s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.924s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.935s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[4.942s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[4.949s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[4.958s] -- Symlinking: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.xml
+[4.967s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[4.968s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""
+[4.968s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[4.968s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.968s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[4.969s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.969s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[4.969s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""
+[4.969s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.970s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.970s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[4.970s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.970s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[4.970s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""
+[5.009s] Listing '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...
+[5.009s] Listing '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/__init__.py'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_follow_path.py'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_hoju.py'...
+[5.009s] Listing '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...
+[5.009s] Compiling '/home/kazusa/kazusa/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_can_packet.py'...
+[5.012s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[5.013s] -- Set runtime path of "/home/kazusa/kazusa/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""
+[5.013s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[5.013s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.013s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[5.014s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.015s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[5.016s] -- Installing: /home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.018s] Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs

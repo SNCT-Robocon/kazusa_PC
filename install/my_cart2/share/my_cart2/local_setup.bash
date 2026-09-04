@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/my_cart2/ament_cmake_environment_hooks/local_setup.bash

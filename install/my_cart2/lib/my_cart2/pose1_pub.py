@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/ver0/my_cart2/scripts/pose1_pub.py

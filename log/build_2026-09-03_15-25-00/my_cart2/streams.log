@@ -1,0 +1,47 @@
+[0.035s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[0.108s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_merger_cpp.dir/scripts/merge_scan.cpp.o[0m
+[10.080s] [100%] [32m[1mLinking CXX executable laser_scan_merger_cpp[0m
+[10.801s] [100%] Built target laser_scan_merger_cpp
+[10.816s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[10.818s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[10.828s] -- Install configuration: ""
+[10.828s] -- Execute custom install script
+[10.829s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer.lua
+[10.842s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer_static.lua
+[10.854s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder.lua
+[10.865s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder_server.lua
+[10.877s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/multi_map_builder.lua
+[10.888s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/params.yaml
+[10.900s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/pose_graph.lua
+[10.912s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder.lua
+[10.924s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_2d.lua
+[10.938s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_3d.lua
+[10.951s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_static.lua
+[10.963s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/laser_scan_merger_cpp
+[10.975s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/pose1_pub.py
+[10.987s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/imu_reader.py
+[10.999s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/i2c_pub.py
+[11.011s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan.py
+[11.023s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter.py
+[11.036s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter_static.py
+[11.048s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/odom_fusion.py
+[11.062s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan_cpu.py
+[11.075s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/noise_test.py
+[11.089s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/emcl_degree.py
+[11.102s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/package_run_dependencies/my_cart2
+[11.115s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/parent_prefix_path/my_cart2
+[11.130s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.sh
+[11.143s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.dsv
+[11.156s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.sh
+[11.169s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.dsv
+[11.182s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.bash
+[11.194s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.sh
+[11.208s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.zsh
+[11.219s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.dsv
+[11.232s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv
+[11.244s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/packages/my_cart2
+[11.257s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.270s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config.cmake
+[11.284s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config-version.cmake
+[11.298s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.xml
+[11.315s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2

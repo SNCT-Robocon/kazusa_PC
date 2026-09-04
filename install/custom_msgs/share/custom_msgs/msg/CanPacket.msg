@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/ver0/custom_msgs/msg/CanPacket.msg

@@ -1,0 +1,6 @@
+image: /home/suzuka/offseason_flip.pgm
+resolution: 0.050000
+origin: [-1.250000, -1.064633, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c66cfb344f53d1641117.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "esp_agent",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "esp_agent_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-esp_agent_uninstall-b5354d92513ee4b9a476.json",
+					"name" : "esp_agent_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sub_to_udp_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sub_to_udp_node-bfae72d00ccb32c5dc43.json",
+					"name" : "sub_to_udp_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "udp_to_pub_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-udp_to_pub_node-cfe1ddb77582ed714562.json",
+					"name" : "udp_to_pub_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-34f96a826b2d48ea0992.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "usb_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-usb_node-6195775bc06034bc6ce8.json",
+					"name" : "usb_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kazusa/kazusa/build/esp_agent",
+		"source" : "/home/kazusa/kazusa/ver0/esp_agent"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

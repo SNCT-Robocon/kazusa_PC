@@ -1,0 +1,938 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=<colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72a2ad4642b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72a2ad42bca0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72a2ad42bca0>>)
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.192s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kazusa/kazusa'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'ros'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['cmake', 'python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/1) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/10) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/11) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/12) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'ros'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/13) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'ros'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/14) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/15) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/16) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/17) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'ros'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['cmake', 'python']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'cmake'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'python'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extensions ['python_setup_py']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/18) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/19) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/2) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/20) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/21) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/22) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/23) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/3) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/4) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/5) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/6) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/7) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/8) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(records/9) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/amcl_config' with type 'ros.ament_cmake' and name 'amcl_config'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/controller' with type 'ros.ament_cmake' and name 'controller'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/controller_src' with type 'ros.ament_cmake' and name 'controller_src'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/esp_agent' with type 'ros.ament_cmake' and name 'esp_agent'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/launcher' with type 'ros.ament_cmake' and name 'launcher'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/mast' with type 'ros.ament_cmake' and name 'mast'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/my_cart2' with type 'ros.ament_cmake' and name 'my_cart2'
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/kazusa/kazusa/install
+[0.248s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/kazusa/ros2_deps_ws/install
+[0.249s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 325 installed packages in /opt/ros/humble
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'amcl_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/amcl_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/amcl_config', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/amcl_config', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/controller', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/controller', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/custom_msgs', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/custom_msgs', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'launcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/launcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/launcher', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/launcher', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'my_cart2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/my_cart2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/my_cart2', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/my_cart2', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'controller_src' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/controller_src', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/controller_src', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/controller_src', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'esp_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/esp_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/esp_agent', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/esp_agent', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'mast' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/mast', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/mast', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/mast', 'symlink_install': <colcon_core.argument_default.BooleanDefaultValue object at 0x72a2ad4c82b0>, 'test_result_base': None}
+[0.275s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/controller' with build type 'ament_cmake'
+[0.276s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/controller'
+[0.278s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.283s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/custom_msgs' with build type 'ament_cmake'
+[0.283s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/custom_msgs'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.287s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/amcl_config' with build type 'ament_cmake'
+[0.287s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/amcl_config'
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/launcher' with build type 'ament_cmake'
+[0.293s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/launcher'
+[0.293s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.296s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/my_cart2' with build type 'ament_cmake'
+[0.296s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/my_cart2'
+[0.297s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[0.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[0.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/launcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/launcher -- -j12 -l12
+[0.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[0.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[0.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/launcher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/launcher -- -j12 -l12
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/launcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/launcher
+[0.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amcl_config)
+[0.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[0.409s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake module files
+[0.409s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake config files
+[0.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('amcl_config', 'cmake_prefix_path')
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.sh'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/pkgconfig/amcl_config.pc'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/python3.10/site-packages'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.ps1'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.sh'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.bash'
+[0.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.zsh'
+[0.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/amcl_config/share/colcon-core/packages/amcl_config)
+[0.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amcl_config)
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake module files
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake config files
+[0.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('amcl_config', 'cmake_prefix_path')
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.dsv'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.sh'
+[0.416s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.416s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/pkgconfig/amcl_config.pc'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/python3.10/site-packages'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.ps1'
+[0.417s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.sh'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.bash'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.zsh'
+[0.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/amcl_config/share/colcon-core/packages/amcl_config)
+[0.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launcher)
+[0.420s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake module files
+[0.420s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake config files
+[0.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('launcher', 'cmake_prefix_path')
+[0.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.ps1'
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/launcher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/launcher
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.dsv'
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.sh'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/pkgconfig/launcher.pc'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/python3.10/site-packages'
+[0.422s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.ps1'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/package.dsv'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.sh'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.bash'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.zsh'
+[0.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/launcher/share/colcon-core/packages/launcher)
+[0.424s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launcher)
+[0.424s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake module files
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake config files
+[0.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('launcher', 'cmake_prefix_path')
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.ps1'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.dsv'
+[0.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.sh'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/pkgconfig/launcher.pc'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/python3.10/site-packages'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.ps1'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/package.dsv'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.sh'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.bash'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.zsh'
+[0.428s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/launcher/share/colcon-core/packages/launcher)
+[0.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[0.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cart2)
+[0.455s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake module files
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake config files
+[0.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cart2', 'cmake_prefix_path')
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.dsv'
+[0.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.sh'
+[0.458s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib'
+[0.458s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.458s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/pkgconfig/my_cart2.pc'
+[0.459s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/python3.10/site-packages'
+[0.459s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.ps1'
+[0.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv'
+[0.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.sh'
+[0.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.bash'
+[0.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.zsh'
+[0.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/my_cart2/share/colcon-core/packages/my_cart2)
+[0.461s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cart2)
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake module files
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake config files
+[0.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cart2', 'cmake_prefix_path')
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.ps1'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.dsv'
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.sh'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/pkgconfig/my_cart2.pc'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/python3.10/site-packages'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.ps1'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.sh'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.bash'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.zsh'
+[0.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/my_cart2/share/colcon-core/packages/my_cart2)
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs
+[0.687s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake module files
+[0.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake config files
+[0.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib'
+[0.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/python3.10/site-packages'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.ps1'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.dsv'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.sh'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.bash'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.zsh'
+[0.694s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[0.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake module files
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake config files
+[0.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[0.696s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib'
+[0.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[0.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[0.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/python3.10/site-packages'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[0.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.ps1'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.dsv'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.sh'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.bash'
+[0.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.zsh'
+[0.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[0.699s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/esp_agent' with build type 'ament_cmake'
+[0.699s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/esp_agent'
+[0.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/esp_agent': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/esp_agent -- -j12 -l12
+[0.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/esp_agent' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/esp_agent -- -j12 -l12
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/esp_agent': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/esp_agent
+[0.829s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(esp_agent)
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake module files
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/esp_agent' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/esp_agent
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake config files
+[0.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_agent', 'cmake_prefix_path')
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.ps1'
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.dsv'
+[0.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.sh'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/pkgconfig/esp_agent.pc'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/python3.10/site-packages'
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[0.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.ps1'
+[0.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.dsv'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.sh'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.bash'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.zsh'
+[0.834s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/esp_agent/share/colcon-core/packages/esp_agent)
+[0.835s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(esp_agent)
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake module files
+[0.836s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake config files
+[0.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_agent', 'cmake_prefix_path')
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.sh'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/pkgconfig/esp_agent.pc'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/python3.10/site-packages'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.sh'
+[0.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.bash'
+[0.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.zsh'
+[0.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/esp_agent/share/colcon-core/packages/esp_agent)
+[3.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[3.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/controller
+[3.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[3.191s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake module files
+[3.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/controller
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake config files
+[3.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'cmake_prefix_path')
+[3.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.ps1'
+[3.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.dsv'
+[3.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.sh'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib'
+[3.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ld_library_path_lib')
+[3.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.ps1'
+[3.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.dsv'
+[3.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.sh'
+[3.198s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[3.198s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/pkgconfig/controller.pc'
+[3.198s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/python3.10/site-packages'
+[3.199s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[3.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.ps1'
+[3.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller/share/controller/package.dsv'
+[3.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.sh'
+[3.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.bash'
+[3.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.zsh'
+[3.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller/share/colcon-core/packages/controller)
+[3.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[3.201s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake module files
+[3.201s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake config files
+[3.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'cmake_prefix_path')
+[3.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.ps1'
+[3.202s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.dsv'
+[3.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.sh'
+[3.202s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib'
+[3.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ld_library_path_lib')
+[3.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.ps1'
+[3.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.dsv'
+[3.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.sh'
+[3.203s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[3.203s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/pkgconfig/controller.pc'
+[3.203s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/python3.10/site-packages'
+[3.204s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[3.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.ps1'
+[3.204s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller/share/controller/package.dsv'
+[3.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.sh'
+[3.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.bash'
+[3.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.zsh'
+[3.205s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller/share/colcon-core/packages/controller)
+[3.205s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/controller_src' with build type 'ament_cmake'
+[3.205s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/controller_src'
+[3.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/mast' with build type 'ament_cmake'
+[3.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/mast'
+[3.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller_src': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[3.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[3.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[3.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller_src': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src
+[3.285s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_src)
+[3.285s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake module files
+[3.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake config files
+[3.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_src', 'cmake_prefix_path')
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.ps1'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.dsv'
+[3.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.sh'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/pkgconfig/controller_src.pc'
+[3.289s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/python3.10/site-packages'
+[3.289s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.ps1'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.sh'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.bash'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.zsh'
+[3.291s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller_src/share/colcon-core/packages/controller_src)
+[3.292s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_src)
+[3.292s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake module files
+[3.292s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake config files
+[3.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_src', 'cmake_prefix_path')
+[3.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.ps1'
+[3.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.dsv'
+[3.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.sh'
+[3.294s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib'
+[3.294s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[3.294s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/pkgconfig/controller_src.pc'
+[3.295s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/python3.10/site-packages'
+[3.295s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[3.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.ps1'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.sh'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.bash'
+[3.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.zsh'
+[3.297s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller_src/share/colcon-core/packages/controller_src)
+[12.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[12.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[12.227s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mast)
+[12.227s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake module files
+[12.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[12.228s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake config files
+[12.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('mast', 'cmake_prefix_path')
+[12.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.ps1'
+[12.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.dsv'
+[12.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.sh'
+[12.230s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib'
+[12.230s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[12.230s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/pkgconfig/mast.pc'
+[12.230s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/python3.10/site-packages'
+[12.230s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[12.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.ps1'
+[12.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mast/share/mast/package.dsv'
+[12.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.sh'
+[12.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.bash'
+[12.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.zsh'
+[12.232s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mast/share/colcon-core/packages/mast)
+[12.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mast)
+[12.232s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake module files
+[12.233s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake config files
+[12.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('mast', 'cmake_prefix_path')
+[12.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.ps1'
+[12.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.dsv'
+[12.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.sh'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/pkgconfig/mast.pc'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/python3.10/site-packages'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[12.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.ps1'
+[12.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mast/share/mast/package.dsv'
+[12.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.sh'
+[12.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.bash'
+[12.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.zsh'
+[12.238s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mast/share/colcon-core/packages/mast)
+[12.238s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.238s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.239s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.239s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.244s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.244s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.244s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.253s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.253s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.ps1'
+[12.253s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kazusa/kazusa/install/_local_setup_util_ps1.py'
+[12.254s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.ps1'
+[12.255s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.sh'
+[12.255s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kazusa/kazusa/install/_local_setup_util_sh.py'
+[12.256s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.sh'
+[12.256s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.bash'
+[12.257s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.bash'
+[12.258s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.zsh'
+[12.258s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.zsh'

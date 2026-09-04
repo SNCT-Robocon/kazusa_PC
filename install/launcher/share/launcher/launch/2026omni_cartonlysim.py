@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/ver0/launcher/launch/2026omni_cartonlysim.py

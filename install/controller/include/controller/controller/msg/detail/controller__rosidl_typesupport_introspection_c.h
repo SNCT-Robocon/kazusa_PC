@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/controller/rosidl_typesupport_introspection_c/controller/msg/detail/controller__rosidl_typesupport_introspection_c.h

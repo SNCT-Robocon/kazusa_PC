@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/controller/ament_cmake_core/controllerConfig.cmake

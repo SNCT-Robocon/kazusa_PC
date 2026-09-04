@@ -1,0 +1,21 @@
+fast_lio2:
+  ros__parameters:
+    lidar_topic: "/scan"  # LIDARのトピック名
+    imu_topic: "/imu"        # IMUのトピック名
+
+    extrinsicTrans: [0.0, 0.0, 0.15]  # LIDARのオフセット (x, y, z)
+    extrinsicRot: [1.0, 0.0, 0.0, 0.0]  # 四元数（回転なし）
+
+    # マップ更新の設定
+    use_point_cloud_map: true
+    mapping_resolution: 0.1
+    publish_tf: true  # TFをブロードキャストする
+    publish_path: true  # 経路を可視化
+
+    # オドメトリの出力
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+
+    # IMU のキャリブレーション
+    imu_acc_noise: 0.001
+    imu_gyro_noise: 0.0001

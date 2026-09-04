@@ -1,0 +1,8 @@
+source;share/esp_agent/hook/cmake_prefix_path.ps1
+source;share/esp_agent/hook/cmake_prefix_path.dsv
+source;share/esp_agent/hook/cmake_prefix_path.sh
+source;share/esp_agent/local_setup.bash
+source;share/esp_agent/local_setup.dsv
+source;share/esp_agent/local_setup.ps1
+source;share/esp_agent/local_setup.sh
+source;share/esp_agent/local_setup.zsh

@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/kazusa/kazusa/ver0/custom_msgs:msg/CanPacket.msg",
+    "/home/kazusa/kazusa/ver0/custom_msgs:action/FollowPath.action",
+    "/home/kazusa/kazusa/ver0/custom_msgs:action/Hoju.action"
+  ]
+}

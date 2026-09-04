@@ -1,0 +1,4 @@
+source;share/mast/local_setup.bash
+source;share/mast/local_setup.dsv
+source;share/mast/local_setup.sh
+source;share/mast/local_setup.zsh

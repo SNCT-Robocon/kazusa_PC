@@ -1,0 +1,1 @@
+/home/kazusa/kazusa/build/controller_src/ament_cmake_environment_hooks/local_setup.bash
