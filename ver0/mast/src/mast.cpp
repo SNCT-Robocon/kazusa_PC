@@ -168,6 +168,20 @@ private:
             return;
         }
 
+        if(current_controller_val.hojuposition){
+
+            geometry_msgs::msg::Pose2D hoju_pose{};
+            hoju_pose.x = 4080.0 + current_controller_val.hoju_turn_y;
+            hoju_pose.y = 500.0 - current_controller_val.hoju_turn_x;
+            hoju_pose.theta = 0.0 + current_controller_val.hoju_turn_theta * (M_PI / 180.0);
+
+            hoju_pose = target_pose_for_field(hoju_pose);
+
+            positioning(hoju_pose);
+
+            return;
+        }
+
         float x_speed = current_controller_val.y * 3.672f;
         float y_speed = current_controller_val.x * - 3.672f;
 
@@ -222,16 +236,18 @@ private:
             return;
         }
 
-        geometry_msgs::msg::Pose2D start_pose;
-        start_pose.x = 4050.0;
-        start_pose.y = 465.0;
-        start_pose.theta = 0.0;
+        can_pub -> publish(omni::stop_packet());
 
-        RCLCPP_INFO(this -> get_logger(), "positioning at the refill point for 2 seconds");
-        if(!position_for(start_pose, std::chrono::seconds(2))){
-            fail("initial positioning was interrupted");
-            return;
-        }
+        // geometry_msgs::msg::Pose2D start_pose;
+        // start_pose.x = 4050.0;
+        // start_pose.y = 465.0;
+        // start_pose.theta = 0.0;
+
+        // RCLCPP_INFO(this -> get_logger(), "positioning at the refill point for 2 seconds");
+        // if(!position_for(start_pose, std::chrono::seconds(2))){
+        //     fail("initial positioning was interrupted");
+        //     return;
+        // }
 
         if(!send_hoju_goal_and_wait("GET")){
             fail("GET failed");
@@ -310,8 +326,10 @@ private:
             return;
         }
 
-        geometry_msgs::msg::Pose2D finish_pose = start_pose;
-        finish_pose.x -= 100.0;
+        geometry_msgs::msg::Pose2D finish_pose{};
+        finish_pose.x = 4080.0;
+        finish_pose.y = 500.0;
+        finish_pose.theta = 0.0;
 
         RCLCPP_INFO(this -> get_logger(), "holding at the finish pose for 1 second");
         if(!position_for(finish_pose, std::chrono::seconds(1))){

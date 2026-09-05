@@ -1,0 +1,6 @@
+Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config

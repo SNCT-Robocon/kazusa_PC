@@ -1,0 +1,34 @@
+[0.011s] Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[0.069s] [ 33%] [32mBuilding CXX object CMakeFiles/mast_node.dir/src/mast.cpp.o[0m
+[0.070s] [ 50%] Built target hoju_node
+[0.072s] [ 83%] Built target path_follow_node
+[8.516s] [100%] [32m[1mLinking CXX executable mast_node[0m
+[8.961s] [100%] Built target mast_node
+[8.971s] Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[8.973s] Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[8.981s] -- Install configuration: ""
+[8.981s] -- Execute custom install script
+[8.981s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/lib/mast/mast_node
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/lib/mast/hoju_node
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/lib/mast/path_follow_node
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/path/bucket_to_flag.yaml
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/path/bucket_to_start.yaml
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/path/flag_to_start.yaml
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/path/start_to_bucket.yaml
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/path/start_to_flag.yaml
+[8.982s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/package_run_dependencies/mast
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/parent_prefix_path/mast
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/environment/ament_prefix_path.sh
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/environment/ament_prefix_path.dsv
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/environment/path.sh
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/environment/path.dsv
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/local_setup.bash
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/local_setup.sh
+[8.983s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/local_setup.zsh
+[8.984s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/local_setup.dsv
+[8.984s] -- Symlinking: /home/kazusa/kazusa/install/mast/share/mast/package.dsv
+[8.994s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/ament_index/resource_index/packages/mast
+[8.994s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/cmake/mastConfig.cmake
+[8.994s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/cmake/mastConfig-version.cmake
+[8.994s] -- Up-to-date symlink: /home/kazusa/kazusa/install/mast/share/mast/package.xml
+[8.997s] Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/mast

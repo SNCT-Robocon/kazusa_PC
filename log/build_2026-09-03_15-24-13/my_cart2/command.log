@@ -1,1 +1,0 @@
-Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/my_cart2 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/my_cart2

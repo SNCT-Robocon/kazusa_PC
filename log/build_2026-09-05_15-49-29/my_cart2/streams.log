@@ -1,0 +1,137 @@
+[0.018s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/my_cart2 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/my_cart2
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.122s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.205s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.205s] -- Detecting C compile features
+[0.206s] -- Detecting C compile features - done
+[0.210s] -- Detecting CXX compiler ABI info
+[0.296s] -- Detecting CXX compiler ABI info - done
+[0.301s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.301s] -- Detecting CXX compile features
+[0.301s] -- Detecting CXX compile features - done
+[0.303s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.420s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.473s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.504s] -- Found cartographer_ros: 2.0.9002 (/opt/ros/humble/share/cartographer_ros/cmake)
+[0.535s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.539s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.544s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.552s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.761s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: iostreams 
+[0.842s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.845s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.936s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.976s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.031s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.041s] -- Found Threads: TRUE  
+[1.136s] -- Checking for module 'eigen3'
+[1.155s] --   Found eigen3, version 3.4.0
+[1.203s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.203s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.233s] -- Checking for module 'flann'
+[1.252s] --   Found flann, version 1.9.1
+[1.307s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.307s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.543s] -- Checking for module 'libusb-1.0'
+[2.566s] --   Found libusb-1.0, version 1.0.25
+[2.649s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.651s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.763s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.948s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.961s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.972s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.236s] -- Found Qhull version 8.0.2
+[3.568s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.797s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.798s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.799s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.800s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.800s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.801s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.801s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.802s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.803s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.805s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.806s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.807s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.808s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.809s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.810s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.811s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.811s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.812s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.813s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.814s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.814s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.815s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.815s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.816s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.816s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.958s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[3.958s] -- Found required Ceres dependency: glog
+[3.959s] -- Found required Ceres dependency: gflags
+[3.959s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[3.967s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.047s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.048s] -- Configured cppcheck include dirs: 
+[4.048s] -- Configured cppcheck exclude dirs and/or files: 
+[4.048s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.048s] -- Added test 'lint_cmake' to check CMake code style
+[4.049s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.050s] -- Added test 'uncrustify' to check C / C++ code style
+[4.050s] -- Configured uncrustify additional arguments: 
+[4.051s] -- Added test 'xmllint' to check XML markup files
+[4.052s] -- Configuring done
+[4.064s] -- Generating done
+[4.067s] -- Build files have been written to: /home/kazusa/kazusa/build/my_cart2
+[4.083s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/my_cart2 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/my_cart2
+[4.084s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[4.140s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_merger_cpp.dir/scripts/merge_scan.cpp.o[0m
+[14.341s] [100%] [32m[1mLinking CXX executable laser_scan_merger_cpp[0m
+[14.819s] [100%] Built target laser_scan_merger_cpp
+[14.834s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[14.836s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[14.844s] -- Install configuration: ""
+[14.845s] -- Execute custom install script
+[14.845s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer.lua
+[14.855s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer_static.lua
+[14.865s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder.lua
+[14.875s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder_server.lua
+[14.885s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/multi_map_builder.lua
+[14.895s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/params.yaml
+[14.905s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/pose_graph.lua
+[14.916s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder.lua
+[14.926s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_2d.lua
+[14.936s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_3d.lua
+[14.948s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_static.lua
+[14.959s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/laser_scan_merger_cpp
+[14.969s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/pose1_pub.py
+[14.979s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/imu_reader.py
+[14.990s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/i2c_pub.py
+[14.999s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan.py
+[15.010s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter.py
+[15.020s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter_static.py
+[15.030s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/odom_fusion.py
+[15.041s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan_cpu.py
+[15.051s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/noise_test.py
+[15.060s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/emcl_degree.py
+[15.069s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/package_run_dependencies/my_cart2
+[15.079s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/parent_prefix_path/my_cart2
+[15.089s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.sh
+[15.098s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.dsv
+[15.108s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.sh
+[15.117s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.dsv
+[15.127s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.bash
+[15.139s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.sh
+[15.148s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.zsh
+[15.158s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.dsv
+[15.168s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv
+[15.176s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/packages/my_cart2
+[15.184s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.192s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config.cmake
+[15.200s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config-version.cmake
+[15.207s] -- Symlinking: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.xml
+[15.218s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2

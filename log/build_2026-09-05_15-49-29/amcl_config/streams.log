@@ -1,0 +1,82 @@
+[0.017s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+[0.076s] -- The C compiler identification is GNU 11.4.0
+[0.134s] -- The CXX compiler identification is GNU 11.4.0
+[0.141s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.317s] -- Detecting CXX compiler ABI info - done
+[0.323s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.324s] -- Detecting CXX compile features
+[0.324s] -- Detecting CXX compile features - done
+[0.327s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.464s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.519s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.540s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.634s] -- Added test 'lint_cmake' to check CMake code style
+[0.637s] -- Added test 'xmllint' to check XML markup files
+[0.639s] -- Configuring done
+[0.642s] -- Generating done
+[0.643s] [33mCMake Warning:
+[0.643s]   Manually-specified variables were not used by the project:
+[0.643s] 
+[0.643s]     CMAKE_EXPORT_COMPILE_COMMANDS
+[0.643s] 
+[0.643s] [0m
+[0.644s] -- Build files have been written to: /home/kazusa/kazusa/build/amcl_config
+[0.654s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+[0.657s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.705s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.720s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[0.729s] -- Install configuration: ""
+[0.729s] -- Execute custom install script
+[0.730s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl copy.yaml
+[0.741s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl.yaml
+[0.750s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl714.yaml
+[0.761s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl_cart.yaml
+[0.771s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl_draw.yaml
+[0.781s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl.yaml
+[0.789s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl2.yaml
+[0.802s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_blue.yaml
+[0.814s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_katahou.yaml
+[0.824s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_red.yaml
+[0.834s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b.pgm
+[0.843s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b.yaml
+[0.857s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b2.yaml
+[0.869s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b_2.yaml
+[0.880s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r.pgm
+[0.889s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r.yaml
+[0.897s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r_2.yaml
+[0.906s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapblue.pgm
+[0.918s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapred.pgm
+[0.927s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapred_bak.pgm
+[0.937s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/drawmap.pgm
+[0.945s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/drawmap.yaml
+[0.954s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/map.pgm
+[0.964s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/my_map_amcl.pgm
+[0.975s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/my_map_amcl.yaml
+[0.983s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off.pgm
+[0.992s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off.yaml
+[1.004s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.pbstream
+[1.013s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.pgm
+[1.024s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.yaml
+[1.032s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/offseason.pgm
+[1.040s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/offseason.yaml
+[1.049s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/package_run_dependencies/amcl_config
+[1.058s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/parent_prefix_path/amcl_config
+[1.067s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/ament_prefix_path.sh
+[1.075s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/ament_prefix_path.dsv
+[1.086s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/path.sh
+[1.095s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/path.dsv
+[1.107s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.bash
+[1.116s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.sh
+[1.126s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.zsh
+[1.134s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.dsv
+[1.144s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv
+[1.153s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/packages/amcl_config
+[1.161s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/cmake/amcl_configConfig.cmake
+[1.174s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/cmake/amcl_configConfig-version.cmake
+[1.185s] -- Symlinking: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.xml
+[1.197s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
