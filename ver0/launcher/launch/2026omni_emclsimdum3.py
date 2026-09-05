@@ -8,14 +8,6 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # ユーザーのホームディレクトリからの相対で bag 保存先を取得
-    home_dir = os.path.expanduser("~")
-    base_dir = os.path.join(home_dir, "kazusa", "records")
-    os.makedirs(base_dir, exist_ok=True)
-
-    # base_dir 内の既存フォルダをチェックして最大番号を取得
-    existing = [int(name) for name in os.listdir(base_dir) if name.isdigit()]
-    next_index = max(existing, default=0) + 1
-    output_dir = os.path.join(base_dir, str(next_index))
 
     # --- 各パッケージの share ディレクトリを取得 ---
     my_cart_share = get_package_share_directory("my_cart2")
@@ -23,15 +15,15 @@ def generate_launch_description():
 
     cartographer_config_dir = os.path.join(my_cart_share, "config")
     # AMCLの代わりに EMCL2 のパラメータファイルを指定
-    emcl2_config_path = os.path.join(amcl_config_pkg, "config", "emcl3_blue.yaml")
-    map_yaml_path = os.path.join(amcl_config_pkg, "map", "2026_b_2.yaml")
+    emcl2_config_path = os.path.join(amcl_config_pkg, "config", "emcl3_red.yaml")
+    map_yaml_path = os.path.join(amcl_config_pkg, "map", "2026_r_2.yaml")
 
     # Launch Configurations の共通化
     use_sim_time_config = LaunchConfiguration("use_sim_time")
     field_color_config = LaunchConfiguration("field_color")
 
     color_arg = DeclareLaunchArgument(
-        "field_color", default_value="blue", description="Field color"
+        "field_color", default_value="red", description="Field color"
     )
 
     use_sim_time_arg = DeclareLaunchArgument(
@@ -161,6 +153,12 @@ def generate_launch_description():
             }]
         )
          ,
+Node(
+            package="controller_src",
+            executable="con.py",
+            name="controller",
+            output="screen"
+        ),
 # Node(
 #             package="my_cart2",
 #             executable="merge_scan_cpu.py",

@@ -88,18 +88,19 @@ def launch_setup(context, *args, **kwargs):
         ),      
 
         # Scan Merger & Controller
-        Node(
-            package="my_cart2",
-            executable="merge_scan_cpu.py",
-            name="merge_publisher",
-            output="screen",
-            parameters=[{
-                'topic_1': '/right_scan',  
-                'topic_2': '/left_scan',   
-                'merged_topic': '/merged_scan', 
-                'target_frame': 'base_link'        
-            }]
-        ),
+           Node(
+                        package='my_cart2',
+                        executable='laser_scan_merger_cpp',
+                        name='laser_scan_merger_cpp',
+                        output='screen',
+                        parameters=[{
+                        'topic_1': '/right_scan',
+                        'topic_2': '/left_scan',
+                        'merged_topic': '/merged_scan',
+                        'target_frame': 'base_link',
+                        'use_sim_time': False,  
+                    }]
+                ),
         Node(
                 package="my_cart2",
                 executable="emcl_degree.py",
