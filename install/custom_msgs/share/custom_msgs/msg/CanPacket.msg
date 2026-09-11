@@ -1,1 +1,2 @@
-/home/kazusa/kazusa/ver0/custom_msgs/msg/CanPacket.msg
+uint16 id
+uint8[32] data

@@ -6,6 +6,7 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "custom_msgs/msg/detail/can_packet__struct.h"
 #include "custom_msgs/msg/detail/can_packet__type_support.h"
+#include "custom_msgs/msg/detail/can_packet__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t CanPacket_message_type_support_handle
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_CanPacket_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &custom_msgs__msg__CanPacket__get_type_hash,
+  &custom_msgs__msg__CanPacket__get_type_description,
+  &custom_msgs__msg__CanPacket__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c

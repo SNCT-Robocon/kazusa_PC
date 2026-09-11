@@ -1,0 +1,76 @@
+[0.033s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+[0.203s] -- The C compiler identification is GNU 13.3.0
+[0.343s] -- The CXX compiler identification is GNU 13.3.0
+[0.374s] -- Detecting C compiler ABI info
+[0.532s] -- Detecting C compiler ABI info - done
+[0.549s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.550s] -- Detecting C compile features
+[0.550s] -- Detecting C compile features - done
+[0.563s] -- Detecting CXX compiler ABI info
+[0.731s] -- Detecting CXX compiler ABI info - done
+[0.744s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.745s] -- Detecting CXX compile features
+[0.745s] -- Detecting CXX compile features - done
+[0.761s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.004s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.244s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.450s] -- Added test 'lint_cmake' to check CMake code style
+[1.455s] -- Added test 'xmllint' to check XML markup files
+[1.459s] -- Configuring done (1.4s)
+[1.464s] -- Generating done (0.0s)
+[1.468s] -- Build files have been written to: /home/kazusa/kazusa/build/amcl_config
+[1.481s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/amcl_config -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/amcl_config
+[1.482s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[1.555s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[1.574s] Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[1.589s] -- Install configuration: ""
+[1.589s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config
+[1.589s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl_cart.yaml
+[1.589s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_red.yaml
+[1.589s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl_draw.yaml
+[1.590s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl.yaml
+[1.590s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl714.yaml
+[1.590s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl2.yaml
+[1.590s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl.yaml
+[1.590s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/amcl copy.yaml
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_katahou.yaml
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/config/emcl3_blue.yaml
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/drawmap.yaml
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b2.yaml
+[1.591s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/map.pgm
+[1.592s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r.pgm
+[1.593s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/offseason.pgm
+[1.595s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b.yaml
+[1.595s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b_2.yaml
+[1.596s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_b.pgm
+[1.596s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/offseason.yaml
+[1.597s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/my_map_amcl.pgm
+[1.597s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/drawmap.pgm
+[1.598s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r_2.yaml
+[1.598s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off.yaml
+[1.598s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapblue.pgm
+[1.599s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/my_map_amcl.yaml
+[1.599s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.pbstream
+[1.600s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off.pgm
+[1.600s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.yaml
+[1.600s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026_r.yaml
+[1.600s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapred_bak.pgm
+[1.601s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/off2.pgm
+[1.602s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/map/2026mapred.pgm
+[1.603s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/package_run_dependencies/amcl_config
+[1.604s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/parent_prefix_path/amcl_config
+[1.604s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/ament_prefix_path.sh
+[1.604s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/ament_prefix_path.dsv
+[1.604s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/path.sh
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/environment/path.dsv
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.bash
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.sh
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.zsh
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/local_setup.dsv
+[1.605s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv
+[1.606s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/ament_index/resource_index/packages/amcl_config
+[1.606s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/cmake/amcl_configConfig.cmake
+[1.606s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/cmake/amcl_configConfig-version.cmake
+[1.606s] -- Installing: /home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.xml
+[1.631s] Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config

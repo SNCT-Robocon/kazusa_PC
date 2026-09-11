@@ -1,1 +1,36 @@
-/home/kazusa/kazusa/build/custom_msgs/rosidl_adapter/custom_msgs/action/FollowPath.idl
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_msgs/action/FollowPath.action
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct FollowPath_Goal {
+      string path_name;
+    };
+    struct FollowPath_Result {
+      boolean success;
+
+      string message;
+    };
+    struct FollowPath_Feedback {
+      string path_name;
+
+      uint32 index;
+
+      float ref_x;
+
+      float ref_y;
+
+      float ref_yaw;
+
+      float now_x;
+
+      float now_y;
+
+      float now_yaw;
+    };
+  };
+};

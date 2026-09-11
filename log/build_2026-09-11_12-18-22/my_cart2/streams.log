@@ -1,0 +1,196 @@
+[0.029s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/my_cart2 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/my_cart2
+[0.190s] -- The C compiler identification is GNU 13.3.0
+[0.336s] -- The CXX compiler identification is GNU 13.3.0
+[0.363s] -- Detecting C compiler ABI info
+[0.518s] -- Detecting C compiler ABI info - done
+[0.530s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.533s] -- Detecting C compile features
+[0.533s] -- Detecting C compile features - done
+[0.549s] -- Detecting CXX compiler ABI info
+[0.718s] -- Detecting CXX compiler ABI info - done
+[0.738s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.739s] -- Detecting CXX compile features
+[0.740s] -- Detecting CXX compile features - done
+[0.748s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.991s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.238s] -- Found cartographer_ros: 2.0.9003 (/opt/ros/jazzy/share/cartographer_ros/cmake)
+[1.349s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.379s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.418s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.454s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.673s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.796s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.797s] -- Found Threads: TRUE  
+[2.316s] -- Found AMD headers in: /usr/include/suitesparse
+[2.319s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[2.320s] -- Found CAMD headers in: /usr/include/suitesparse
+[2.322s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[2.322s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[2.323s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[2.324s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[2.325s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[2.326s] -- Found COLAMD headers in: /usr/include/suitesparse
+[2.327s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[2.328s] -- Found SPQR headers in: /usr/include/suitesparse
+[2.329s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[2.330s] -- Found Config headers in: /usr/include/suitesparse
+[2.331s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[2.337s] -- Found Intel Thread Building Blocks (TBB) library (2021.11 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[2.337s] -- Looking for shm_open in rt
+[2.439s] -- Looking for shm_open in rt - found
+[2.439s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[2.447s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[2.500s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: iostreams 
+[2.697s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.701s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.821s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.837s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.858s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.020s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[3.021s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[3.021s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[3.021s]   cmake_policy command to set the policy and suppress this warning.
+[3.021s] 
+[3.021s]   CMake variable FLANN_ROOT is set to:
+[3.021s] 
+[3.021s]     /usr
+[3.021s] 
+[3.021s]   For compatibility, find_package is ignoring the variable, but code in a
+[3.021s]   .cmake module might still use it.
+[3.021s] Call Stack (most recent call first):
+[3.021s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[3.021s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[3.022s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[3.022s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.022s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[3.022s]   /opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.022s]   /opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)
+[3.022s]   CMakeLists.txt:11 (find_package)
+[3.022s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.022s] [0m
+[3.022s] -- Found flann version 1.9.2
+[3.346s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[3.346s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[4.768s] -- Checking for module 'libusb-1.0'
+[4.802s] --   Found libusb-1.0, version 1.0.27
+[4.879s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.880s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.995s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.001s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[5.019s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[5.041s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") 
+[5.618s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.626s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.266s] -- Found Qhull version 8.0.2
+[6.845s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.189s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.192s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.193s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.193s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.194s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.195s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.195s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[7.195s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[7.196s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.197s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.197s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.198s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.199s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.200s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.201s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.202s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.203s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.204s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.205s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.206s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.208s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[7.209s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[7.209s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[7.211s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.212s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[7.417s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[7.596s] -- Found AMD headers in: /usr/include/suitesparse
+[7.596s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[7.596s] -- Found CAMD headers in: /usr/include/suitesparse
+[7.596s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[7.596s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[7.596s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[7.596s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[7.596s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[7.596s] -- Found COLAMD headers in: /usr/include/suitesparse
+[7.596s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[7.596s] -- Found SPQR headers in: /usr/include/suitesparse
+[7.596s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[7.596s] -- Found Config headers in: /usr/include/suitesparse
+[7.596s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[7.596s] -- Found Intel Thread Building Blocks (TBB) library (2021.11 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[7.597s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[7.600s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[7.600s] -- Found SuiteSparse: /usr/include/suitesparse (found suitable version "7.6.1", minimum required is "7.6.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config 
+[7.602s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[7.602s] -- Found required Ceres dependency: glog
+[7.602s] -- Found required Ceres dependency: gflags
+[7.602s] -- Found Ceres version: 2.2.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]
+[7.612s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.695s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.695s] -- Configured cppcheck include dirs: 
+[7.695s] -- Configured cppcheck exclude dirs and/or files: 
+[7.696s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.696s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.697s] -- Added test 'lint_cmake' to check CMake code style
+[7.697s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.698s] -- Added test 'uncrustify' to check C / C++ code style
+[7.698s] -- Configured uncrustify additional arguments: 
+[7.699s] -- Added test 'xmllint' to check XML markup files
+[7.700s] -- Configuring done (7.6s)
+[7.715s] -- Generating done (0.0s)
+[7.718s] -- Build files have been written to: /home/kazusa/kazusa/build/my_cart2
+[7.737s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/my_cart2 -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/my_cart2
+[7.739s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[7.805s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_merger_cpp.dir/scripts/merge_scan.cpp.o[0m
+[16.544s] [100%] [32m[1mLinking CXX executable laser_scan_merger_cpp[0m
+[17.038s] [100%] Built target laser_scan_merger_cpp
+[17.053s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[17.055s] Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[17.065s] -- Install configuration: ""
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_3d.lua
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/multi_map_builder.lua
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_static.lua
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder_server.lua
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/map_builder.lua
+[17.065s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer.lua
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/params.yaml
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/pose_graph.lua
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder_2d.lua
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/cartographer_static.lua
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2//config/trajectory_builder.lua
+[17.066s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/laser_scan_merger_cpp
+[17.074s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/my_cart2/lib/my_cart2/laser_scan_merger_cpp" to ""
+[17.074s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/pose1_pub.py
+[17.074s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/imu_reader.py
+[17.074s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/i2c_pub.py
+[17.074s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/cartStarter_static.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/odom_fusion.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/merge_scan_cpu.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/noise_test.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/lib/my_cart2/emcl_degree.py
+[17.075s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/package_run_dependencies/my_cart2
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/parent_prefix_path/my_cart2
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.sh
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/ament_prefix_path.dsv
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.sh
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/environment/path.dsv
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.bash
+[17.076s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.sh
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.zsh
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/local_setup.dsv
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/ament_index/resource_index/packages/my_cart2
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config.cmake
+[17.077s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/cmake/my_cart2Config-version.cmake
+[17.078s] -- Installing: /home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.xml
+[17.080s] Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2

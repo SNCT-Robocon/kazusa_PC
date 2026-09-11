@@ -2,6 +2,9 @@
 // with input from custom_msgs:msg/CanPacket.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_msgs/msg/can_packet.h"
+
+
 #ifndef CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__TYPE_SUPPORT_H_
 #define CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   custom_msgs,
   msg,
   CanPacket
-)();
+)(void);
 
 #ifdef __cplusplus
 }

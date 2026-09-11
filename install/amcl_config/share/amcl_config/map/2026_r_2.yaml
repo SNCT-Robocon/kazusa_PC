@@ -1,1 +1,7 @@
-/home/kazusa/kazusa/ver0/amcl_config/map/2026_r_2.yaml
+image: 2026mapred.pgm
+resolution: 0.02   # 1px = 1mm の場合
+origin: [-0.16, -10.66, 0]
+
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

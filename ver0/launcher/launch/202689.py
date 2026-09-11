@@ -45,7 +45,7 @@ def launch_setup(context, *args, **kwargs):
             # x, y, z, yaw, pitch, roll, frame, child
             # 元の x=0.07445, y=-0.2317  -> 新しい x=0.2317, y=0.07445
             # 元の yaw=-1.16309 -> 新しい yaw=0.40771
-            arguments=["-0.295", "-0.390", "0", "-2.35619449", "0", "0", "base_link", "left_laser"]
+            arguments=["-0.295", "-0.390", "0", "-2.35619449", "0", "3.1415", "base_link", "left_laser"]
         ),
 
         Node(
@@ -54,7 +54,7 @@ def launch_setup(context, *args, **kwargs):
             # x, y, z, yaw, pitch, roll, frame, child
             # 元の x=0.07445, y=0.2317   -> 新しい x=-0.2317, y=0.07445
             # 元の yaw=1.16309  -> 新しい yaw=2.73389
-            arguments=["-0.295", "0.390", "0", "2.35619449", "0", "0", "base_link", "right_laser"]
+            arguments=["-0.295", "0.390", "0", "2.35619449", "0", "3.1415", "base_link", "right_laser"]
         ),
 
         # URG Laser Scanners (ノード名を右/左でユニークに変更)
@@ -66,7 +66,7 @@ def launch_setup(context, *args, **kwargs):
             parameters=[{
                 "ip_address": "192.168.4.11",
                 "angle_min": -1.57,
-                "angle_max": 1.57,
+                "angle_max": 2.00,
                 "laser_frame_id": "right_laser"
             }],
             remappings=[("/scan", "/right_scan")],
@@ -79,7 +79,7 @@ def launch_setup(context, *args, **kwargs):
             output="screen",
             parameters=[{
                 "ip_address": "192.168.3.11",
-                "angle_min": -1.57,
+                "angle_min": -2.00,
                 "angle_max": 1.57,
                 "laser_frame_id": "left_laser"
             }],

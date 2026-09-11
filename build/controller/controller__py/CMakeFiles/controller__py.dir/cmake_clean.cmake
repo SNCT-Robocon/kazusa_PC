@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_c.c"
-  "../rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "../rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c"
-  "../rosidl_generator_py/controller/msg/__init__.py"
-  "../rosidl_generator_py/controller/msg/_controller.py"
-  "../rosidl_generator_py/controller/msg/_controller_s.c"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_c.c"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/msg/__init__.py"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/msg/_controller.py"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/msg/_controller_s.c"
   "CMakeFiles/controller__py"
 )
 

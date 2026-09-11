@@ -5,9 +5,11 @@
 
 
 #include <cassert>
+#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
+#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -42,15 +44,12 @@ extern "C"
 
 using _Controller__ros_msg_type = controller__msg__Controller;
 
-static bool _Controller__cdr_serialize(
-  const void * untyped_ros_message,
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
+bool cdr_serialize_controller__msg__Controller(
+  const controller__msg__Controller * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const _Controller__ros_msg_type * ros_message = static_cast<const _Controller__ros_msg_type *>(untyped_ros_message);
   // Field name: x
   {
     cdr << ros_message->x;
@@ -299,15 +298,11 @@ static bool _Controller__cdr_serialize(
   return true;
 }
 
-static bool _Controller__cdr_deserialize(
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
+bool cdr_deserialize_controller__msg__Controller(
   eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
+  controller__msg__Controller * ros_message)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  _Controller__ros_msg_type * ros_message = static_cast<_Controller__ros_msg_type *>(untyped_ros_message);
   // Field name: x
   {
     cdr >> ros_message->x;
@@ -608,6 +603,7 @@ static bool _Controller__cdr_deserialize(
   return true;
 }  // NOLINT(readability/fn_size)
 
+
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
 size_t get_serialized_size_controller__msg__Controller(
   const void * untyped_ros_message,
@@ -622,231 +618,270 @@ size_t get_serialized_size_controller__msg__Controller(
   (void)padding;
   (void)wchar_size;
 
-  // field.name x
+  // Field name: x
   {
     size_t item_size = sizeof(ros_message->x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name y
+
+  // Field name: y
   {
     size_t item_size = sizeof(ros_message->y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name theta
+
+  // Field name: theta
   {
     size_t item_size = sizeof(ros_message->theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hata_turn_x
+
+  // Field name: hata_turn_x
   {
     size_t item_size = sizeof(ros_message->hata_turn_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hata_turn_y
+
+  // Field name: hata_turn_y
   {
     size_t item_size = sizeof(ros_message->hata_turn_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hata_turn_theta
+
+  // Field name: hata_turn_theta
   {
     size_t item_size = sizeof(ros_message->hata_turn_theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name baketu_turn_x
+
+  // Field name: baketu_turn_x
   {
     size_t item_size = sizeof(ros_message->baketu_turn_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name baketu_turn_y
+
+  // Field name: baketu_turn_y
   {
     size_t item_size = sizeof(ros_message->baketu_turn_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name baketu_turn_theta
+
+  // Field name: baketu_turn_theta
   {
     size_t item_size = sizeof(ros_message->baketu_turn_theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hoju_turn_x
+
+  // Field name: hoju_turn_x
   {
     size_t item_size = sizeof(ros_message->hoju_turn_x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hoju_turn_y
+
+  // Field name: hoju_turn_y
   {
     size_t item_size = sizeof(ros_message->hoju_turn_y);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hoju_turn_theta
+
+  // Field name: hoju_turn_theta
   {
     size_t item_size = sizeof(ros_message->hoju_turn_theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hata_speed
+
+  // Field name: hata_speed
   {
     size_t item_size = sizeof(ros_message->hata_speed);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name baketu_speed
+
+  // Field name: baketu_speed
   {
     size_t item_size = sizeof(ros_message->baketu_speed);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name fieldcolor
+
+  // Field name: fieldcolor
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->fieldcolor.size + 1);
-  // field.name dengen
+
+  // Field name: dengen
   {
     size_t item_size = sizeof(ros_message->dengen);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name mode
+
+  // Field name: mode
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->mode.size + 1);
-  // field.name column1
+
+  // Field name: column1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->column1.size + 1);
-  // field.name column2
+
+  // Field name: column2
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->column2.size + 1);
-  // field.name column3
+
+  // Field name: column3
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->column3.size + 1);
-  // field.name execute
+
+  // Field name: execute
   {
     size_t item_size = sizeof(ros_message->execute);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name refill
+
+  // Field name: refill
   {
     size_t item_size = sizeof(ros_message->refill);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name reload1
+
+  // Field name: reload1
   {
     size_t item_size = sizeof(ros_message->reload1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name reload2
+
+  // Field name: reload2
   {
     size_t item_size = sizeof(ros_message->reload2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name reload3
+
+  // Field name: reload3
   {
     size_t item_size = sizeof(ros_message->reload3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name firehata
+
+  // Field name: firehata
   {
     size_t item_size = sizeof(ros_message->firehata);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name firebaketu
+
+  // Field name: firebaketu
   {
     size_t item_size = sizeof(ros_message->firebaketu);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hojuposition
+
+  // Field name: hojuposition
   {
     size_t item_size = sizeof(ros_message->hojuposition);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name left
+
+  // Field name: left
   {
     size_t item_size = sizeof(ros_message->left);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name right
+
+  // Field name: right
   {
     size_t item_size = sizeof(ros_message->right);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name up
+
+  // Field name: up
   {
     size_t item_size = sizeof(ros_message->up);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name down
+
+  // Field name: down
   {
     size_t item_size = sizeof(ros_message->down);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name circle
+
+  // Field name: circle
   {
     size_t item_size = sizeof(ros_message->circle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name triangle
+
+  // Field name: triangle
   {
     size_t item_size = sizeof(ros_message->triangle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name square
+
+  // Field name: square
   {
     size_t item_size = sizeof(ros_message->square);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name cross
+
+  // Field name: cross
   {
     size_t item_size = sizeof(ros_message->cross);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name l1
+
+  // Field name: l1
   {
     size_t item_size = sizeof(ros_message->l1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name l2
+
+  // Field name: l2
   {
     size_t item_size = sizeof(ros_message->l2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name r1
+
+  // Field name: r1
   {
     size_t item_size = sizeof(ros_message->r1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name r2
+
+  // Field name: r2
   {
     size_t item_size = sizeof(ros_message->r2);
     current_alignment += item_size +
@@ -856,12 +891,6 @@ size_t get_serialized_size_controller__msg__Controller(
   return current_alignment - initial_alignment;
 }
 
-static uint32_t _Controller__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_controller__msg__Controller(
-      untyped_ros_message, 0));
-}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
 size_t max_serialized_size_controller__msg__Controller(
@@ -881,122 +910,121 @@ size_t max_serialized_size_controller__msg__Controller(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // Field name: x
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: y
+
+  // Field name: y
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: theta
+
+  // Field name: theta
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hata_turn_x
+
+  // Field name: hata_turn_x
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hata_turn_y
+
+  // Field name: hata_turn_y
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hata_turn_theta
+
+  // Field name: hata_turn_theta
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: baketu_turn_x
+
+  // Field name: baketu_turn_x
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: baketu_turn_y
+
+  // Field name: baketu_turn_y
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: baketu_turn_theta
+
+  // Field name: baketu_turn_theta
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hoju_turn_x
+
+  // Field name: hoju_turn_x
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hoju_turn_y
+
+  // Field name: hoju_turn_y
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hoju_turn_theta
+
+  // Field name: hoju_turn_theta
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hata_speed
+
+  // Field name: hata_speed
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: baketu_speed
+
+  // Field name: baketu_speed
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: fieldcolor
+
+  // Field name: fieldcolor
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -1005,17 +1033,17 @@ size_t max_serialized_size_controller__msg__Controller(
         1;
     }
   }
-  // member: dengen
+
+  // Field name: dengen
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: mode
+
+  // Field name: mode
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -1024,10 +1052,10 @@ size_t max_serialized_size_controller__msg__Controller(
         1;
     }
   }
-  // member: column1
+
+  // Field name: column1
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -1036,10 +1064,10 @@ size_t max_serialized_size_controller__msg__Controller(
         1;
     }
   }
-  // member: column2
+
+  // Field name: column2
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -1048,10 +1076,10 @@ size_t max_serialized_size_controller__msg__Controller(
         1;
     }
   }
-  // member: column3
+
+  // Field name: column3
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -1060,143 +1088,1036 @@ size_t max_serialized_size_controller__msg__Controller(
         1;
     }
   }
-  // member: execute
+
+  // Field name: execute
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: refill
+
+  // Field name: refill
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: reload1
+
+  // Field name: reload1
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: reload2
+
+  // Field name: reload2
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: reload3
+
+  // Field name: reload3
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: firehata
+
+  // Field name: firehata
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: firebaketu
+
+  // Field name: firebaketu
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: hojuposition
+
+  // Field name: hojuposition
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: left
+
+  // Field name: left
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: right
+
+  // Field name: right
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: up
+
+  // Field name: up
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: down
+
+  // Field name: down
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: circle
+
+  // Field name: circle
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: triangle
+
+  // Field name: triangle
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: square
+
+  // Field name: square
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: cross
+
+  // Field name: cross
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: l1
+
+  // Field name: l1
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: l2
+
+  // Field name: l2
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: r1
+
+  // Field name: r1
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: r2
+
+  // Field name: r2
   {
     size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = controller__msg__Controller;
+    is_plain =
+      (
+      offsetof(DataType, r2) +
+      last_member_size
+      ) == ret_val;
+  }
+  return ret_val;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
+bool cdr_serialize_key_controller__msg__Controller(
+  const controller__msg__Controller * ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Field name: x
+  {
+    cdr << ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr << ros_message->y;
+  }
+
+  // Field name: theta
+  {
+    cdr << ros_message->theta;
+  }
+
+  // Field name: hata_turn_x
+  {
+    cdr << ros_message->hata_turn_x;
+  }
+
+  // Field name: hata_turn_y
+  {
+    cdr << ros_message->hata_turn_y;
+  }
+
+  // Field name: hata_turn_theta
+  {
+    cdr << ros_message->hata_turn_theta;
+  }
+
+  // Field name: baketu_turn_x
+  {
+    cdr << ros_message->baketu_turn_x;
+  }
+
+  // Field name: baketu_turn_y
+  {
+    cdr << ros_message->baketu_turn_y;
+  }
+
+  // Field name: baketu_turn_theta
+  {
+    cdr << ros_message->baketu_turn_theta;
+  }
+
+  // Field name: hoju_turn_x
+  {
+    cdr << ros_message->hoju_turn_x;
+  }
+
+  // Field name: hoju_turn_y
+  {
+    cdr << ros_message->hoju_turn_y;
+  }
+
+  // Field name: hoju_turn_theta
+  {
+    cdr << ros_message->hoju_turn_theta;
+  }
+
+  // Field name: hata_speed
+  {
+    cdr << ros_message->hata_speed;
+  }
+
+  // Field name: baketu_speed
+  {
+    cdr << ros_message->baketu_speed;
+  }
+
+  // Field name: fieldcolor
+  {
+    const rosidl_runtime_c__String * str = &ros_message->fieldcolor;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: dengen
+  {
+    cdr << (ros_message->dengen ? true : false);
+  }
+
+  // Field name: mode
+  {
+    const rosidl_runtime_c__String * str = &ros_message->mode;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: column1
+  {
+    const rosidl_runtime_c__String * str = &ros_message->column1;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: column2
+  {
+    const rosidl_runtime_c__String * str = &ros_message->column2;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: column3
+  {
+    const rosidl_runtime_c__String * str = &ros_message->column3;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: execute
+  {
+    cdr << (ros_message->execute ? true : false);
+  }
+
+  // Field name: refill
+  {
+    cdr << (ros_message->refill ? true : false);
+  }
+
+  // Field name: reload1
+  {
+    cdr << (ros_message->reload1 ? true : false);
+  }
+
+  // Field name: reload2
+  {
+    cdr << (ros_message->reload2 ? true : false);
+  }
+
+  // Field name: reload3
+  {
+    cdr << (ros_message->reload3 ? true : false);
+  }
+
+  // Field name: firehata
+  {
+    cdr << (ros_message->firehata ? true : false);
+  }
+
+  // Field name: firebaketu
+  {
+    cdr << (ros_message->firebaketu ? true : false);
+  }
+
+  // Field name: hojuposition
+  {
+    cdr << (ros_message->hojuposition ? true : false);
+  }
+
+  // Field name: left
+  {
+    cdr << (ros_message->left ? true : false);
+  }
+
+  // Field name: right
+  {
+    cdr << (ros_message->right ? true : false);
+  }
+
+  // Field name: up
+  {
+    cdr << (ros_message->up ? true : false);
+  }
+
+  // Field name: down
+  {
+    cdr << (ros_message->down ? true : false);
+  }
+
+  // Field name: circle
+  {
+    cdr << (ros_message->circle ? true : false);
+  }
+
+  // Field name: triangle
+  {
+    cdr << (ros_message->triangle ? true : false);
+  }
+
+  // Field name: square
+  {
+    cdr << (ros_message->square ? true : false);
+  }
+
+  // Field name: cross
+  {
+    cdr << (ros_message->cross ? true : false);
+  }
+
+  // Field name: l1
+  {
+    cdr << (ros_message->l1 ? true : false);
+  }
+
+  // Field name: l2
+  {
+    cdr << (ros_message->l2 ? true : false);
+  }
+
+  // Field name: r1
+  {
+    cdr << (ros_message->r1 ? true : false);
+  }
+
+  // Field name: r2
+  {
+    cdr << (ros_message->r2 ? true : false);
+  }
+
+  return true;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
+size_t get_serialized_size_key_controller__msg__Controller(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _Controller__ros_msg_type * ros_message = static_cast<const _Controller__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Field name: x
+  {
+    size_t item_size = sizeof(ros_message->x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: y
+  {
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: theta
+  {
+    size_t item_size = sizeof(ros_message->theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_turn_x
+  {
+    size_t item_size = sizeof(ros_message->hata_turn_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_turn_y
+  {
+    size_t item_size = sizeof(ros_message->hata_turn_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_turn_theta
+  {
+    size_t item_size = sizeof(ros_message->hata_turn_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_turn_x
+  {
+    size_t item_size = sizeof(ros_message->baketu_turn_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_turn_y
+  {
+    size_t item_size = sizeof(ros_message->baketu_turn_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_turn_theta
+  {
+    size_t item_size = sizeof(ros_message->baketu_turn_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hoju_turn_x
+  {
+    size_t item_size = sizeof(ros_message->hoju_turn_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hoju_turn_y
+  {
+    size_t item_size = sizeof(ros_message->hoju_turn_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hoju_turn_theta
+  {
+    size_t item_size = sizeof(ros_message->hoju_turn_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_speed
+  {
+    size_t item_size = sizeof(ros_message->hata_speed);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_speed
+  {
+    size_t item_size = sizeof(ros_message->baketu_speed);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: fieldcolor
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->fieldcolor.size + 1);
+
+  // Field name: dengen
+  {
+    size_t item_size = sizeof(ros_message->dengen);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: mode
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->mode.size + 1);
+
+  // Field name: column1
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->column1.size + 1);
+
+  // Field name: column2
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->column2.size + 1);
+
+  // Field name: column3
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->column3.size + 1);
+
+  // Field name: execute
+  {
+    size_t item_size = sizeof(ros_message->execute);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: refill
+  {
+    size_t item_size = sizeof(ros_message->refill);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: reload1
+  {
+    size_t item_size = sizeof(ros_message->reload1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: reload2
+  {
+    size_t item_size = sizeof(ros_message->reload2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: reload3
+  {
+    size_t item_size = sizeof(ros_message->reload3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: firehata
+  {
+    size_t item_size = sizeof(ros_message->firehata);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: firebaketu
+  {
+    size_t item_size = sizeof(ros_message->firebaketu);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hojuposition
+  {
+    size_t item_size = sizeof(ros_message->hojuposition);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: left
+  {
+    size_t item_size = sizeof(ros_message->left);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: right
+  {
+    size_t item_size = sizeof(ros_message->right);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: up
+  {
+    size_t item_size = sizeof(ros_message->up);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: down
+  {
+    size_t item_size = sizeof(ros_message->down);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: circle
+  {
+    size_t item_size = sizeof(ros_message->circle);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: triangle
+  {
+    size_t item_size = sizeof(ros_message->triangle);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: square
+  {
+    size_t item_size = sizeof(ros_message->square);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: cross
+  {
+    size_t item_size = sizeof(ros_message->cross);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: l1
+  {
+    size_t item_size = sizeof(ros_message->l1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: l2
+  {
+    size_t item_size = sizeof(ros_message->l2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: r1
+  {
+    size_t item_size = sizeof(ros_message->r1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: r2
+  {
+    size_t item_size = sizeof(ros_message->r2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_controller
+size_t max_serialized_size_key_controller__msg__Controller(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+  // Field name: x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_turn_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_turn_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_turn_theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_turn_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_turn_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_turn_theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hoju_turn_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hoju_turn_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hoju_turn_theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_speed
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_speed
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: fieldcolor
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Field name: dengen
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: mode
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Field name: column1
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Field name: column2
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Field name: column3
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Field name: execute
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: refill
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: reload1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: reload2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: reload3
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: firehata
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: firebaketu
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: hojuposition
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: left
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: right
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: up
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: down
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: circle
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: triangle
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: square
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: cross
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: l1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: l2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: r1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: r2
+  {
+    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
@@ -1213,8 +2134,41 @@ size_t max_serialized_size_controller__msg__Controller(
       last_member_size
       ) == ret_val;
   }
-
   return ret_val;
+}
+
+
+static bool _Controller__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const controller__msg__Controller * ros_message = static_cast<const controller__msg__Controller *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_serialize_controller__msg__Controller(ros_message, cdr);
+}
+
+static bool _Controller__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  controller__msg__Controller * ros_message = static_cast<controller__msg__Controller *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_deserialize_controller__msg__Controller(cdr, ros_message);
+}
+
+static uint32_t _Controller__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_controller__msg__Controller(
+      untyped_ros_message, 0));
 }
 
 static size_t _Controller__max_serialized_size(char & bounds_info)
@@ -1239,13 +2193,17 @@ static message_type_support_callbacks_t __callbacks_Controller = {
   _Controller__cdr_serialize,
   _Controller__cdr_deserialize,
   _Controller__get_serialized_size,
-  _Controller__max_serialized_size
+  _Controller__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _Controller__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_Controller,
   get_message_typesupport_handle_function,
+  &controller__msg__Controller__get_type_hash,
+  &controller__msg__Controller__get_type_description,
+  &controller__msg__Controller__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

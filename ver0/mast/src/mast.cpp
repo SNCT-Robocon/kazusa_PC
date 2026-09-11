@@ -667,8 +667,8 @@ private:
 
     std::array<path_loader::Path, path_loader::path_files_name.size()> paths;
 
-    pid_control pid_x{1000.0f, 0.002f, 0.0f, 0.0f, 1700.0f};
-    pid_control pid_y{1000.0f, 0.002f, 0.0f, 0.0f, 1700.0f};
+    pid_control pid_x{1000.0f, 0.001f, 0.0f, 0.0f, 1700.0f};
+    pid_control pid_y{1000.0f, 0.001f, 0.0f, 0.0f, 1700.0f};
     pid_control pid_yaw{1000.0f, 2.0f, 0.0f, 0.0f, 4.0f};
 
 };

@@ -1,0 +1,17 @@
+/home/kazusa/kazusa/install/controller_src/lib/controller_src/con.py
+/home/kazusa/kazusa/install/controller_src/lib/controller_src/launch_starter.py
+/home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/package_run_dependencies/controller_src
+/home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/parent_prefix_path/controller_src
+/home/kazusa/kazusa/install/controller_src/share/controller_src/environment/ament_prefix_path.sh
+/home/kazusa/kazusa/install/controller_src/share/controller_src/environment/ament_prefix_path.dsv
+/home/kazusa/kazusa/install/controller_src/share/controller_src/environment/path.sh
+/home/kazusa/kazusa/install/controller_src/share/controller_src/environment/path.dsv
+/home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.bash
+/home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.sh
+/home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.zsh
+/home/kazusa/kazusa/install/controller_src/share/controller_src/local_setup.dsv
+/home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv
+/home/kazusa/kazusa/install/controller_src/share/ament_index/resource_index/packages/controller_src
+/home/kazusa/kazusa/install/controller_src/share/controller_src/cmake/controller_srcConfig.cmake
+/home/kazusa/kazusa/install/controller_src/share/controller_src/cmake/controller_srcConfig-version.cmake
+/home/kazusa/kazusa/install/controller_src/share/controller_src/package.xml

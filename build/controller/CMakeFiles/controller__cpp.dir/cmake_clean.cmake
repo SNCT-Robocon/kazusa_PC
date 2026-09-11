@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/controller/msg/detail/controller__struct.hpp"
   "rosidl_generator_cpp/controller/msg/detail/controller__traits.hpp"
   "rosidl_generator_cpp/controller/msg/detail/controller__type_support.hpp"
+  "rosidl_generator_cpp/controller/msg/rosidl_generator_cpp__visibility_control.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

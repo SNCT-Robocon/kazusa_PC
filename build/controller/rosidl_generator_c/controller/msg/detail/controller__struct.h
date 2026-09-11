@@ -2,6 +2,9 @@
 // with input from controller:msg/Controller.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "controller/msg/controller.h"
+
+
 #ifndef CONTROLLER__MSG__DETAIL__CONTROLLER__STRUCT_H_
 #define CONTROLLER__MSG__DETAIL__CONTROLLER__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

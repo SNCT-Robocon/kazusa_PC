@@ -7,18 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # ユーザーのホームディレクトリからの相対で bag 保存先を取得（環境に依存させないため）
-    home_dir = os.path.expanduser('~')
-    base_dir = os.path.join(home_dir, "kazusa", "records")
-    os.makedirs(base_dir, exist_ok=True)
-
-    # base_dir 内の既存フォルダをチェックして最大番号を取得
-    existing = [
-        int(name) for name in os.listdir(base_dir)
-        if name.isdigit()
-    ]
-    next_index = max(existing, default=0) + 1
-    output_dir = os.path.join(base_dir, str(next_index))
-
+    
     # --- 各パッケージの share ディレクトリを取得（相対パス化の要） ---
     # ※ もし amcl.yaml や 2026_r.yaml が my_cart2 ではなく
     # 別個の「amcl_config」パッケージにある場合は、そちらのパッケージ名に変えてください。

@@ -1,1 +1,2 @@
-/home/kazusa/kazusa/build/esp_agent/ament_cmake_environment_hooks/local_setup.dsv
+source;share/esp_agent/environment/ament_prefix_path.sh
+source;share/esp_agent/environment/path.sh

@@ -2,6 +2,9 @@
 // with input from custom_msgs:msg/CanPacket.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_msgs/msg/can_packet.h"
+
+
 #ifndef CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__STRUCT_H_
 #define CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

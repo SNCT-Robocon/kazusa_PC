@@ -11,10 +11,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/msg/_controller_s.c" "CMakeFiles/controller__rosidl_generator_py.dir/rosidl_generator_py/controller/msg/_controller_s.c.o" "gcc" "CMakeFiles/controller__rosidl_generator_py.dir/rosidl_generator_py/controller/msg/_controller_s.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kazusa/kazusa/build/controller/CMakeFiles/controller__rosidl_typesupport_c.dir/DependInfo.cmake"
-  "/home/kazusa/kazusa/build/controller/CMakeFiles/controller__rosidl_generator_c.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

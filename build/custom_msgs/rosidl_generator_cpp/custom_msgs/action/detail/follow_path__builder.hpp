@@ -2,6 +2,9 @@
 // with input from custom_msgs:action/FollowPath.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_msgs/action/follow_path.hpp"
+
+
 #ifndef CUSTOM_MSGS__ACTION__DETAIL__FOLLOW_PATH__BUILDER_HPP_
 #define CUSTOM_MSGS__ACTION__DETAIL__FOLLOW_PATH__BUILDER_HPP_
 
@@ -391,6 +394,80 @@ namespace action
 namespace builder
 {
 
+class Init_FollowPath_SendGoal_Event_response
+{
+public:
+  explicit Init_FollowPath_SendGoal_Event_response(::custom_msgs::action::FollowPath_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::action::FollowPath_SendGoal_Event response(::custom_msgs::action::FollowPath_SendGoal_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_SendGoal_Event msg_;
+};
+
+class Init_FollowPath_SendGoal_Event_request
+{
+public:
+  explicit Init_FollowPath_SendGoal_Event_request(::custom_msgs::action::FollowPath_SendGoal_Event & msg)
+  : msg_(msg)
+  {}
+  Init_FollowPath_SendGoal_Event_response request(::custom_msgs::action::FollowPath_SendGoal_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_FollowPath_SendGoal_Event_response(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_SendGoal_Event msg_;
+};
+
+class Init_FollowPath_SendGoal_Event_info
+{
+public:
+  Init_FollowPath_SendGoal_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_FollowPath_SendGoal_Event_request info(::custom_msgs::action::FollowPath_SendGoal_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_FollowPath_SendGoal_Event_request(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_SendGoal_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::custom_msgs::action::FollowPath_SendGoal_Event>()
+{
+  return custom_msgs::action::builder::Init_FollowPath_SendGoal_Event_info();
+}
+
+}  // namespace custom_msgs
+
+
+namespace custom_msgs
+{
+
+namespace action
+{
+
+namespace builder
+{
+
 class Init_FollowPath_GetResult_Request_goal_id
 {
 public:
@@ -477,6 +554,80 @@ inline
 auto build<::custom_msgs::action::FollowPath_GetResult_Response>()
 {
   return custom_msgs::action::builder::Init_FollowPath_GetResult_Response_status();
+}
+
+}  // namespace custom_msgs
+
+
+namespace custom_msgs
+{
+
+namespace action
+{
+
+namespace builder
+{
+
+class Init_FollowPath_GetResult_Event_response
+{
+public:
+  explicit Init_FollowPath_GetResult_Event_response(::custom_msgs::action::FollowPath_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::action::FollowPath_GetResult_Event response(::custom_msgs::action::FollowPath_GetResult_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_GetResult_Event msg_;
+};
+
+class Init_FollowPath_GetResult_Event_request
+{
+public:
+  explicit Init_FollowPath_GetResult_Event_request(::custom_msgs::action::FollowPath_GetResult_Event & msg)
+  : msg_(msg)
+  {}
+  Init_FollowPath_GetResult_Event_response request(::custom_msgs::action::FollowPath_GetResult_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_FollowPath_GetResult_Event_response(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_GetResult_Event msg_;
+};
+
+class Init_FollowPath_GetResult_Event_info
+{
+public:
+  Init_FollowPath_GetResult_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_FollowPath_GetResult_Event_request info(::custom_msgs::action::FollowPath_GetResult_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_FollowPath_GetResult_Event_request(msg_);
+  }
+
+private:
+  ::custom_msgs::action::FollowPath_GetResult_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace action
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::custom_msgs::action::FollowPath_GetResult_Event>()
+{
+  return custom_msgs::action::builder::Init_FollowPath_GetResult_Event_info();
 }
 
 }  // namespace custom_msgs

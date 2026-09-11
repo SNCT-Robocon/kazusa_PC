@@ -2,6 +2,9 @@
 // with input from custom_msgs:msg/CanPacket.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "custom_msgs/msg/can_packet.hpp"
+
+
 #ifndef CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__STRUCT_HPP_
 #define CUSTOM_MSGS__MSG__DETAIL__CAN_PACKET__STRUCT_HPP_
 

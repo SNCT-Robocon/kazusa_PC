@@ -1,1 +1,17 @@
-/home/kazusa/kazusa/ver0/custom_msgs/action/Hoju.action
+# Goal
+string action_name
+
+---
+
+# Result
+bool success
+string message
+uint8 arm_mode
+
+---
+
+# Feedback
+float32 z
+float32 x
+float32 pitch
+bool[9] hand

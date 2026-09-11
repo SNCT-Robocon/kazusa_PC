@@ -2,6 +2,9 @@
 // with input from controller:msg/Controller.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "controller/msg/controller.hpp"
+
+
 #ifndef CONTROLLER__MSG__DETAIL__CONTROLLER__STRUCT_HPP_
 #define CONTROLLER__MSG__DETAIL__CONTROLLER__STRUCT_HPP_
 

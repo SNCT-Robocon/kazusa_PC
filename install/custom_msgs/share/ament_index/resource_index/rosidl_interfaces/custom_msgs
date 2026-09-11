@@ -1,1 +1,6 @@
-/home/kazusa/kazusa/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+action/FollowPath.action
+action/FollowPath.idl
+action/Hoju.action
+action/Hoju.idl
+msg/CanPacket.idl
+msg/CanPacket.msg

@@ -2,6 +2,9 @@
 // with input from controller:msg/Controller.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "controller/msg/controller.h"
+
+
 #ifndef CONTROLLER__MSG__DETAIL__CONTROLLER__FUNCTIONS_H_
 #define CONTROLLER__MSG__DETAIL__CONTROLLER__FUNCTIONS_H_
 
@@ -13,6 +16,12 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "controller/msg/rosidl_generator_c__visibility_control.h"
 
@@ -53,7 +62,7 @@ controller__msg__Controller__fini(controller__msg__Controller * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_controller
 controller__msg__Controller *
-controller__msg__Controller__create();
+controller__msg__Controller__create(void);
 
 /// Destroy msg/Controller message.
 /**
@@ -92,6 +101,30 @@ bool
 controller__msg__Controller__copy(
   const controller__msg__Controller * input,
   controller__msg__Controller * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_controller
+const rosidl_type_hash_t *
+controller__msg__Controller__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_controller
+const rosidl_runtime_c__type_description__TypeDescription *
+controller__msg__Controller__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_controller
+const rosidl_runtime_c__type_description__TypeSource *
+controller__msg__Controller__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_controller
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+controller__msg__Controller__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/Controller messages.
 /**

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msgs/action/FollowPath_Goal",
+      "fields": [
+        {
+          "name": "path_name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msgs/action/FollowPath_Goal",
+      "hash_string": "RIHS01_c47095ec2b7b1729b07354bb6e23b8a8ef177888b672e10dd7a4907d68ce0583"
+    }
+  ]
+}

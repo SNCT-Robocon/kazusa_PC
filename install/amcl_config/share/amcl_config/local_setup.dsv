@@ -1,1 +1,2 @@
-/home/kazusa/kazusa/build/amcl_config/ament_cmake_environment_hooks/local_setup.dsv
+source;share/amcl_config/environment/ament_prefix_path.sh
+source;share/amcl_config/environment/path.sh

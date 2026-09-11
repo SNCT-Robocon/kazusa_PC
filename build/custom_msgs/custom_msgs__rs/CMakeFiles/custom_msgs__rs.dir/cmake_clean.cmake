@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/custom_msgs/rust/Cargo.toml"
-  "../rosidl_generator_rs/custom_msgs/rust/build.rs"
-  "../rosidl_generator_rs/custom_msgs/rust/src/action.rs"
-  "../rosidl_generator_rs/custom_msgs/rust/src/action/rmw.rs"
-  "../rosidl_generator_rs/custom_msgs/rust/src/lib.rs"
-  "../rosidl_generator_rs/custom_msgs/rust/src/msg.rs"
-  "../rosidl_generator_rs/custom_msgs/rust/src/msg/rmw.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/Cargo.toml"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/build.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/src/action.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/src/action/rmw.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/src/lib.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/src/msg.rs"
+  "/home/kazusa/kazusa/build/custom_msgs/rosidl_generator_rs/custom_msgs/rust/src/msg/rmw.rs"
   "CMakeFiles/custom_msgs__rs"
 )
 

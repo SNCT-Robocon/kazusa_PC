@@ -9,11 +9,23 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "custom_msgs/msg/detail/can_packet__struct.h"
+#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
+bool cdr_serialize_custom_msgs__msg__CanPacket(
+  const custom_msgs__msg__CanPacket * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
+bool cdr_deserialize_custom_msgs__msg__CanPacket(
+  eprosima::fastcdr::Cdr &,
+  custom_msgs__msg__CanPacket * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
 size_t get_serialized_size_custom_msgs__msg__CanPacket(
@@ -22,6 +34,22 @@ size_t get_serialized_size_custom_msgs__msg__CanPacket(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
 size_t max_serialized_size_custom_msgs__msg__CanPacket(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
+bool cdr_serialize_key_custom_msgs__msg__CanPacket(
+  const custom_msgs__msg__CanPacket * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
+size_t get_serialized_size_key_custom_msgs__msg__CanPacket(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_custom_msgs
+size_t max_serialized_size_key_custom_msgs__msg__CanPacket(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

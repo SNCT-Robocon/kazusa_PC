@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_msgs/msg/detail/can_packet__struct.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/can_packet__traits.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/can_packet__type_support.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

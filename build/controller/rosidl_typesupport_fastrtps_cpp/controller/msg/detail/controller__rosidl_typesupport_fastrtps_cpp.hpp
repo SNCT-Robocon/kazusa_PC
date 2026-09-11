@@ -5,6 +5,7 @@
 #ifndef CONTROLLER__MSG__DETAIL__CONTROLLER__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define CONTROLLER__MSG__DETAIL__CONTROLLER__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
+#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -54,6 +55,25 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_controller
 max_serialized_size_Controller(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_controller
+cdr_serialize_key(
+  const controller::msg::Controller & ros_message,
+  eprosima::fastcdr::Cdr &);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_controller
+get_serialized_size_key(
+  const controller::msg::Controller & ros_message,
+  size_t current_alignment);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_controller
+max_serialized_size_key_Controller(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

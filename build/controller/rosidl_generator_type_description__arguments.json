@@ -1,0 +1,11 @@
+{
+  "package_name": "controller",
+  "output_dir": "/home/kazusa/kazusa/build/controller/rosidl_generator_type_description/controller",
+  "idl_tuples": [
+    "/home/kazusa/kazusa/build/controller/rosidl_adapter/controller:msg/Controller.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

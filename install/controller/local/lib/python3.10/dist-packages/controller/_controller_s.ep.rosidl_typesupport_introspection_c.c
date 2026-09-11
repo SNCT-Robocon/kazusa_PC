@@ -1,1 +1,0 @@
-/home/kazusa/kazusa/build/controller/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/controller/rust/Cargo.toml"
-  "../rosidl_generator_rs/controller/rust/build.rs"
-  "../rosidl_generator_rs/controller/rust/src/lib.rs"
-  "../rosidl_generator_rs/controller/rust/src/msg.rs"
-  "../rosidl_generator_rs/controller/rust/src/msg/rmw.rs"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/Cargo.toml"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/build.rs"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/src/lib.rs"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/src/msg.rs"
+  "/home/kazusa/kazusa/build/controller/rosidl_generator_rs/controller/rust/src/msg/rmw.rs"
   "CMakeFiles/controller__rs"
 )
 
