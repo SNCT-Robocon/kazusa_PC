@@ -4,7 +4,14 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, OpaqueFunction,TimerAction
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from launch.actions import (
+    DeclareLaunchArgument,
+    ExecuteProcess,
+    TimerAction,
+    IncludeLaunchDescription,
+)
 
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 def launch_setup(context, *args, **kwargs):
     # --- 1. rosbag 保存先ディレクトリの設定 ---
     home_dir = os.path.expanduser('~')
@@ -22,7 +29,12 @@ def launch_setup(context, *args, **kwargs):
     my_cart_share = get_package_share_directory("my_cart2")
     amcl_config_pkg = get_package_share_directory("amcl_config")
     cartographer_config_dir = os.path.join(my_cart_share, "config")
+    mola_lo_share = get_package_share_directory("mola_lidar_odometry")
+    mola_conf_pkg= get_package_share_directory("mola_conf")
+        
+    mola_yaml_path = os.path.join(mola_conf_pkg, "config", "mola2026_conf.yaml")
     
+       
     # --- 3. field_color によるマップ切り替え分岐 ---
     # スターターから渡された引数文字列を取得 ('red' または 'blue')
     field_color = LaunchConfiguration('field_color').perform(context)
@@ -66,7 +78,7 @@ def launch_setup(context, *args, **kwargs):
             parameters=[{
                 "ip_address": "192.168.4.11",
                 "angle_min": -1.57,
-                "angle_max": 2.00,
+                "angle_max": 1.57,
                 "laser_frame_id": "right_laser"
             }],
             remappings=[("/scan", "/right_scan")],
@@ -79,7 +91,7 @@ def launch_setup(context, *args, **kwargs):
             output="screen",
             parameters=[{
                 "ip_address": "192.168.3.11",
-                "angle_min": -2.00,
+                "angle_min": -1.57,
                 "angle_max": 1.57,
                 "laser_frame_id": "left_laser"
             }],
@@ -141,20 +153,33 @@ def launch_setup(context, *args, **kwargs):
             }]
         ),
 
-        # Cartographer
-        Node(
-            package="cartographer_ros",
-            executable="cartographer_node",
-            name="cartographer_node",
-            output="log",
-            parameters=[{"use_sim_time": LaunchConfiguration("use_sim_time")}],
-            arguments=[
-                "-configuration_directory", cartographer_config_dir,
-                "-configuration_basename", "cartographer.lua",
-            ],
-            remappings=[("/scan", "/merged_scan")]
-        ),
-        
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    mola_lo_share, "ros2-launchs", "ros2-lidar-odometry.launch.py"
+                )
+            ),
+            launch_arguments={
+                # cartographerの remappings=[("/scan","/merged_scan")] に相当
+                "lidar_topic_name": "/merged_scan",
+                # /merged_scan は sensor_msgs/LaserScan (laser_scan_merger_cpp の出力)
+                "lidar_topic_type": "LaserScan",
+                # 前回チューニングした2D ICPパイプライン
+                "mola_lo_pipeline": mola_yaml_path,
+                # cartographerの tracking_frame/published_frame = "base_link" に相当
+                "mola_tf_base_link": "base_link",
+                # cartographerの map_frame = "odom" に相当
+                "mola_lo_reference_frame": "odom",
+                # cartographerの provide_odom_frame=false（odom->base_link直結）に相当
+                "publish_localization_following_rep105": "False",
+                # cartographerはIMU/wheel odom/GNSSを使っていないため無効化
+                "use_state_estimator": "False",
+                # 実機運用時はGUI/Rvizなしで headless に（デバッグ時はTrueに変更可）
+                "use_mola_gui": "False",
+                "use_rviz": "False",
+                "use_sim_time": LaunchConfiguration('use_sim_time'),
+            }.items(),
+        ),        
         # Rosbag Record
         ExecuteProcess(
             cmd=[

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "controller/msg/detail/controller__type_support.h"
 #include "controller/msg/detail/controller__functions.h"
-#include "controller/msg/detail/controller__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "controller/msg/detail/controller__type_support.h"
+#include "controller/msg/detail/controller__struct.h"
 
 #ifdef __cplusplus
 extern "C"

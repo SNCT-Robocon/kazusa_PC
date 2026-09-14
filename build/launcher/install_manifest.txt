@@ -5,6 +5,7 @@
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/temp_frametest_cpp.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/temp_frametest.py
+/home/kazusa/kazusa/install/launcher/share/launcher//launch/202689_prev.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum4katahou copy.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/mola_mapping.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/similator.py
@@ -21,6 +22,7 @@
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/mola_test.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum2.py
 /home/kazusa/kazusa/install/launcher/share/launcher//launch/similator_rf2o.py
+/home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emcl_mola_sim.py
 /home/kazusa/kazusa/install/launcher/share/ament_index/resource_index/package_run_dependencies/launcher
 /home/kazusa/kazusa/install/launcher/share/ament_index/resource_index/parent_prefix_path/launcher
 /home/kazusa/kazusa/install/launcher/share/launcher/environment/ament_prefix_path.sh

@@ -306,7 +306,7 @@ private:
             return;
         }
 
-        if(!shoot_three(10.0f)){
+        if(!shoot_three(10.1f)){
             fail("first flag shooting sequence was interrupted");
             return;
         }
@@ -316,7 +316,7 @@ private:
             return;
         }
 
-        if(!shoot_three(10.0f)){
+        if(!shoot_three(10.1f)){
             fail("second flag shooting sequence was interrupted");
             return;
         }

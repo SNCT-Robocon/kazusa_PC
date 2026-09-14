@@ -1,0 +1,243 @@
+[0.039s] Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/controller -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/controller
+[0.151s] -- The C compiler identification is GNU 13.3.0
+[0.227s] -- The CXX compiler identification is GNU 13.3.0
+[0.247s] -- Detecting C compiler ABI info
+[0.344s] -- Detecting C compiler ABI info - done
+[0.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.353s] -- Detecting C compile features
+[0.354s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.475s] -- Detecting CXX compiler ABI info - done
+[0.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.484s] -- Detecting CXX compile features
+[0.485s] -- Detecting CXX compile features - done
+[0.490s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.665s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.798s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.807s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.872s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.946s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.948s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.992s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.600s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.014s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.543s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.549s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.669s] -- Found PythonExtra: /usr/bin/python3  
+[3.007s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.091s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.096s] -- Added test 'lint_cmake' to check CMake code style
+[3.097s] -- Added test 'xmllint' to check XML markup files
+[3.104s] -- Configuring done (3.0s)
+[3.140s] -- Generating done (0.0s)
+[3.147s] -- Build files have been written to: /home/kazusa/kazusa/build/controller
+[3.157s] Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kazusa/kazusa/ver0/controller -DCMAKE_INSTALL_PREFIX=/home/kazusa/kazusa/install/controller
+[3.158s] Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[3.216s] [  5%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.216s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.232s] [  5%] Built target ament_cmake_python_copy_controller
+[3.439s] running egg_info
+[3.439s] creating controller.egg-info
+[3.454s] [  5%] Built target controller__rosidl_generator_type_description
+[3.459s] writing controller.egg-info/PKG-INFO
+[3.459s] writing dependency_links to controller.egg-info/dependency_links.txt
+[3.459s] writing top-level names to controller.egg-info/top_level.txt
+[3.459s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[3.470s] [  5%] Built target controller__rs
+[3.470s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.484s] [ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.509s] reading manifest file 'controller.egg-info/SOURCES.txt'
+[3.510s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[3.540s] [ 11%] Built target ament_cmake_python_build_controller_egg
+[3.730s] [ 14%] [32mBuilding C object CMakeFiles/controller__rosidl_generator_c.dir/rosidl_generator_c/controller/msg/detail/controller__type_support.c.o[0m
+[3.730s] [ 17%] [32mBuilding C object CMakeFiles/controller__rosidl_generator_c.dir/rosidl_generator_c/controller/msg/detail/controller__description.c.o[0m
+[3.730s] [ 20%] [32mBuilding C object CMakeFiles/controller__rosidl_generator_c.dir/rosidl_generator_c/controller/msg/detail/controller__functions.c.o[0m
+[3.744s] [ 20%] Built target controller__cpp
+[3.782s] [ 22%] [32m[1mLinking C shared library libcontroller__rosidl_generator_c.so[0m
+[3.822s] [ 22%] Built target controller__rosidl_generator_c
+[3.834s] [ 25%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.835s] [ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.835s] [ 37%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.836s] [ 37%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.836s] [ 37%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.836s] [ 40%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.180s] [ 42%] [32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controller/msg/controller__type_support.cpp.o[0m
+[4.198s] [ 45%] [32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/controller/msg/controller__type_support.cpp.o[0m
+[4.224s] [ 48%] [32mBuilding C object CMakeFiles/controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controller/msg/detail/controller__type_support.c.o[0m
+[4.273s] [ 51%] [32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controller/msg/detail/controller__type_support.cpp.o[0m
+[4.278s] [ 54%] [32m[1mLinking CXX shared library libcontroller__rosidl_typesupport_c.so[0m
+[4.284s] [ 57%] [32m[1mLinking C shared library libcontroller__rosidl_typesupport_introspection_c.so[0m
+[4.292s] [ 60%] [32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controller/msg/detail/dds_fastrtps/controller__type_support.cpp.o[0m
+[4.324s] [ 62%] [32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controller/msg/detail/controller__type_support_c.cpp.o[0m
+[4.334s] [ 62%] Built target controller__rosidl_typesupport_c
+[4.335s] [ 62%] Built target controller__rosidl_typesupport_introspection_c
+[4.575s] [ 65%] [32m[1mLinking CXX shared library libcontroller__rosidl_typesupport_cpp.so[0m
+[4.640s] [ 65%] Built target controller__rosidl_typesupport_cpp
+[4.683s] [ 68%] [32m[1mLinking CXX shared library libcontroller__rosidl_typesupport_introspection_cpp.so[0m
+[4.794s] [ 68%] Built target controller__rosidl_typesupport_introspection_cpp
+[4.984s] [ 71%] [32m[1mLinking CXX shared library libcontroller__rosidl_typesupport_fastrtps_c.so[0m
+[4.995s] [ 74%] [32m[1mLinking CXX shared library libcontroller__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.151s] [ 74%] Built target controller__rosidl_typesupport_fastrtps_c
+[5.167s] [ 74%] Built target controller__rosidl_typesupport_fastrtps_cpp
+[5.209s] [ 74%] Built target controller
+[5.243s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.971s] [ 77%] Built target controller__py
+[6.007s] [ 80%] [32mBuilding C object CMakeFiles/controller__rosidl_generator_py.dir/rosidl_generator_py/controller/msg/_controller_s.c.o[0m
+[6.273s] [ 82%] [32m[1mLinking C shared library libcontroller__rosidl_generator_py.so[0m
+[6.336s] [ 82%] Built target controller__rosidl_generator_py
+[6.365s] [ 88%] [32mBuilding C object CMakeFiles/controller_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.365s] [ 88%] [32mBuilding C object CMakeFiles/controller_s__rosidl_typesupport_c.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[6.365s] [ 91%] [32mBuilding C object CMakeFiles/controller_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.472s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/controller/controller_s__rosidl_typesupport_c.so[0m
+[6.473s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/controller/controller_s__rosidl_typesupport_introspection_c.so[0m
+[6.478s] [100%] [32m[1mLinking C shared module rosidl_generator_py/controller/controller_s__rosidl_typesupport_fastrtps_c.so[0m
+[6.512s] [100%] Built target controller_s__rosidl_typesupport_introspection_c
+[6.512s] [100%] Built target controller_s__rosidl_typesupport_c
+[6.518s] [100%] Built target controller_s__rosidl_typesupport_fastrtps_c
+[6.533s] Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[6.534s] Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/controller
+[6.544s] -- Install configuration: ""
+[6.544s] -- Installing: /home/kazusa/kazusa/install/controller/share/ament_index/resource_index/rosidl_interfaces/controller
+[6.544s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/msg/Controller.json
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/rosidl_generator_c__visibility_control.h
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/controller.h
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__type_support.c
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__functions.h
+[6.545s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__functions.c
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__type_support.h
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__description.c
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__struct.h
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/library_path.sh
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/library_path.dsv
+[6.546s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_generator_c.so
+[6.547s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_generator_c.so" to ""
+[6.547s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.547s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.547s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.547s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__rosidl_typesupport_fastrtps_c.h
+[6.547s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.547s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so
+[6.548s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so" to ""
+[6.548s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.548s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.548s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.548s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.548s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__type_support.c
+[6.548s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__rosidl_typesupport_introspection_c.h
+[6.548s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so
+[6.549s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so" to ""
+[6.549s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_c.so
+[6.549s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_c.so" to ""
+[6.549s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.550s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.550s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__struct.hpp
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__traits.hpp
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__type_support.hpp
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__builder.hpp
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/controller.hpp
+[6.550s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.550s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.550s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.551s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.551s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/dds_fastrtps
+[6.551s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__rosidl_typesupport_fastrtps_cpp.hpp
+[6.551s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.551s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so
+[6.551s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.551s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller
+[6.551s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg
+[6.551s] -- Up-to-date: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail
+[6.552s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__type_support.cpp
+[6.552s] -- Installing: /home/kazusa/kazusa/install/controller/include/controller/controller/msg/detail/controller__rosidl_typesupport_introspection_cpp.hpp
+[6.552s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so
+[6.552s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so" to ""
+[6.552s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so
+[6.553s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so" to ""
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/pythonpath.sh
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/pythonpath.dsv
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info/top_level.txt
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info/PKG-INFO
+[6.553s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/_controller_s.ep.rosidl_typesupport_c.c
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/__init__.py
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg/__init__.py
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg/_controller_s.c
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg/_controller.py
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c
+[6.554s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.so
+[6.555s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_introspection_c.so
+[6.555s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_c.so
+[6.591s] Listing '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller'...
+[6.591s] Compiling '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/__init__.py'...
+[6.591s] Listing '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg'...
+[6.592s] Compiling '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg/__init__.py'...
+[6.592s] Compiling '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/msg/_controller.py'...
+[6.596s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.so
+[6.597s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.so" to ""
+[6.597s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_introspection_c.so
+[6.598s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_introspection_c.so" to ""
+[6.598s] -- Installing: /home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_c.so
+[6.598s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages/controller/controller_s__rosidl_typesupport_c.so" to ""
+[6.598s] -- Installing: /home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_generator_py.so
+[6.599s] -- Set non-toolchain portion of runtime path of "/home/kazusa/kazusa/install/controller/lib/libcontroller__rosidl_generator_py.so" to ""
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/ament_index/resource_index/rust_packages/controller
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/Cargo.toml
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/src
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/src/msg
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/src/msg/rmw.rs
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/src/msg.rs
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/src/lib.rs
+[6.599s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/rust/build.rs
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/msg/Controller.idl
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/msg/Controller.msg
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/ament_prefix_path.sh
+[6.600s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/ament_prefix_path.dsv
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/path.sh
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/environment/path.dsv
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/local_setup.bash
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/local_setup.sh
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/local_setup.zsh
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/local_setup.dsv
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/package.dsv
+[6.601s] -- Installing: /home/kazusa/kazusa/install/controller/share/ament_index/resource_index/packages/controller
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport.cmake
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport-noconfig.cmake
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport.cmake
+[6.602s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport-noconfig.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_generator_cppExport.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport.cmake
+[6.603s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport-noconfig.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport-noconfig.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/rosidl_cmake-extras.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/ament_cmake_export_libraries-extras.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/ament_cmake_export_targets-extras.cmake
+[6.604s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.605s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.605s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[6.605s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controllerConfig.cmake
+[6.605s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[6.605s] -- Installing: /home/kazusa/kazusa/install/controller/share/controller/package.xml
+[6.608s] Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/controller

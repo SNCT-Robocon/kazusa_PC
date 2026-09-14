@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "custom_msgs/action/detail/hoju__functions.h"
 #include "custom_msgs/action/detail/hoju__struct.h"
+#include "custom_msgs/action/detail/hoju__functions.h"
 #include "custom_msgs/action/detail/hoju__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 

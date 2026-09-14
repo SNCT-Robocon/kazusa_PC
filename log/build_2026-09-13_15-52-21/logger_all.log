@@ -1,0 +1,680 @@
+[0.169s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.170s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7eaba8191040>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7eaba8190c50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7eaba8190c50>>, mixin_verb=('build',))
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.244s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kazusa/kazusa'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'ros'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['cmake', 'python']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'cmake'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'python'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extensions ['python_setup_py']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(ver0) by extension 'python_setup_py'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/amcl_config) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/amcl_config' with type 'ros.ament_cmake' and name 'amcl_config'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/controller' with type 'ros.ament_cmake' and name 'controller'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/controller_src) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/controller_src' with type 'ros.ament_cmake' and name 'controller_src'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/custom_msgs) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/esp_agent) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/esp_agent' with type 'ros.ament_cmake' and name 'esp_agent'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/launcher) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/launcher' with type 'ros.ament_cmake' and name 'launcher'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mast) by extension 'ros'
+[0.295s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/mast' with type 'ros.ament_cmake' and name 'mast'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/mola_conf) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/mola_conf' with type 'ros.ament_cmake' and name 'mola_conf'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(ver0/my_cart2) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'ver0/my_cart2' with type 'ros.ament_cmake' and name 'my_cart2'
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.335s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/kazusa/kazusa/install
+[0.335s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/kazusa/ros2_deps_ws/install
+[0.338s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 434 installed packages in /opt/ros/jazzy
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_target' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'amcl_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.412s] DEBUG:colcon.colcon_core.verb:Building package 'amcl_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/amcl_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/amcl_config', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/amcl_config', 'symlink_install': False, 'test_result_base': None}
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.412s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.412s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/controller', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/controller', 'symlink_install': False, 'test_result_base': None}
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.413s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/custom_msgs', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_target' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_clean_first' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'cmake_force_configure' from command line to 'False'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'ament_cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'launcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.413s] DEBUG:colcon.colcon_core.verb:Building package 'launcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/launcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/launcher', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/launcher', 'symlink_install': False, 'test_result_base': None}
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_target' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_clean_first' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'cmake_force_configure' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'ament_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'mola_conf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.414s] DEBUG:colcon.colcon_core.verb:Building package 'mola_conf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/mola_conf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/mola_conf', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/mola_conf', 'symlink_install': False, 'test_result_base': None}
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_target' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_clean_first' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'cmake_force_configure' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'ament_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'my_cart2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.414s] DEBUG:colcon.colcon_core.verb:Building package 'my_cart2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/my_cart2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/my_cart2', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/my_cart2', 'symlink_install': False, 'test_result_base': None}
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_target' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_clean_cache' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_clean_first' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'cmake_force_configure' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'ament_cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'catkin_cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'controller_src' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.415s] DEBUG:colcon.colcon_core.verb:Building package 'controller_src' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/controller_src', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/controller_src', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/controller_src', 'symlink_install': False, 'test_result_base': None}
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_target' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_clean_cache' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_clean_first' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'cmake_force_configure' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'ament_cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'catkin_cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'esp_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.415s] DEBUG:colcon.colcon_core.verb:Building package 'esp_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/esp_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/esp_agent', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/esp_agent', 'symlink_install': False, 'test_result_base': None}
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_target' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_clean_cache' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_clean_first' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'cmake_force_configure' from command line to 'False'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'ament_cmake_args' from command line to 'None'
+[0.415s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'catkin_cmake_args' from command line to 'None'
+[0.416s] Level 5:colcon.colcon_core.verb:set package 'mast' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.416s] DEBUG:colcon.colcon_core.verb:Building package 'mast' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kazusa/kazusa/build/mast', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kazusa/kazusa/install/mast', 'merge_install': False, 'path': '/home/kazusa/kazusa/ver0/mast', 'symlink_install': False, 'test_result_base': None}
+[0.416s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.417s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/controller' with build type 'ament_cmake'
+[0.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/controller'
+[0.423s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.430s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/custom_msgs' with build type 'ament_cmake'
+[0.430s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/custom_msgs'
+[0.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/amcl_config' with build type 'ament_cmake'
+[0.438s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/amcl_config'
+[0.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/launcher' with build type 'ament_cmake'
+[0.444s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/launcher'
+[0.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/mola_conf' with build type 'ament_cmake'
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/mola_conf'
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/my_cart2' with build type 'ament_cmake'
+[0.457s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/my_cart2'
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[0.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[0.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/launcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/launcher -- -j12 -l12
+[0.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mola_conf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mola_conf -- -j12 -l12
+[0.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[0.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/amcl_config -- -j12 -l12
+[0.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/amcl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[0.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/launcher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/launcher -- -j12 -l12
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/launcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/launcher
+[0.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mola_conf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mola_conf -- -j12 -l12
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mola_conf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mola_conf
+[0.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launcher)
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake module files
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake config files
+[0.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('launcher', 'cmake_prefix_path')
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.dsv'
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.sh'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/launcher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/launcher
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/pkgconfig/launcher.pc'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/python3.12/site-packages'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.ps1'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/package.dsv'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.sh'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.bash'
+[0.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.zsh'
+[0.657s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/launcher/share/colcon-core/packages/launcher)
+[0.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(launcher)
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake module files
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher' for CMake config files
+[0.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('launcher', 'cmake_prefix_path')
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.ps1'
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.dsv'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/launcher/share/launcher/hook/cmake_prefix_path.sh'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/pkgconfig/launcher.pc'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/lib/python3.12/site-packages'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/launcher/bin'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.ps1'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/launcher/share/launcher/package.dsv'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.sh'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.bash'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/launcher/share/launcher/package.zsh'
+[0.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/launcher/share/colcon-core/packages/launcher)
+[0.670s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amcl_config)
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake module files
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake config files
+[0.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('amcl_config', 'cmake_prefix_path')
+[0.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.ps1'
+[0.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/amcl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/amcl_config
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.dsv'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.sh'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/pkgconfig/amcl_config.pc'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/python3.12/site-packages'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.ps1'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.sh'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.bash'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.zsh'
+[0.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/amcl_config/share/colcon-core/packages/amcl_config)
+[0.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amcl_config)
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake module files
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config' for CMake config files
+[0.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('amcl_config', 'cmake_prefix_path')
+[0.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.ps1'
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.dsv'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/hook/cmake_prefix_path.sh'
+[0.718s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.718s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/pkgconfig/amcl_config.pc'
+[0.719s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/lib/python3.12/site-packages'
+[0.719s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/amcl_config/bin'
+[0.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.ps1'
+[0.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.dsv'
+[0.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.sh'
+[0.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.bash'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/amcl_config/share/amcl_config/package.zsh'
+[0.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/amcl_config/share/colcon-core/packages/amcl_config)
+[0.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mola_conf)
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf' for CMake module files
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mola_conf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mola_conf
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf' for CMake config files
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('mola_conf', 'cmake_prefix_path')
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.sh'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/bin'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/lib/pkgconfig/mola_conf.pc'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/lib/python3.12/site-packages'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/bin'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.sh'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.bash'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.zsh'
+[0.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mola_conf/share/colcon-core/packages/mola_conf)
+[0.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mola_conf)
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf' for CMake module files
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf' for CMake config files
+[0.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('mola_conf', 'cmake_prefix_path')
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.ps1'
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.dsv'
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/hook/cmake_prefix_path.sh'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/bin'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/lib/pkgconfig/mola_conf.pc'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/lib/python3.12/site-packages'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mola_conf/bin'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.dsv'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.sh'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.bash'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mola_conf/share/mola_conf/package.zsh'
+[0.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mola_conf/share/colcon-core/packages/mola_conf)
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/my_cart2 -- -j12 -l12
+[0.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/my_cart2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[0.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cart2)
+[0.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/my_cart2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/my_cart2
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake module files
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake config files
+[0.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cart2', 'cmake_prefix_path')
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.ps1'
+[0.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.dsv'
+[0.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.sh'
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib'
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/pkgconfig/my_cart2.pc'
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/python3.12/site-packages'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.ps1'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.sh'
+[0.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.bash'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.zsh'
+[0.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/my_cart2/share/colcon-core/packages/my_cart2)
+[0.775s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cart2)
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake module files
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2' for CMake config files
+[0.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cart2', 'cmake_prefix_path')
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.ps1'
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/hook/cmake_prefix_path.sh'
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib'
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/pkgconfig/my_cart2.pc'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/lib/python3.12/site-packages'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/my_cart2/bin'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.ps1'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.sh'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.bash'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/my_cart2/share/my_cart2/package.zsh'
+[0.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/my_cart2/share/colcon-core/packages/my_cart2)
+[1.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/controller -- -j12 -l12
+[1.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/controller
+[1.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/custom_msgs -- -j12 -l12
+[1.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs
+[1.171s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[1.171s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake module files
+[1.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/controller
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake config files
+[1.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'cmake_prefix_path')
+[1.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.ps1'
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.dsv'
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.sh'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib'
+[1.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ld_library_path_lib')
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.ps1'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.sh'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/pkgconfig/controller.pc'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages'
+[1.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[1.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.ps1'
+[1.178s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.dsv'
+[1.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.sh'
+[1.180s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.ps1'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller/share/controller/package.dsv'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.sh'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.bash'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.zsh'
+[1.182s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller/share/colcon-core/packages/controller)
+[1.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake module files
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller' for CMake config files
+[1.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'cmake_prefix_path')
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/cmake_prefix_path.sh'
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib'
+[1.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ld_library_path_lib')
+[1.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.ps1'
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.dsv'
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/ld_library_path_lib.sh'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/pkgconfig/controller.pc'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages'
+[1.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.ps1'
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.dsv'
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller/share/controller/hook/pythonpath.sh'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller/bin'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.ps1'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller/share/controller/package.dsv'
+[1.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.sh'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.bash'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller/share/controller/package.zsh'
+[1.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller/share/colcon-core/packages/controller)
+[1.203s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/controller_src' with build type 'ament_cmake'
+[1.203s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/controller_src'
+[1.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake module files
+[1.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/custom_msgs
+[1.212s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake config files
+[1.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib'
+[1.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages'
+[1.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.219s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.sh'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.bash'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.222s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake module files
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs' for CMake config files
+[1.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib'
+[1.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages'
+[1.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[1.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[1.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/custom_msgs/bin'
+[1.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.sh'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.bash'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.236s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.238s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/esp_agent' with build type 'ament_cmake'
+[1.238s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/esp_agent'
+[1.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kazusa/kazusa/ver0/mast' with build type 'ament_cmake'
+[1.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kazusa/kazusa/ver0/mast'
+[1.245s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.245s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller_src': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages:/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[1.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/esp_agent': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/esp_agent -- -j12 -l12
+[1.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[1.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages:/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/kazusa/kazusa/build/controller_src -- -j12 -l12
+[1.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/controller_src': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages:/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src
+[1.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_src)
+[1.348s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake module files
+[1.349s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake config files
+[1.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_src', 'cmake_prefix_path')
+[1.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.ps1'
+[1.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.dsv'
+[1.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.sh'
+[1.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/controller_src' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kazusa/kazusa/install/controller/lib:/home/kazusa/kazusa/install/custom_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/kazusa/kazusa/install/controller/lib/python3.12/site-packages:/home/kazusa/kazusa/install/custom_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/kazusa/kazusa/build/controller_src
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/pkgconfig/controller_src.pc'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/python3.12/site-packages'
+[1.354s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[1.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.ps1'
+[1.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv'
+[1.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.sh'
+[1.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.bash'
+[1.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.zsh'
+[1.358s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller_src/share/colcon-core/packages/controller_src)
+[1.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_src)
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake module files
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src' for CMake config files
+[1.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_src', 'cmake_prefix_path')
+[1.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.ps1'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.dsv'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/controller_src/share/controller_src/hook/cmake_prefix_path.sh'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/pkgconfig/controller_src.pc'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/lib/python3.12/site-packages'
+[1.363s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/controller_src/bin'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.ps1'
+[1.364s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.dsv'
+[1.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.sh'
+[1.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.bash'
+[1.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/controller_src/share/controller_src/package.zsh'
+[1.366s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/controller_src/share/colcon-core/packages/controller_src)
+[1.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/esp_agent' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/esp_agent -- -j12 -l12
+[1.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/esp_agent': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/esp_agent
+[1.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(esp_agent)
+[1.442s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake module files
+[1.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/esp_agent' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/esp_agent
+[1.443s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake config files
+[1.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_agent', 'cmake_prefix_path')
+[1.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.ps1'
+[1.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.dsv'
+[1.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.sh'
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib'
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/pkgconfig/esp_agent.pc'
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/python3.12/site-packages'
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[1.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.ps1'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.dsv'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.sh'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.bash'
+[1.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.zsh'
+[1.448s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/esp_agent/share/colcon-core/packages/esp_agent)
+[1.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(esp_agent)
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake module files
+[1.450s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent' for CMake config files
+[1.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_agent', 'cmake_prefix_path')
+[1.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.ps1'
+[1.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.dsv'
+[1.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/hook/cmake_prefix_path.sh'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/pkgconfig/esp_agent.pc'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/lib/python3.12/site-packages'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/esp_agent/bin'
+[1.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.ps1'
+[1.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.dsv'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.sh'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.bash'
+[1.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/esp_agent/share/esp_agent/package.zsh'
+[1.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/esp_agent/share/colcon-core/packages/esp_agent)
+[10.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mast -- -j12 -l12
+[10.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kazusa/kazusa/build/mast': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[11.008s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mast)
+[11.008s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake module files
+[11.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kazusa/kazusa/build/mast' returned '0': CMAKE_PREFIX_PATH=/home/kazusa/kazusa/install/custom_msgs:/home/kazusa/kazusa/install/controller:/home/kazusa/kazusa/install/my_cart2:/home/kazusa/kazusa/install/mola_conf:/home/kazusa/kazusa/install/mast:/home/kazusa/kazusa/install/launcher:/home/kazusa/kazusa/install/esp_agent:/home/kazusa/kazusa/install/controller_src:/home/kazusa/kazusa/install/amcl_config:/home/kazusa/ros2_deps_ws/install/emcl2:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mast
+[11.009s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake config files
+[11.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('mast', 'cmake_prefix_path')
+[11.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.ps1'
+[11.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.dsv'
+[11.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.sh'
+[11.011s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib'
+[11.011s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[11.011s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/pkgconfig/mast.pc'
+[11.011s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/python3.12/site-packages'
+[11.011s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[11.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.ps1'
+[11.012s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mast/share/mast/package.dsv'
+[11.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.sh'
+[11.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.bash'
+[11.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.zsh'
+[11.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mast/share/colcon-core/packages/mast)
+[11.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mast)
+[11.013s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake module files
+[11.014s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast' for CMake config files
+[11.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('mast', 'cmake_prefix_path')
+[11.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.ps1'
+[11.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.dsv'
+[11.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kazusa/kazusa/install/mast/share/mast/hook/cmake_prefix_path.sh'
+[11.015s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib'
+[11.015s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[11.015s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/pkgconfig/mast.pc'
+[11.015s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/lib/python3.12/site-packages'
+[11.016s] Level 1:colcon.colcon_core.environment:checking '/home/kazusa/kazusa/install/mast/bin'
+[11.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.ps1'
+[11.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kazusa/kazusa/install/mast/share/mast/package.dsv'
+[11.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.sh'
+[11.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.bash'
+[11.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/kazusa/kazusa/install/mast/share/mast/package.zsh'
+[11.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kazusa/kazusa/install/mast/share/colcon-core/packages/mast)
+[11.018s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.019s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.025s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.025s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.025s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.040s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.040s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.ps1'
+[11.041s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kazusa/kazusa/install/_local_setup_util_ps1.py'
+[11.042s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.ps1'
+[11.044s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.sh'
+[11.044s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kazusa/kazusa/install/_local_setup_util_sh.py'
+[11.045s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.sh'
+[11.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.bash'
+[11.047s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.bash'
+[11.048s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kazusa/kazusa/install/local_setup.zsh'
+[11.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kazusa/kazusa/install/setup.zsh'

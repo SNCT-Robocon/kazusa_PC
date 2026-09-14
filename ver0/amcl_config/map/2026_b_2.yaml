@@ -1,6 +1,6 @@
-image: 2026mapblue.pgm
+image: mapblue.pgm
 resolution: 0.02   # 1px = 1mm の場合
-origin: [-0.16, -0.16, 0]
+origin: [-0.04, -0.04, 0]
 
 negate: 0
 occupied_thresh: 0.65

@@ -1,0 +1,4 @@
+Invoking command in '/home/kazusa/kazusa/build/mola_conf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mola_conf -- -j12 -l12
+Invoked command in '/home/kazusa/kazusa/build/mola_conf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kazusa/kazusa/build/mola_conf -- -j12 -l12
+Invoking command in '/home/kazusa/kazusa/build/mola_conf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mola_conf
+Invoked command in '/home/kazusa/kazusa/build/mola_conf' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kazusa/kazusa/build/mola_conf

@@ -132,7 +132,7 @@ class UDPToCmdVel(Node):
             f'EMCL RESET streak: {self.reset_streak}'
         )
 
-        if self.reset_streak % 10 == 0:
+        if self.reset_streak % 30 == 0:
             warning_msg = String()
             warning_msg.data = "マッチング率低下"
             self.log_publisher.publish(warning_msg)

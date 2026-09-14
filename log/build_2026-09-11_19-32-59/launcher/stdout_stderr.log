@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kazusa/kazusa/build/launcher
+-- Install configuration: ""
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_cartsim.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/202689master.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_newpos_b.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/similator_merge.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/temp_frametest_cpp.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/temp_frametest.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum4katahou copy.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/mola_mapping.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/similator.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/controller.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/wheelodom_test.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/map_test.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum3.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_cartonlysim.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_cart.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsim.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_newpos_r.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_statictest.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/202689.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/mola_test.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emclsimdum2.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/similator_rf2o.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher//launch/2026omni_emcl_mola_sim.py
+-- Installing: /home/kazusa/kazusa/install/launcher/share/ament_index/resource_index/package_run_dependencies/launcher
+-- Installing: /home/kazusa/kazusa/install/launcher/share/ament_index/resource_index/parent_prefix_path/launcher
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/environment/ament_prefix_path.sh
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/environment/ament_prefix_path.dsv
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/environment/path.sh
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/environment/path.dsv
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/local_setup.bash
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/local_setup.sh
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/local_setup.zsh
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/local_setup.dsv
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/package.dsv
+-- Installing: /home/kazusa/kazusa/install/launcher/share/ament_index/resource_index/packages/launcher
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/cmake/launcherConfig.cmake
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/cmake/launcherConfig-version.cmake
+-- Installing: /home/kazusa/kazusa/install/launcher/share/launcher/package.xml

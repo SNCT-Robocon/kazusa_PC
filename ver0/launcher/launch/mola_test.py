@@ -1,50 +1,55 @@
-# my_robot_bringup/launch/mola_localization.launch.py
-
 import os
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.substitutions import FindPackageShare
-from launch.substitutions import PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration
 
+def launch_setup(context, *args, **kwargs):
+    # --- パッケージディレクトリとパスの取得 ---
+    mola_lo_share = get_package_share_directory("mola_lidar_odometry")
+    mola_conf_pkg = get_package_share_directory("mola_conf")
+
+    # --- field_color による設定ファイルの切り替え ---
+    
+    mola_yaml_path = os.path.join(mola_conf_pkg, "config", "mola2026_conf_blue.yaml")
+
+    # --- MOLA Lidar Odometry のみ起動 ---
+    return [
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    mola_lo_share, "ros2-launchs", "ros2-lidar-odometry.launch.py"
+                )
+            ),
+            launch_arguments={
+                "lidar_topic_name": "/merged_scan",
+                "lidar_topic_type": "LaserScan",
+                "mola_lo_pipeline": mola_yaml_path,
+                "mola_tf_base_link": "base_link",
+                "mola_lo_reference_frame": "map",
+                "publish_localization_following_rep105": "False",
+                "use_state_estimator": "False",
+                "use_mola_gui": "False",
+                "use_rviz": "False",
+                "use_sim_time": LaunchConfiguration('use_sim_time'),
+            }.items(),
+        )
+    ]
 
 def generate_launch_description():
-    pipeline_yaml = PathJoinSubstitution([
-        FindPackageShare('mola_conf'),
-        'config',
-        'lidar2d.yaml'
-    ])
-
-    mola_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            PathJoinSubstitution([
-                FindPackageShare('mola_lidar_odometry'),
-                'ros2-launchs',
-                'ros2-lidar-odometry.launch.py'
-            ])
-        ]),
-        launch_arguments={
-            'lidar_topic_name': '/merged_scan',
-            'lidar_topic_type': 'LaserScan',
-            'start_active': 'True',
-            # 既存のstatic mapを変換した.mmファイルを読み込んでローカリゼーション
-            'mola_initial_map_mm_file': PathJoinSubstitution([
-                FindPackageShare('mola_conf'),
-                'maps',
-                'maps.mm'
-            ]),
-            'publish_localization_following_rep105': 'True',
-            'mola_tf_base_link': 'base_link',
-        }.items()
-    )
-
     return LaunchDescription([
-        SetEnvironmentVariable('MOLA_ODOMETRY_PIPELINE_YAML', pipeline_yaml),
-        SetEnvironmentVariable(
-            'MOLA_STATE_ESTIMATOR',
-            'mola::state_estimation_smoother::StateEstimationSmoother'
+        # 引数の定義
+        DeclareLaunchArgument(
+            'field_color', 
+            default_value='blue',
+            description='Field color (blue or red)'
         ),
-        SetEnvironmentVariable('MOLA_LOCAL_MAP_MAX_SIZE', '15.0'),
-        SetEnvironmentVariable('MOLA_ADAPT_THRESHOLD_ALPHA', '0.9'),
-        mola_launch,
+        DeclareLaunchArgument(
+            "use_sim_time", 
+            default_value="false", 
+            description="Use simulation clock if true"
+        ),
+        # 動的評価（OpaqueFunction）
+        OpaqueFunction(function=launch_setup)
     ])

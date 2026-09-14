@@ -1,0 +1,8 @@
+source;share/mola_conf/hook/cmake_prefix_path.ps1
+source;share/mola_conf/hook/cmake_prefix_path.dsv
+source;share/mola_conf/hook/cmake_prefix_path.sh
+source;share/mola_conf/local_setup.bash
+source;share/mola_conf/local_setup.dsv
+source;share/mola_conf/local_setup.ps1
+source;share/mola_conf/local_setup.sh
+source;share/mola_conf/local_setup.zsh
