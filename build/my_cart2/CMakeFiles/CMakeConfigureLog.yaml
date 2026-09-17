@@ -1434,3 +1434,217 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7"
+      binary: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/jazzy/share/cartographer/cmake/modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_86d49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_86d49.dir/build.make CMakeFiles/cmTC_86d49.dir/build
+        gmake[1]: Entering directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7'
+        Building C object CMakeFiles/cmTC_86d49.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_86d49.dir/test_mpi.c.o -c /home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7/test_mpi.c
+        Linking C executable cmTC_86d49
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86d49.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_86d49.dir/test_mpi.c.o -o cmTC_86d49  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-7ZksF7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e"
+      binary: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/jazzy/share/cartographer/cmake/modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a4fe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a4fe.dir/build.make CMakeFiles/cmTC_2a4fe.dir/build
+        gmake[1]: Entering directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e'
+        Building C object CMakeFiles/cmTC_2a4fe.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_2a4fe.dir/test_mpi.c.o -c /home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e/test_mpi.c
+        Linking C executable cmTC_2a4fe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a4fe.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_2a4fe.dir/test_mpi.c.o -o cmTC_2a4fe  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-Wz0d6e'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH"
+      binary: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/jazzy/share/cartographer/cmake/modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c7500/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c7500.dir/build.make CMakeFiles/cmTC_c7500.dir/build
+        gmake[1]: Entering directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH'
+        Building C object CMakeFiles/cmTC_c7500.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_c7500.dir/test_mpi.c.o -c /home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH/test_mpi.c
+        Linking C executable cmTC_c7500
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7500.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_c7500.dir/test_mpi.c.o -o cmTC_c7500  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-VOAuJH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK"
+      binary: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/jazzy/share/cartographer/cmake/modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4b026/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4b026.dir/build.make CMakeFiles/cmTC_4b026.dir/build
+        gmake[1]: Entering directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK'
+        Building C object CMakeFiles/cmTC_4b026.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_4b026.dir/test_mpi.c.o -c /home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK/test_mpi.c
+        Linking C executable cmTC_4b026
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b026.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_4b026.dir/test_mpi.c.o -o cmTC_4b026  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-X2C0DK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/jazzy/share/cartographer_ros/cmake/cartographer_rosConfig.cmake:41 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK"
+      binary: "/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/jazzy/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/jazzy/share/cartographer/cmake/modules;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f8f8b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f8f8b.dir/build.make CMakeFiles/cmTC_f8f8b.dir/build
+        gmake[1]: Entering directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK'
+        Building C object CMakeFiles/cmTC_f8f8b.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_f8f8b.dir/test_mpi.c.o -c /home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK/test_mpi.c
+        Linking C executable cmTC_f8f8b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8f8b.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_f8f8b.dir/test_mpi.c.o -o cmTC_f8f8b  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/kazusa/kazusa/build/my_cart2/CMakeFiles/CMakeScratch/TryCompile-HffIAK'
+        
+      exitCode: 0
+...

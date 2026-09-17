@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1b2a039318a3c5ad6d23.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "controller__py",
+					"jsonFile" : "directory-controller__py-71e6ccebc64edea324b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/kazusa/kazusa/build/controller/controller__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "controller__rs",
+					"jsonFile" : "directory-controller__rs-cddfca9c40341a93d0c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/kazusa/kazusa/build/controller/controller__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_controller_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_controller_egg-686d21d4e9d7ef910a33.json",
+					"name" : "ament_cmake_python_build_controller_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_controller-71499609457b6e86ef2f.json",
+					"name" : "ament_cmake_python_copy_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller-c911b42a09eaffbe13c6.json",
+					"name" : "controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__cpp-802f3c555898877fc68f.json",
+					"name" : "controller__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "controller__py::@640804f71caef9b5ae9b",
+					"jsonFile" : "target-controller__py-9bc333c61b92139087f3.json",
+					"name" : "controller__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_generator_c-769dbe2d815afb151ff6.json",
+					"name" : "controller__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_generator_py-88ffbbb009e1a3c8e0d7.json",
+					"name" : "controller__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_generator_type_description-4492c8f9252fb5332c3f.json",
+					"name" : "controller__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_c-01049561bed0ae1a9842.json",
+					"name" : "controller__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_cpp-d29697f7be53fccaa8b1.json",
+					"name" : "controller__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_fastrtps_c-37d4a9bde88775acd485.json",
+					"name" : "controller__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_fastrtps_cpp-0f2d4808738f00123dab.json",
+					"name" : "controller__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_introspection_c-12967a26467d9be42a2a.json",
+					"name" : "controller__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller__rosidl_typesupport_introspection_cpp-dfb294e24e47a74cd184.json",
+					"name" : "controller__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "controller__rs::@6e57265111f74f44bc1e",
+					"jsonFile" : "target-controller__rs-4994441ecea68a8008bd.json",
+					"name" : "controller__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_s__rosidl_typesupport_c-506c6baf85812b5b4b3c.json",
+					"name" : "controller_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_s__rosidl_typesupport_fastrtps_c-1879fb1f51ddf29210aa.json",
+					"name" : "controller_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_s__rosidl_typesupport_introspection_c-a1e5768cec365ccca4dd.json",
+					"name" : "controller_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_uninstall-eaea6c470720bb1858c5.json",
+					"name" : "controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dcec583aed9de6f25ec5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kazusa/kazusa/build/controller",
+		"source" : "/home/kazusa/kazusa/ver0/controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

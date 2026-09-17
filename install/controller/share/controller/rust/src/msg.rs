@@ -74,12 +74,32 @@ pub struct Controller {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub hata_speed: f32,
+    pub hata_speed1: f32,
 
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub baketu_speed: f32,
+    pub baketu_speed1: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub hata_speed2: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub baketu_speed2: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub hata_speed3: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub baketu_speed3: f32,
 
 
     // This member is not documented.
@@ -239,8 +259,12 @@ impl rosidl_runtime_rs::Message for Controller {
         hoju_turn_x: msg.hoju_turn_x,
         hoju_turn_y: msg.hoju_turn_y,
         hoju_turn_theta: msg.hoju_turn_theta,
-        hata_speed: msg.hata_speed,
-        baketu_speed: msg.baketu_speed,
+        hata_speed1: msg.hata_speed1,
+        baketu_speed1: msg.baketu_speed1,
+        hata_speed2: msg.hata_speed2,
+        baketu_speed2: msg.baketu_speed2,
+        hata_speed3: msg.hata_speed3,
+        baketu_speed3: msg.baketu_speed3,
         fieldcolor: msg.fieldcolor.as_str().into(),
         dengen: msg.dengen,
         mode: msg.mode.as_str().into(),
@@ -281,8 +305,12 @@ impl rosidl_runtime_rs::Message for Controller {
       hoju_turn_x: msg.hoju_turn_x,
       hoju_turn_y: msg.hoju_turn_y,
       hoju_turn_theta: msg.hoju_turn_theta,
-      hata_speed: msg.hata_speed,
-      baketu_speed: msg.baketu_speed,
+      hata_speed1: msg.hata_speed1,
+      baketu_speed1: msg.baketu_speed1,
+      hata_speed2: msg.hata_speed2,
+      baketu_speed2: msg.baketu_speed2,
+      hata_speed3: msg.hata_speed3,
+      baketu_speed3: msg.baketu_speed3,
         fieldcolor: msg.fieldcolor.as_str().into(),
       dengen: msg.dengen,
         mode: msg.mode.as_str().into(),
@@ -327,8 +355,12 @@ impl rosidl_runtime_rs::Message for Controller {
       hoju_turn_x: msg.hoju_turn_x,
       hoju_turn_y: msg.hoju_turn_y,
       hoju_turn_theta: msg.hoju_turn_theta,
-      hata_speed: msg.hata_speed,
-      baketu_speed: msg.baketu_speed,
+      hata_speed1: msg.hata_speed1,
+      baketu_speed1: msg.baketu_speed1,
+      hata_speed2: msg.hata_speed2,
+      baketu_speed2: msg.baketu_speed2,
+      hata_speed3: msg.hata_speed3,
+      baketu_speed3: msg.baketu_speed3,
       fieldcolor: msg.fieldcolor.to_string(),
       dengen: msg.dengen,
       mode: msg.mode.to_string(),

@@ -10,8 +10,12 @@ float32 baketu_turn_theta
 float32 hoju_turn_x
 float32 hoju_turn_y
 float32 hoju_turn_theta
-float32 hata_speed
-float32 baketu_speed
+float32 hata_speed1
+float32 baketu_speed1
+float32 hata_speed2
+float32 baketu_speed2
+float32 hata_speed3
+float32 baketu_speed3
 
 string fieldcolor
 bool dengen

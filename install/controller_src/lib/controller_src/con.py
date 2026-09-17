@@ -216,13 +216,24 @@ class UDPToCmdVel(Node):
                 "hoju_turntheta", 0.0
             )
 
-            ctrl.hata_speed = msg_dict.get(
-                "hata_speed", 0.0
+            ctrl.hata_speed1 = msg_dict.get(
+                "hata_speed1", 0.0
             )
-            ctrl.baketu_speed = msg_dict.get(
-                "baketu_speed", 0.0
+            ctrl.baketu_speed1 = msg_dict.get(
+                "baketu_speed1", 0.0
             )
-
+            ctrl.hata_speed2 = msg_dict.get(
+                "hata_speed2", 0.0
+            )
+            ctrl.baketu_speed2 = msg_dict.get(
+                "baketu_speed2", 0.0
+            )
+            ctrl.hata_speed3 = msg_dict.get(
+                "hata_speed3", 0.0
+            )
+            ctrl.baketu_speed3 = msg_dict.get(
+                "baketu_speed3", 0.0
+            )
             ctrl.hojuposition = msg_dict.get(
                 "HojuPosition", False
             )

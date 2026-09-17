@@ -1,0 +1,18 @@
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:[m[K In member function ‘[01m[Kvoid Mast::[01;32m[Kexecute_baketsu_hata_hata[m[K()[m[K’:
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:483:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMast::shoot_three(std::atomic<float>&)[m[K’
+  483 |         if(![01;31m[Kshoot_three(auto_hata_speed0)[m[K){
+      |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:927:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool Mast::[01;32m[Kshoot_three[m[K(float, float, float)[m[K’
+  927 |     bool [01;36m[Kshoot_three[m[K(float velocity0, float velocity1, float velocity2)
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:927:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:494:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMast::shoot_three(std::atomic<float>&)[m[K’
+  494 |         if(![01;31m[Kshoot_three(auto_hata_speed0)[m[K){
+      |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:927:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool Mast::[01;32m[Kshoot_three[m[K(float, float, float)[m[K’
+  927 |     bool [01;36m[Kshoot_three[m[K(float velocity0, float velocity1, float velocity2)
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/kazusa/kazusa/ver0/mast/src/mast.cpp:927:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/mast_node.dir/build.make:76: CMakeFiles/mast_node.dir/src/mast.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/mast_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

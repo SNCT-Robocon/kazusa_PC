@@ -124,7 +124,7 @@
           "default_value": ""
         },
         {
-          "name": "hata_speed",
+          "name": "hata_speed1",
           "type": {
             "type_id": 10,
             "capacity": 0,
@@ -134,7 +134,47 @@
           "default_value": ""
         },
         {
-          "name": "baketu_speed",
+          "name": "baketu_speed1",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "hata_speed2",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "baketu_speed2",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "hata_speed3",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "baketu_speed3",
           "type": {
             "type_id": 10,
             "capacity": 0,
@@ -410,7 +450,7 @@
   "type_hashes": [
     {
       "type_name": "controller/msg/Controller",
-      "hash_string": "RIHS01_a5859dfaf23bbf385436d2d39fdac6bb447342873f088210f2b55f3c01f588ea"
+      "hash_string": "RIHS01_4755b6b3f49e7f5f409149b9e98434c32d10408f9fb33acc12de9ffa22408b5c"
     }
   ]
 }

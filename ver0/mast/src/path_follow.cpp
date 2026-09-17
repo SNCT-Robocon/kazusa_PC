@@ -44,7 +44,7 @@ constexpr float PI = 3.14159265358979323846f;
 
 
 struct Params{
-    double kp_xy = 0.003;
+    double kp_xy = 0.002;
     double kp_yaw = 2.0;
     double start_tolerance_xy = 500.0;
     double start_tolerance_yaw = 0.5;

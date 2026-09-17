@@ -37,8 +37,12 @@ controller__msg__Controller__init(controller__msg__Controller * msg)
   // hoju_turn_x
   // hoju_turn_y
   // hoju_turn_theta
-  // hata_speed
-  // baketu_speed
+  // hata_speed1
+  // baketu_speed1
+  // hata_speed2
+  // baketu_speed2
+  // hata_speed3
+  // baketu_speed3
   // fieldcolor
   if (!rosidl_runtime_c__String__init(&msg->fieldcolor)) {
     controller__msg__Controller__fini(msg);
@@ -106,8 +110,12 @@ controller__msg__Controller__fini(controller__msg__Controller * msg)
   // hoju_turn_x
   // hoju_turn_y
   // hoju_turn_theta
-  // hata_speed
-  // baketu_speed
+  // hata_speed1
+  // baketu_speed1
+  // hata_speed2
+  // baketu_speed2
+  // hata_speed3
+  // baketu_speed3
   // fieldcolor
   rosidl_runtime_c__String__fini(&msg->fieldcolor);
   // dengen
@@ -195,12 +203,28 @@ controller__msg__Controller__are_equal(const controller__msg__Controller * lhs, 
   if (lhs->hoju_turn_theta != rhs->hoju_turn_theta) {
     return false;
   }
-  // hata_speed
-  if (lhs->hata_speed != rhs->hata_speed) {
+  // hata_speed1
+  if (lhs->hata_speed1 != rhs->hata_speed1) {
     return false;
   }
-  // baketu_speed
-  if (lhs->baketu_speed != rhs->baketu_speed) {
+  // baketu_speed1
+  if (lhs->baketu_speed1 != rhs->baketu_speed1) {
+    return false;
+  }
+  // hata_speed2
+  if (lhs->hata_speed2 != rhs->hata_speed2) {
+    return false;
+  }
+  // baketu_speed2
+  if (lhs->baketu_speed2 != rhs->baketu_speed2) {
+    return false;
+  }
+  // hata_speed3
+  if (lhs->hata_speed3 != rhs->hata_speed3) {
+    return false;
+  }
+  // baketu_speed3
+  if (lhs->baketu_speed3 != rhs->baketu_speed3) {
     return false;
   }
   // fieldcolor
@@ -352,10 +376,18 @@ controller__msg__Controller__copy(
   output->hoju_turn_y = input->hoju_turn_y;
   // hoju_turn_theta
   output->hoju_turn_theta = input->hoju_turn_theta;
-  // hata_speed
-  output->hata_speed = input->hata_speed;
-  // baketu_speed
-  output->baketu_speed = input->baketu_speed;
+  // hata_speed1
+  output->hata_speed1 = input->hata_speed1;
+  // baketu_speed1
+  output->baketu_speed1 = input->baketu_speed1;
+  // hata_speed2
+  output->hata_speed2 = input->hata_speed2;
+  // baketu_speed2
+  output->baketu_speed2 = input->baketu_speed2;
+  // hata_speed3
+  output->hata_speed3 = input->hata_speed3;
+  // baketu_speed3
+  output->baketu_speed3 = input->baketu_speed3;
   // fieldcolor
   if (!rosidl_runtime_c__String__copy(
       &(input->fieldcolor), &(output->fieldcolor)))

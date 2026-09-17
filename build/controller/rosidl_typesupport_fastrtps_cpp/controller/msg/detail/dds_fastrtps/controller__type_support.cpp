@@ -72,11 +72,23 @@ cdr_serialize(
   // Member: hoju_turn_theta
   cdr << ros_message.hoju_turn_theta;
 
-  // Member: hata_speed
-  cdr << ros_message.hata_speed;
+  // Member: hata_speed1
+  cdr << ros_message.hata_speed1;
 
-  // Member: baketu_speed
-  cdr << ros_message.baketu_speed;
+  // Member: baketu_speed1
+  cdr << ros_message.baketu_speed1;
+
+  // Member: hata_speed2
+  cdr << ros_message.hata_speed2;
+
+  // Member: baketu_speed2
+  cdr << ros_message.baketu_speed2;
+
+  // Member: hata_speed3
+  cdr << ros_message.hata_speed3;
+
+  // Member: baketu_speed3
+  cdr << ros_message.baketu_speed3;
 
   // Member: fieldcolor
   cdr << ros_message.fieldcolor;
@@ -201,11 +213,23 @@ cdr_deserialize(
   // Member: hoju_turn_theta
   cdr >> ros_message.hoju_turn_theta;
 
-  // Member: hata_speed
-  cdr >> ros_message.hata_speed;
+  // Member: hata_speed1
+  cdr >> ros_message.hata_speed1;
 
-  // Member: baketu_speed
-  cdr >> ros_message.baketu_speed;
+  // Member: baketu_speed1
+  cdr >> ros_message.baketu_speed1;
+
+  // Member: hata_speed2
+  cdr >> ros_message.hata_speed2;
+
+  // Member: baketu_speed2
+  cdr >> ros_message.baketu_speed2;
+
+  // Member: hata_speed3
+  cdr >> ros_message.hata_speed3;
+
+  // Member: baketu_speed3
+  cdr >> ros_message.baketu_speed3;
 
   // Member: fieldcolor
   cdr >> ros_message.fieldcolor;
@@ -470,16 +494,44 @@ get_serialized_size(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: hata_speed
+  // Member: hata_speed1
   {
-    size_t item_size = sizeof(ros_message.hata_speed);
+    size_t item_size = sizeof(ros_message.hata_speed1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: baketu_speed
+  // Member: baketu_speed1
   {
-    size_t item_size = sizeof(ros_message.baketu_speed);
+    size_t item_size = sizeof(ros_message.baketu_speed1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: hata_speed2
+  {
+    size_t item_size = sizeof(ros_message.hata_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: baketu_speed2
+  {
+    size_t item_size = sizeof(ros_message.baketu_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: hata_speed3
+  {
+    size_t item_size = sizeof(ros_message.hata_speed3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: baketu_speed3
+  {
+    size_t item_size = sizeof(ros_message.baketu_speed3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -763,14 +815,42 @@ max_serialized_size_Controller(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // Member: hata_speed
+  // Member: hata_speed1
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // Member: baketu_speed
+  // Member: baketu_speed1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: hata_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: baketu_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: hata_speed3
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: baketu_speed3
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -1017,11 +1097,23 @@ cdr_serialize_key(
   // Member: hoju_turn_theta
   cdr << ros_message.hoju_turn_theta;
 
-  // Member: hata_speed
-  cdr << ros_message.hata_speed;
+  // Member: hata_speed1
+  cdr << ros_message.hata_speed1;
 
-  // Member: baketu_speed
-  cdr << ros_message.baketu_speed;
+  // Member: baketu_speed1
+  cdr << ros_message.baketu_speed1;
+
+  // Member: hata_speed2
+  cdr << ros_message.hata_speed2;
+
+  // Member: baketu_speed2
+  cdr << ros_message.baketu_speed2;
+
+  // Member: hata_speed3
+  cdr << ros_message.hata_speed3;
+
+  // Member: baketu_speed3
+  cdr << ros_message.baketu_speed3;
 
   // Member: fieldcolor
   cdr << ros_message.fieldcolor;
@@ -1201,16 +1293,44 @@ get_serialized_size_key(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: hata_speed
+  // Member: hata_speed1
   {
-    size_t item_size = sizeof(ros_message.hata_speed);
+    size_t item_size = sizeof(ros_message.hata_speed1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: baketu_speed
+  // Member: baketu_speed1
   {
-    size_t item_size = sizeof(ros_message.baketu_speed);
+    size_t item_size = sizeof(ros_message.baketu_speed1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: hata_speed2
+  {
+    size_t item_size = sizeof(ros_message.hata_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: baketu_speed2
+  {
+    size_t item_size = sizeof(ros_message.baketu_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: hata_speed3
+  {
+    size_t item_size = sizeof(ros_message.hata_speed3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: baketu_speed3
+  {
+    size_t item_size = sizeof(ros_message.baketu_speed3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1505,7 +1625,7 @@ max_serialized_size_key_Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: hata_speed
+  // Member: hata_speed1
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -1513,7 +1633,39 @@ max_serialized_size_key_Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: baketu_speed
+  // Member: baketu_speed1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: hata_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: baketu_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: hata_speed3
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: baketu_speed3
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);

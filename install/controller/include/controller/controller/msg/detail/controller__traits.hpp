@@ -112,17 +112,45 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: hata_speed
+  // member: hata_speed1
   {
-    out << "hata_speed: ";
-    rosidl_generator_traits::value_to_yaml(msg.hata_speed, out);
+    out << "hata_speed1: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed1, out);
     out << ", ";
   }
 
-  // member: baketu_speed
+  // member: baketu_speed1
   {
-    out << "baketu_speed: ";
-    rosidl_generator_traits::value_to_yaml(msg.baketu_speed, out);
+    out << "baketu_speed1: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed1, out);
+    out << ", ";
+  }
+
+  // member: hata_speed2
+  {
+    out << "hata_speed2: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed2, out);
+    out << ", ";
+  }
+
+  // member: baketu_speed2
+  {
+    out << "baketu_speed2: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed2, out);
+    out << ", ";
+  }
+
+  // member: hata_speed3
+  {
+    out << "hata_speed3: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed3, out);
+    out << ", ";
+  }
+
+  // member: baketu_speed3
+  {
+    out << "baketu_speed3: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed3, out);
     out << ", ";
   }
 
@@ -433,23 +461,63 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: hata_speed
+  // member: hata_speed1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "hata_speed: ";
-    rosidl_generator_traits::value_to_yaml(msg.hata_speed, out);
+    out << "hata_speed1: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed1, out);
     out << "\n";
   }
 
-  // member: baketu_speed
+  // member: baketu_speed1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "baketu_speed: ";
-    rosidl_generator_traits::value_to_yaml(msg.baketu_speed, out);
+    out << "baketu_speed1: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed1, out);
+    out << "\n";
+  }
+
+  // member: hata_speed2
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "hata_speed2: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed2, out);
+    out << "\n";
+  }
+
+  // member: baketu_speed2
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "baketu_speed2: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed2, out);
+    out << "\n";
+  }
+
+  // member: hata_speed3
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "hata_speed3: ";
+    rosidl_generator_traits::value_to_yaml(msg.hata_speed3, out);
+    out << "\n";
+  }
+
+  // member: baketu_speed3
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "baketu_speed3: ";
+    rosidl_generator_traits::value_to_yaml(msg.baketu_speed3, out);
     out << "\n";
   }
 

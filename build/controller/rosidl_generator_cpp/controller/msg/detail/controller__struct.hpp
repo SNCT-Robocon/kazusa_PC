@@ -54,8 +54,12 @@ struct Controller_
       this->hoju_turn_x = 0.0f;
       this->hoju_turn_y = 0.0f;
       this->hoju_turn_theta = 0.0f;
-      this->hata_speed = 0.0f;
-      this->baketu_speed = 0.0f;
+      this->hata_speed1 = 0.0f;
+      this->baketu_speed1 = 0.0f;
+      this->hata_speed2 = 0.0f;
+      this->baketu_speed2 = 0.0f;
+      this->hata_speed3 = 0.0f;
+      this->baketu_speed3 = 0.0f;
       this->fieldcolor = "";
       this->dengen = false;
       this->mode = "";
@@ -107,8 +111,12 @@ struct Controller_
       this->hoju_turn_x = 0.0f;
       this->hoju_turn_y = 0.0f;
       this->hoju_turn_theta = 0.0f;
-      this->hata_speed = 0.0f;
-      this->baketu_speed = 0.0f;
+      this->hata_speed1 = 0.0f;
+      this->baketu_speed1 = 0.0f;
+      this->hata_speed2 = 0.0f;
+      this->baketu_speed2 = 0.0f;
+      this->hata_speed3 = 0.0f;
+      this->baketu_speed3 = 0.0f;
       this->fieldcolor = "";
       this->dengen = false;
       this->mode = "";
@@ -175,12 +183,24 @@ struct Controller_
   using _hoju_turn_theta_type =
     float;
   _hoju_turn_theta_type hoju_turn_theta;
-  using _hata_speed_type =
+  using _hata_speed1_type =
     float;
-  _hata_speed_type hata_speed;
-  using _baketu_speed_type =
+  _hata_speed1_type hata_speed1;
+  using _baketu_speed1_type =
     float;
-  _baketu_speed_type baketu_speed;
+  _baketu_speed1_type baketu_speed1;
+  using _hata_speed2_type =
+    float;
+  _hata_speed2_type hata_speed2;
+  using _baketu_speed2_type =
+    float;
+  _baketu_speed2_type baketu_speed2;
+  using _hata_speed3_type =
+    float;
+  _hata_speed3_type hata_speed3;
+  using _baketu_speed3_type =
+    float;
+  _baketu_speed3_type baketu_speed3;
   using _fieldcolor_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _fieldcolor_type fieldcolor;
@@ -333,16 +353,40 @@ struct Controller_
     this->hoju_turn_theta = _arg;
     return *this;
   }
-  Type & set__hata_speed(
+  Type & set__hata_speed1(
     const float & _arg)
   {
-    this->hata_speed = _arg;
+    this->hata_speed1 = _arg;
     return *this;
   }
-  Type & set__baketu_speed(
+  Type & set__baketu_speed1(
     const float & _arg)
   {
-    this->baketu_speed = _arg;
+    this->baketu_speed1 = _arg;
+    return *this;
+  }
+  Type & set__hata_speed2(
+    const float & _arg)
+  {
+    this->hata_speed2 = _arg;
+    return *this;
+  }
+  Type & set__baketu_speed2(
+    const float & _arg)
+  {
+    this->baketu_speed2 = _arg;
+    return *this;
+  }
+  Type & set__hata_speed3(
+    const float & _arg)
+  {
+    this->hata_speed3 = _arg;
+    return *this;
+  }
+  Type & set__baketu_speed3(
+    const float & _arg)
+  {
+    this->baketu_speed3 = _arg;
     return *this;
   }
   Type & set__fieldcolor(
@@ -580,10 +624,22 @@ struct Controller_
     if (this->hoju_turn_theta != other.hoju_turn_theta) {
       return false;
     }
-    if (this->hata_speed != other.hata_speed) {
+    if (this->hata_speed1 != other.hata_speed1) {
       return false;
     }
-    if (this->baketu_speed != other.baketu_speed) {
+    if (this->baketu_speed1 != other.baketu_speed1) {
+      return false;
+    }
+    if (this->hata_speed2 != other.hata_speed2) {
+      return false;
+    }
+    if (this->baketu_speed2 != other.baketu_speed2) {
+      return false;
+    }
+    if (this->hata_speed3 != other.hata_speed3) {
+      return false;
+    }
+    if (this->baketu_speed3 != other.baketu_speed3) {
       return false;
     }
     if (this->fieldcolor != other.fieldcolor) {

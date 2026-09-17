@@ -38,7 +38,7 @@ void Controller_fini_function(void * message_memory)
   typed_message->~Controller();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_message_member_array[40] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_message_member_array[44] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -256,7 +256,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
     nullptr  // resize(index) function pointer
   },
   {
-    "hata_speed",  // name
+    "hata_speed1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -264,7 +264,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(controller::msg::Controller, hata_speed),  // bytes offset in struct
+    offsetof(controller::msg::Controller, hata_speed1),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -274,7 +274,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
     nullptr  // resize(index) function pointer
   },
   {
-    "baketu_speed",  // name
+    "baketu_speed1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -282,7 +282,79 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(controller::msg::Controller, baketu_speed),  // bytes offset in struct
+    offsetof(controller::msg::Controller, baketu_speed1),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "hata_speed2",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, hata_speed2),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "baketu_speed2",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, baketu_speed2),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "hata_speed3",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, hata_speed3),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "baketu_speed3",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, baketu_speed3),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -764,7 +836,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Controller_message_members = {
   "controller::msg",  // message namespace
   "Controller",  // message name
-  40,  // number of fields
+  44,  // number of fields
   sizeof(controller::msg::Controller),
   false,  // has_any_key_member_
   Controller_message_member_array,  // message members

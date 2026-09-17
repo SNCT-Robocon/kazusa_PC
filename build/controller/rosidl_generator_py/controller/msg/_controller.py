@@ -76,8 +76,12 @@ class Controller(metaclass=Metaclass_Controller):
         '_hoju_turn_x',
         '_hoju_turn_y',
         '_hoju_turn_theta',
-        '_hata_speed',
-        '_baketu_speed',
+        '_hata_speed1',
+        '_baketu_speed1',
+        '_hata_speed2',
+        '_baketu_speed2',
+        '_hata_speed3',
+        '_baketu_speed3',
         '_fieldcolor',
         '_dengen',
         '_mode',
@@ -120,8 +124,12 @@ class Controller(metaclass=Metaclass_Controller):
         'hoju_turn_x': 'float',
         'hoju_turn_y': 'float',
         'hoju_turn_theta': 'float',
-        'hata_speed': 'float',
-        'baketu_speed': 'float',
+        'hata_speed1': 'float',
+        'baketu_speed1': 'float',
+        'hata_speed2': 'float',
+        'baketu_speed2': 'float',
+        'hata_speed3': 'float',
+        'baketu_speed3': 'float',
         'fieldcolor': 'string',
         'dengen': 'boolean',
         'mode': 'string',
@@ -153,6 +161,10 @@ class Controller(metaclass=Metaclass_Controller):
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -216,8 +228,12 @@ class Controller(metaclass=Metaclass_Controller):
         self.hoju_turn_x = kwargs.get('hoju_turn_x', float())
         self.hoju_turn_y = kwargs.get('hoju_turn_y', float())
         self.hoju_turn_theta = kwargs.get('hoju_turn_theta', float())
-        self.hata_speed = kwargs.get('hata_speed', float())
-        self.baketu_speed = kwargs.get('baketu_speed', float())
+        self.hata_speed1 = kwargs.get('hata_speed1', float())
+        self.baketu_speed1 = kwargs.get('baketu_speed1', float())
+        self.hata_speed2 = kwargs.get('hata_speed2', float())
+        self.baketu_speed2 = kwargs.get('baketu_speed2', float())
+        self.hata_speed3 = kwargs.get('hata_speed3', float())
+        self.baketu_speed3 = kwargs.get('baketu_speed3', float())
         self.fieldcolor = kwargs.get('fieldcolor', str())
         self.dengen = kwargs.get('dengen', bool())
         self.mode = kwargs.get('mode', str())
@@ -299,9 +315,17 @@ class Controller(metaclass=Metaclass_Controller):
             return False
         if self.hoju_turn_theta != other.hoju_turn_theta:
             return False
-        if self.hata_speed != other.hata_speed:
+        if self.hata_speed1 != other.hata_speed1:
             return False
-        if self.baketu_speed != other.baketu_speed:
+        if self.baketu_speed1 != other.baketu_speed1:
+            return False
+        if self.hata_speed2 != other.hata_speed2:
+            return False
+        if self.baketu_speed2 != other.baketu_speed2:
+            return False
+        if self.hata_speed3 != other.hata_speed3:
+            return False
+        if self.baketu_speed3 != other.baketu_speed3:
             return False
         if self.fieldcolor != other.fieldcolor:
             return False
@@ -543,34 +567,94 @@ class Controller(metaclass=Metaclass_Controller):
         self._hoju_turn_theta = value
 
     @builtins.property
-    def hata_speed(self):
-        """Message field 'hata_speed'."""
-        return self._hata_speed
+    def hata_speed1(self):
+        """Message field 'hata_speed1'."""
+        return self._hata_speed1
 
-    @hata_speed.setter
-    def hata_speed(self, value):
+    @hata_speed1.setter
+    def hata_speed1(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, float), \
-                "The 'hata_speed' field must be of type 'float'"
+                "The 'hata_speed1' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'hata_speed' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._hata_speed = value
+                "The 'hata_speed1' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hata_speed1 = value
 
     @builtins.property
-    def baketu_speed(self):
-        """Message field 'baketu_speed'."""
-        return self._baketu_speed
+    def baketu_speed1(self):
+        """Message field 'baketu_speed1'."""
+        return self._baketu_speed1
 
-    @baketu_speed.setter
-    def baketu_speed(self, value):
+    @baketu_speed1.setter
+    def baketu_speed1(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, float), \
-                "The 'baketu_speed' field must be of type 'float'"
+                "The 'baketu_speed1' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'baketu_speed' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._baketu_speed = value
+                "The 'baketu_speed1' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._baketu_speed1 = value
+
+    @builtins.property
+    def hata_speed2(self):
+        """Message field 'hata_speed2'."""
+        return self._hata_speed2
+
+    @hata_speed2.setter
+    def hata_speed2(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'hata_speed2' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'hata_speed2' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hata_speed2 = value
+
+    @builtins.property
+    def baketu_speed2(self):
+        """Message field 'baketu_speed2'."""
+        return self._baketu_speed2
+
+    @baketu_speed2.setter
+    def baketu_speed2(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'baketu_speed2' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'baketu_speed2' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._baketu_speed2 = value
+
+    @builtins.property
+    def hata_speed3(self):
+        """Message field 'hata_speed3'."""
+        return self._hata_speed3
+
+    @hata_speed3.setter
+    def hata_speed3(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'hata_speed3' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'hata_speed3' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hata_speed3 = value
+
+    @builtins.property
+    def baketu_speed3(self):
+        """Message field 'baketu_speed3'."""
+        return self._baketu_speed3
+
+    @baketu_speed3.setter
+    def baketu_speed3(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'baketu_speed3' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'baketu_speed3' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._baketu_speed3 = value
 
     @builtins.property
     def fieldcolor(self):

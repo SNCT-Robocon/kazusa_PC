@@ -42,8 +42,12 @@ typedef struct controller__msg__Controller
   float hoju_turn_x;
   float hoju_turn_y;
   float hoju_turn_theta;
-  float hata_speed;
-  float baketu_speed;
+  float hata_speed1;
+  float baketu_speed1;
+  float hata_speed2;
+  float baketu_speed2;
+  float hata_speed3;
+  float baketu_speed3;
   rosidl_runtime_c__String fieldcolor;
   bool dengen;
   rosidl_runtime_c__String mode;

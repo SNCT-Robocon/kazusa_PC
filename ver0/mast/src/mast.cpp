@@ -15,6 +15,7 @@
 #include <sstream>
 #include <string>
 #include <thread>
+#include "atomic"
 #include <vector>
 #include <rclcpp/logging.hpp>
 #include "controller/msg/controller.hpp"
@@ -29,7 +30,10 @@
 #include "shoot.hpp"
 
 
-
+static_assert(
+    std::atomic<float>::is_always_lock_free,
+    "atomic<float> must be lock-free"
+);
 
 float nearest_equivalent_angle(float current_theta, float base_angle){
     float diff = base_angle - current_theta;
@@ -76,6 +80,12 @@ public:
             qos_profile,
             [this](const controller::msg::Controller::SharedPtr msg) {
                 current_controller_val = *msg;
+                auto_hata_speed0 = std::clamp(current_controller_val.hata_speed1, 9.5f, 10.5f);
+                auto_hata_speed1 = std::clamp(current_controller_val.hata_speed2, 9.5f, 10.5f);
+                auto_hata_speed2 = std::clamp(current_controller_val.hata_speed3, 9.5f, 10.5f);
+                auto_baketsu_speed0 = std::clamp(current_controller_val.baketu_speed1, 4.0f, 5.0f);
+                auto_baketsu_speed1 = std::clamp(current_controller_val.baketu_speed2, 4.0f, 5.0f);
+                auto_baketsu_speed2 = std::clamp(current_controller_val.baketu_speed3, 4.0f, 5.0f);
             }
         );
 
@@ -154,16 +164,72 @@ private:
         }
 
         if(current_controller_val.execute && !execute_button_latched){
-            execute_button_latched = true;
-            control_mode.store(ControlMode::AUTO);
 
-            if(execute_thread.joinable()){
-                execute_thread.join();
+            auto_is_field_red = (field_color == "red");
+
+            if(
+                current_controller_val.column1 == "hata" &&
+                current_controller_val.column2 == "hata" &&
+                current_controller_val.column3 == "hata"
+            ){
+
+                execute_button_latched = true;
+                control_mode.store(ControlMode::AUTO);
+
+                if(execute_thread.joinable()){
+                    execute_thread.join();
+                }
+
+                execute_thread = std::thread([this](){
+                    this -> execute_hata_hata_hata();
+                });
+
             }
 
-            execute_thread = std::thread([this](){
-                this -> execute();
-            });
+            else if(
+                current_controller_val.column1 == "baketu" &&
+                current_controller_val.column2 == "hata" &&
+                current_controller_val.column3 == "hata"
+            ){
+
+                execute_button_latched = true;
+                control_mode.store(ControlMode::AUTO);
+
+                if(execute_thread.joinable()){
+                    execute_thread.join();
+                }
+
+                execute_thread = std::thread([this](){
+                    this -> execute_baketsu_hata_hata();
+                });
+
+            }
+
+            else if(
+                current_controller_val.column1 == "baketu" &&
+                current_controller_val.column2 == "nothing" &&
+                current_controller_val.column3 == "nothing"
+            ){
+
+                execute_button_latched = true;
+                control_mode.store(ControlMode::AUTO);
+
+                if(execute_thread.joinable()){
+                    execute_thread.join();
+                }
+
+                execute_thread = std::thread([this](){
+                    this -> execute_baketsu_nop_nop();
+                });
+
+            }
+
+            else{
+                RCLCPP_INFO(
+                    this -> get_logger(),
+                    "auto sequence not started: invalid button combination"
+                );
+            }
 
             return;
         }
@@ -210,10 +276,10 @@ private:
         can_pub -> publish(omni::can_packet(x_speed, y_speed, yaw_speed));
 
     }
+
+
     
-
-
-    void execute(){
+    void execute_hata_hata_hata(){
 
         RCLCPP_INFO(this -> get_logger(), "automatic sequence started");
 
@@ -238,16 +304,102 @@ private:
 
         can_pub -> publish(omni::stop_packet());
 
-        // geometry_msgs::msg::Pose2D start_pose;
-        // start_pose.x = 4050.0;
-        // start_pose.y = 465.0;
-        // start_pose.theta = 0.0;
+        if(!send_hoju_goal_and_wait("GET")){
+            fail("GET failed");
+            return;
+        }
 
-        // RCLCPP_INFO(this -> get_logger(), "positioning at the refill point for 2 seconds");
-        // if(!position_for(start_pose, std::chrono::seconds(2))){
-        //     fail("initial positioning was interrupted");
-        //     return;
-        // }
+
+        if(!send_path_goal_and_wait("start_to_flag")){
+            fail("start_to_flag failed");
+            return;
+        }
+        const uint32_t start_to_flag_index = path_loader::find_path_index("start_to_flag");
+        const geometry_msgs::msg::Pose2D flag_pose = paths[start_to_flag_index].poses.back();
+
+        if(!position_until_reached_with_hoju(flag_pose, std::chrono::seconds(10), "HOJU_0")){
+            fail("flag positioning or HOJU_0 failed");
+            return;
+        }
+
+        interruptible_delay(std::chrono::milliseconds(500));
+
+        if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
+            fail("first flag shooting sequence was interrupted");
+            return;
+        }
+
+        if(!send_hoju_goal_and_wait("HOJU_1")){
+            fail("HOJU_1 failed");
+            return;
+        }
+
+        interruptible_delay(std::chrono::milliseconds(500));
+
+        if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
+            fail("first flag shooting sequence was interrupted");
+            return;
+        }
+
+        if(!send_hoju_goal_and_wait("HOJU_2")){
+            fail("HOJU_2 failed");
+            return;
+        }
+
+        if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
+            fail("second flag shooting sequence was interrupted");
+            return;
+        }
+
+        if(!send_path_goal_and_wait("flag_to_start")){
+            fail("flag_to_start failed");
+            return;
+        }
+
+        geometry_msgs::msg::Pose2D finish_pose{};
+        finish_pose.x = 4080.0;
+        finish_pose.y = 500.0;
+        finish_pose.theta = 0.0;
+
+        RCLCPP_INFO(this -> get_logger(), "holding at the finish pose for 1 second");
+        if(!position_for(finish_pose, std::chrono::seconds(1))){
+            fail("final positioning was interrupted");
+            return;
+        }
+
+        can_pub -> publish(omni::stop_packet());
+        control_mode.store(ControlMode::JOY);
+        RCLCPP_INFO(this -> get_logger(), "automatic sequence completed");
+
+    }
+
+    
+
+
+    void execute_baketsu_hata_hata(){
+
+        RCLCPP_INFO(this -> get_logger(), "automatic sequence started");
+
+        const auto fail = [this](const std::string & message) {
+            RCLCPP_ERROR(this -> get_logger(), "automatic sequence stopped: %s", message.c_str());
+            can_pub -> publish(omni::stop_packet());
+            control_mode.store(ControlMode::JOY);
+        };
+
+        if(!wait_for_pose(std::chrono::seconds(2))){
+            fail("pose1 is not available");
+            return;
+        }
+
+        if(
+            !hoju_client -> wait_for_action_server(std::chrono::seconds(5)) ||
+            !path_follow_client -> wait_for_action_server(std::chrono::seconds(5))
+        ){
+            fail("action server is not available");
+            return;
+        }
+
+        can_pub -> publish(omni::stop_packet());
 
         if(!send_hoju_goal_and_wait("GET")){
             fail("GET failed");
@@ -270,43 +422,66 @@ private:
             return;
         }
 
-        shoot(0, 4.4f);
 
-        // if(!interruptible_delay(std::chrono::seconds(2))){
-        //     fail("sequence was interrupted after firing index 2");
-        //     return;
-        // }
 
-        bucket_pose.y += 100.0;
-        if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
-            fail("bucket positioning for index 1 timed out");
-            return;
-        }
-        shoot(1, 4.4f);
+        if(auto_is_field_red){
 
-        bucket_pose.y += 100.0;
-        if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
-            fail("bucket positioning for index 0 timed out");
-            return;
-        }
-        shoot(2, 4.4f);
+            shoot(2, auto_baketsu_speed2);
 
-        if(!send_parallel_goals_and_wait("bucket_to_flag", "HOJU_1")){
-            fail("bucket_to_flag or HOJU_1 failed");
-            return;
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 1 timed out");
+                return;
+            }
+            shoot(1, auto_baketsu_speed1);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 0 timed out");
+                return;
+            }
+            shoot(0, auto_baketsu_speed0);
+
         }
 
-        const uint32_t bucket_to_flag_index =
-            path_loader::find_path_index("bucket_to_flag");
-        const geometry_msgs::msg::Pose2D flag_pose =
-            paths[bucket_to_flag_index].poses.back();
+        else{
 
-        if(!position_until_reached(flag_pose, std::chrono::seconds(10))){
-            fail("flag positioning timed out");
+            shoot(0, auto_baketsu_speed0);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 1 timed out");
+                return;
+            }
+            shoot(1, auto_baketsu_speed1);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 0 timed out");
+                return;
+            }
+            shoot(2, auto_baketsu_speed2);
+
+        }
+
+
+
+
+        if(!send_path_goal_and_wait("bucket_to_flag")){
+            fail("bucket_to_flag failed");
+            return;
+        }
+        const uint32_t bucket_to_flag_index = path_loader::find_path_index("bucket_to_flag");
+        const geometry_msgs::msg::Pose2D flag_pose = paths[bucket_to_flag_index].poses.back();
+
+        if(!position_until_reached_with_hoju(flag_pose, std::chrono::seconds(10), "HOJU_1")){
+            fail("flag positioning or HOJU_1 failed");
             return;
         }
 
-        if(!shoot_three(10.1f)){
+        interruptible_delay(std::chrono::milliseconds(500));
+        
+        if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
             fail("first flag shooting sequence was interrupted");
             return;
         }
@@ -316,13 +491,130 @@ private:
             return;
         }
 
-        if(!shoot_three(10.1f)){
+
+        if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
             fail("second flag shooting sequence was interrupted");
             return;
         }
 
         if(!send_path_goal_and_wait("flag_to_start")){
             fail("flag_to_start failed");
+            return;
+        }
+
+        geometry_msgs::msg::Pose2D finish_pose{};
+        finish_pose.x = 4080.0;
+        finish_pose.y = 500.0;
+        finish_pose.theta = 0.0;
+
+        RCLCPP_INFO(this -> get_logger(), "holding at the finish pose for 1 second");
+        if(!position_for(finish_pose, std::chrono::seconds(1))){
+            fail("final positioning was interrupted");
+            return;
+        }
+
+        can_pub -> publish(omni::stop_packet());
+        control_mode.store(ControlMode::JOY);
+        RCLCPP_INFO(this -> get_logger(), "automatic sequence completed");
+
+    }
+
+
+
+
+    void execute_baketsu_nop_nop(){
+
+        RCLCPP_INFO(this -> get_logger(), "automatic sequence started");
+
+        const auto fail = [this](const std::string & message) {
+            RCLCPP_ERROR(this -> get_logger(), "automatic sequence stopped: %s", message.c_str());
+            can_pub -> publish(omni::stop_packet());
+            control_mode.store(ControlMode::JOY);
+        };
+
+        if(!wait_for_pose(std::chrono::seconds(2))){
+            fail("pose1 is not available");
+            return;
+        }
+
+        if(
+            !hoju_client -> wait_for_action_server(std::chrono::seconds(5)) ||
+            !path_follow_client -> wait_for_action_server(std::chrono::seconds(5))
+        ){
+            fail("action server is not available");
+            return;
+        }
+
+        can_pub -> publish(omni::stop_packet());
+
+
+        if(!send_hoju_goal_and_wait("GET")){
+            fail("GET failed");
+            return;
+        }
+
+        if(!send_parallel_goals_and_wait("start_to_bucket", "HOJU_0")){
+            fail("start_to_bucket or HOJU_0 failed");
+            return;
+        }
+
+        const uint32_t start_to_bucket_index =
+            path_loader::find_path_index("start_to_bucket");
+        geometry_msgs::msg::Pose2D bucket_pose =
+            paths[start_to_bucket_index].poses.back();
+
+        RCLCPP_INFO(this -> get_logger(), "positioning at the end of start_to_bucket");
+        if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+            fail("bucket positioning for index 2 timed out");
+            return;
+        }
+
+
+
+        if(auto_is_field_red){
+
+            shoot(2, auto_baketsu_speed2);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 1 timed out");
+                return;
+            }
+            shoot(1, auto_baketsu_speed1);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 0 timed out");
+                return;
+            }
+            shoot(0, auto_baketsu_speed0);
+
+        }
+
+        else{
+
+            shoot(0, auto_baketsu_speed0);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 1 timed out");
+                return;
+            }
+            shoot(1, auto_baketsu_speed1);
+
+            bucket_pose.y += 100.0;
+            if(!position_until_reached(bucket_pose, std::chrono::seconds(10))){
+                fail("bucket positioning for index 0 timed out");
+                return;
+            }
+            shoot(2, auto_baketsu_speed2);
+
+        }
+
+        
+
+        if(!send_parallel_goals_and_wait("bucket_to_start", "RETURN_NORMALLY")){
+            fail("bucket_to_start or RETURN_NORMALLY failed");
             return;
         }
 
@@ -620,6 +912,54 @@ private:
 
 
 
+    bool position_until_reached_with_hoju(
+        const geometry_msgs::msg::Pose2D & target_pose,
+        const std::chrono::milliseconds position_timeout,
+        const std::string & action_name)
+    {
+        // --- HOJUゴールを先に投げておく（send_parallel_goals_and_waitと同じ書き方） ---
+        custom_msgs::action::Hoju::Goal hoju_goal;
+        hoju_goal.action_name = action_name;
+
+        RCLCPP_INFO(
+            this -> get_logger(),
+            "starting positioning and hoju in parallel: %s",
+            action_name.c_str()
+        );
+
+        auto hoju_goal_future = hoju_client -> async_send_goal(hoju_goal);
+        if(!wait_for_future(hoju_goal_future, std::chrono::seconds(5))){
+            RCLCPP_ERROR(this -> get_logger(), "hoju goal response timed out: %s", action_name.c_str());
+            return false;
+        }
+
+        auto hoju_goal_handle = hoju_goal_future.get();
+        if(!hoju_goal_handle){
+            RCLCPP_ERROR(this -> get_logger(), "hoju goal was rejected: %s", action_name.c_str());
+            return false;
+        }
+
+        auto hoju_result_future = hoju_client -> async_get_result(hoju_goal_handle);
+
+        if(!position_until_reached(target_pose, position_timeout)){
+            RCLCPP_ERROR(this -> get_logger(), "positioning timed out during hoju: %s", action_name.c_str());
+            return false;
+        }
+        // --- 最後にHOJUの結果を待つ ---
+        if(!wait_for_future(hoju_result_future, std::chrono::seconds(30))){
+            RCLCPP_ERROR(this -> get_logger(), "hoju result timed out: %s", action_name.c_str());
+            return false;
+        }
+
+        const auto wrapped_result = hoju_result_future.get();
+        return
+            wrapped_result.code == rclcpp_action::ResultCode::SUCCEEDED &&
+            wrapped_result.result &&
+            wrapped_result.result -> success;
+    }
+
+
+
     void shoot(const uint32_t machine_index, const float velocity)
     {
         can_pub -> publish(::shoot::can_packet(machine_index, velocity));
@@ -633,14 +973,18 @@ private:
 
 
 
-    bool shoot_three(const float velocity)
+    bool shoot_three(float velocity0, float velocity1, float velocity2)
     {
-        for(uint32_t machine_index = 0; machine_index < 3; ++machine_index){
-            shoot(machine_index, velocity);
-            if(machine_index < 2 && !interruptible_delay(std::chrono::seconds(1))){
-                return false;
-            }
-        }
+        shoot(0, velocity0);
+
+        interruptible_delay(std::chrono::milliseconds(800));
+
+        shoot(2, velocity2);
+
+        interruptible_delay(std::chrono::milliseconds(800));
+
+        shoot(1, velocity1);
+        
         return true;
     }
 
@@ -670,6 +1014,17 @@ private:
     pid_control pid_x{1000.0f, 0.001f, 0.0f, 0.0f, 1700.0f};
     pid_control pid_y{1000.0f, 0.001f, 0.0f, 0.0f, 1700.0f};
     pid_control pid_yaw{1000.0f, 2.0f, 0.0f, 0.0f, 4.0f};
+
+
+
+    // AUTO用の持っとく変数
+    std::atomic<float> auto_hata_speed0{10.1f};
+    std::atomic<float> auto_hata_speed1{10.1f};
+    std::atomic<float> auto_hata_speed2{10.1f};
+    std::atomic<float> auto_baketsu_speed0{4.2f};
+    std::atomic<float> auto_baketsu_speed1{4.2f};
+    std::atomic<float> auto_baketsu_speed2{4.2f};
+    std::atomic<bool> auto_is_field_red{false};
 
 };
 

@@ -110,14 +110,34 @@ bool cdr_serialize_controller__msg__Controller(
     cdr << ros_message->hoju_turn_theta;
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
-    cdr << ros_message->hata_speed;
+    cdr << ros_message->hata_speed1;
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
   {
-    cdr << ros_message->baketu_speed;
+    cdr << ros_message->baketu_speed1;
+  }
+
+  // Field name: hata_speed2
+  {
+    cdr << ros_message->hata_speed2;
+  }
+
+  // Field name: baketu_speed2
+  {
+    cdr << ros_message->baketu_speed2;
+  }
+
+  // Field name: hata_speed3
+  {
+    cdr << ros_message->hata_speed3;
+  }
+
+  // Field name: baketu_speed3
+  {
+    cdr << ros_message->baketu_speed3;
   }
 
   // Field name: fieldcolor
@@ -363,14 +383,34 @@ bool cdr_deserialize_controller__msg__Controller(
     cdr >> ros_message->hoju_turn_theta;
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
-    cdr >> ros_message->hata_speed;
+    cdr >> ros_message->hata_speed1;
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
   {
-    cdr >> ros_message->baketu_speed;
+    cdr >> ros_message->baketu_speed1;
+  }
+
+  // Field name: hata_speed2
+  {
+    cdr >> ros_message->hata_speed2;
+  }
+
+  // Field name: baketu_speed2
+  {
+    cdr >> ros_message->baketu_speed2;
+  }
+
+  // Field name: hata_speed3
+  {
+    cdr >> ros_message->hata_speed3;
+  }
+
+  // Field name: baketu_speed3
+  {
+    cdr >> ros_message->baketu_speed3;
   }
 
   // Field name: fieldcolor
@@ -702,16 +742,44 @@ size_t get_serialized_size_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
-    size_t item_size = sizeof(ros_message->hata_speed);
+    size_t item_size = sizeof(ros_message->hata_speed1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
   {
-    size_t item_size = sizeof(ros_message->baketu_speed);
+    size_t item_size = sizeof(ros_message->baketu_speed1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_speed2
+  {
+    size_t item_size = sizeof(ros_message->hata_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_speed2
+  {
+    size_t item_size = sizeof(ros_message->baketu_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_speed3
+  {
+    size_t item_size = sizeof(ros_message->hata_speed3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_speed3
+  {
+    size_t item_size = sizeof(ros_message->baketu_speed3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1006,7 +1074,7 @@ size_t max_serialized_size_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -1014,7 +1082,39 @@ size_t max_serialized_size_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_speed3
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_speed3
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -1310,14 +1410,34 @@ bool cdr_serialize_key_controller__msg__Controller(
     cdr << ros_message->hoju_turn_theta;
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
-    cdr << ros_message->hata_speed;
+    cdr << ros_message->hata_speed1;
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
   {
-    cdr << ros_message->baketu_speed;
+    cdr << ros_message->baketu_speed1;
+  }
+
+  // Field name: hata_speed2
+  {
+    cdr << ros_message->hata_speed2;
+  }
+
+  // Field name: baketu_speed2
+  {
+    cdr << ros_message->baketu_speed2;
+  }
+
+  // Field name: hata_speed3
+  {
+    cdr << ros_message->hata_speed3;
+  }
+
+  // Field name: baketu_speed3
+  {
+    cdr << ros_message->baketu_speed3;
   }
 
   // Field name: fieldcolor
@@ -1597,16 +1717,44 @@ size_t get_serialized_size_key_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
-    size_t item_size = sizeof(ros_message->hata_speed);
+    size_t item_size = sizeof(ros_message->hata_speed1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
   {
-    size_t item_size = sizeof(ros_message->baketu_speed);
+    size_t item_size = sizeof(ros_message->baketu_speed1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_speed2
+  {
+    size_t item_size = sizeof(ros_message->hata_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_speed2
+  {
+    size_t item_size = sizeof(ros_message->baketu_speed2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hata_speed3
+  {
+    size_t item_size = sizeof(ros_message->hata_speed3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: baketu_speed3
+  {
+    size_t item_size = sizeof(ros_message->baketu_speed3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1899,7 +2047,7 @@ size_t max_serialized_size_key_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Field name: hata_speed
+  // Field name: hata_speed1
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -1907,7 +2055,39 @@ size_t max_serialized_size_key_controller__msg__Controller(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Field name: baketu_speed
+  // Field name: baketu_speed1
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_speed2
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: hata_speed3
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: baketu_speed3
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);

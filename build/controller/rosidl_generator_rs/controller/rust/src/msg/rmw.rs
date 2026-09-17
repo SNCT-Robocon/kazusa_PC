@@ -88,12 +88,32 @@ pub struct Controller {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub hata_speed: f32,
+    pub hata_speed1: f32,
 
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub baketu_speed: f32,
+    pub baketu_speed1: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub hata_speed2: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub baketu_speed2: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub hata_speed3: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub baketu_speed3: f32,
 
 
     // This member is not documented.

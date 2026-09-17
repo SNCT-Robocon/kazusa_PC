@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "controller/msg/detail/controller__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "controller/msg/detail/controller__type_support.h"
 #include "controller/msg/detail/controller__struct.h"
+#include "controller/msg/detail/controller__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

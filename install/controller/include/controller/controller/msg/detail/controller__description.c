@@ -11,10 +11,10 @@ controller__msg__Controller__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xa5, 0x85, 0x9d, 0xfa, 0xf2, 0x3b, 0xbf, 0x38,
-      0x54, 0x36, 0xd2, 0xd3, 0x9f, 0xda, 0xc6, 0xbb,
-      0x44, 0x73, 0x42, 0x87, 0x3f, 0x08, 0x82, 0x10,
-      0xf2, 0xb5, 0x5f, 0x3c, 0x01, 0xf5, 0x88, 0xea,
+      0x47, 0x55, 0xb6, 0xb3, 0xf4, 0x9e, 0x7f, 0x5f,
+      0x40, 0x91, 0x49, 0xb9, 0xe9, 0x84, 0x34, 0xc3,
+      0x2d, 0x10, 0x40, 0x8f, 0x9f, 0xb3, 0x3a, 0xcc,
+      0x12, 0xde, 0x9f, 0xfa, 0x22, 0x40, 0x8b, 0x5c,
     }};
   return &hash;
 }
@@ -43,8 +43,12 @@ static char controller__msg__Controller__FIELD_NAME__baketu_turn_theta[] = "bake
 static char controller__msg__Controller__FIELD_NAME__hoju_turn_x[] = "hoju_turn_x";
 static char controller__msg__Controller__FIELD_NAME__hoju_turn_y[] = "hoju_turn_y";
 static char controller__msg__Controller__FIELD_NAME__hoju_turn_theta[] = "hoju_turn_theta";
-static char controller__msg__Controller__FIELD_NAME__hata_speed[] = "hata_speed";
-static char controller__msg__Controller__FIELD_NAME__baketu_speed[] = "baketu_speed";
+static char controller__msg__Controller__FIELD_NAME__hata_speed1[] = "hata_speed1";
+static char controller__msg__Controller__FIELD_NAME__baketu_speed1[] = "baketu_speed1";
+static char controller__msg__Controller__FIELD_NAME__hata_speed2[] = "hata_speed2";
+static char controller__msg__Controller__FIELD_NAME__baketu_speed2[] = "baketu_speed2";
+static char controller__msg__Controller__FIELD_NAME__hata_speed3[] = "hata_speed3";
+static char controller__msg__Controller__FIELD_NAME__baketu_speed3[] = "baketu_speed3";
 static char controller__msg__Controller__FIELD_NAME__fieldcolor[] = "fieldcolor";
 static char controller__msg__Controller__FIELD_NAME__dengen[] = "dengen";
 static char controller__msg__Controller__FIELD_NAME__mode[] = "mode";
@@ -194,7 +198,7 @@ static rosidl_runtime_c__type_description__Field controller__msg__Controller__FI
     {NULL, 0, 0},
   },
   {
-    {controller__msg__Controller__FIELD_NAME__hata_speed, 10, 10},
+    {controller__msg__Controller__FIELD_NAME__hata_speed1, 11, 11},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
       0,
@@ -204,7 +208,47 @@ static rosidl_runtime_c__type_description__Field controller__msg__Controller__FI
     {NULL, 0, 0},
   },
   {
-    {controller__msg__Controller__FIELD_NAME__baketu_speed, 12, 12},
+    {controller__msg__Controller__FIELD_NAME__baketu_speed1, 13, 13},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {controller__msg__Controller__FIELD_NAME__hata_speed2, 11, 11},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {controller__msg__Controller__FIELD_NAME__baketu_speed2, 13, 13},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {controller__msg__Controller__FIELD_NAME__hata_speed3, 11, 11},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {controller__msg__Controller__FIELD_NAME__baketu_speed3, 13, 13},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
       0,
@@ -484,7 +528,7 @@ controller__msg__Controller__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {controller__msg__Controller__TYPE_NAME, 25, 25},
-      {controller__msg__Controller__FIELDS, 40, 40},
+      {controller__msg__Controller__FIELDS, 44, 44},
     },
     {NULL, 0, 0},
   };
@@ -507,8 +551,12 @@ static char toplevel_type_raw_source[] =
   "float32 hoju_turn_x\n"
   "float32 hoju_turn_y\n"
   "float32 hoju_turn_theta\n"
-  "float32 hata_speed\n"
-  "float32 baketu_speed\n"
+  "float32 hata_speed1\n"
+  "float32 baketu_speed1\n"
+  "float32 hata_speed2\n"
+  "float32 baketu_speed2\n"
+  "float32 hata_speed3\n"
+  "float32 baketu_speed3\n"
   "\n"
   "string fieldcolor\n"
   "bool dengen\n"
@@ -550,7 +598,7 @@ controller__msg__Controller__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {controller__msg__Controller__TYPE_NAME, 25, 25},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 593, 593},
+    {toplevel_type_raw_source, 679, 679},
   };
   return &source;
 }

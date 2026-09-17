@@ -161,22 +161,58 @@ bool controller__msg__controller__convert_from_py(PyObject * _pymsg, void * _ros
     ros_message->hoju_turn_theta = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // hata_speed
-    PyObject * field = PyObject_GetAttrString(_pymsg, "hata_speed");
+  {  // hata_speed1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hata_speed1");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->hata_speed = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->hata_speed1 = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // baketu_speed
-    PyObject * field = PyObject_GetAttrString(_pymsg, "baketu_speed");
+  {  // baketu_speed1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "baketu_speed1");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->baketu_speed = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->baketu_speed1 = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // hata_speed2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hata_speed2");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->hata_speed2 = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // baketu_speed2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "baketu_speed2");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->baketu_speed2 = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // hata_speed3
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hata_speed3");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->hata_speed3 = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // baketu_speed3
+    PyObject * field = PyObject_GetAttrString(_pymsg, "baketu_speed3");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->baketu_speed3 = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // fieldcolor
@@ -597,22 +633,66 @@ PyObject * controller__msg__controller__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // hata_speed
+  {  // hata_speed1
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->hata_speed);
+    field = PyFloat_FromDouble(ros_message->hata_speed1);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "hata_speed", field);
+      int rc = PyObject_SetAttrString(_pymessage, "hata_speed1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // baketu_speed
+  {  // baketu_speed1
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->baketu_speed);
+    field = PyFloat_FromDouble(ros_message->baketu_speed1);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "baketu_speed", field);
+      int rc = PyObject_SetAttrString(_pymessage, "baketu_speed1", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // hata_speed2
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->hata_speed2);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "hata_speed2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // baketu_speed2
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->baketu_speed2);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "baketu_speed2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // hata_speed3
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->hata_speed3);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "hata_speed3", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // baketu_speed3
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->baketu_speed3);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "baketu_speed3", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -440,15 +440,15 @@ private:
   ::controller::msg::Controller msg_;
 };
 
-class Init_Controller_baketu_speed
+class Init_Controller_baketu_speed3
 {
 public:
-  explicit Init_Controller_baketu_speed(::controller::msg::Controller & msg)
+  explicit Init_Controller_baketu_speed3(::controller::msg::Controller & msg)
   : msg_(msg)
   {}
-  Init_Controller_fieldcolor baketu_speed(::controller::msg::Controller::_baketu_speed_type arg)
+  Init_Controller_fieldcolor baketu_speed3(::controller::msg::Controller::_baketu_speed3_type arg)
   {
-    msg_.baketu_speed = std::move(arg);
+    msg_.baketu_speed3 = std::move(arg);
     return Init_Controller_fieldcolor(msg_);
   }
 
@@ -456,16 +456,80 @@ private:
   ::controller::msg::Controller msg_;
 };
 
-class Init_Controller_hata_speed
+class Init_Controller_hata_speed3
 {
 public:
-  explicit Init_Controller_hata_speed(::controller::msg::Controller & msg)
+  explicit Init_Controller_hata_speed3(::controller::msg::Controller & msg)
   : msg_(msg)
   {}
-  Init_Controller_baketu_speed hata_speed(::controller::msg::Controller::_hata_speed_type arg)
+  Init_Controller_baketu_speed3 hata_speed3(::controller::msg::Controller::_hata_speed3_type arg)
   {
-    msg_.hata_speed = std::move(arg);
-    return Init_Controller_baketu_speed(msg_);
+    msg_.hata_speed3 = std::move(arg);
+    return Init_Controller_baketu_speed3(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
+class Init_Controller_baketu_speed2
+{
+public:
+  explicit Init_Controller_baketu_speed2(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_hata_speed3 baketu_speed2(::controller::msg::Controller::_baketu_speed2_type arg)
+  {
+    msg_.baketu_speed2 = std::move(arg);
+    return Init_Controller_hata_speed3(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
+class Init_Controller_hata_speed2
+{
+public:
+  explicit Init_Controller_hata_speed2(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_baketu_speed2 hata_speed2(::controller::msg::Controller::_hata_speed2_type arg)
+  {
+    msg_.hata_speed2 = std::move(arg);
+    return Init_Controller_baketu_speed2(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
+class Init_Controller_baketu_speed1
+{
+public:
+  explicit Init_Controller_baketu_speed1(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_hata_speed2 baketu_speed1(::controller::msg::Controller::_baketu_speed1_type arg)
+  {
+    msg_.baketu_speed1 = std::move(arg);
+    return Init_Controller_hata_speed2(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
+class Init_Controller_hata_speed1
+{
+public:
+  explicit Init_Controller_hata_speed1(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_baketu_speed1 hata_speed1(::controller::msg::Controller::_hata_speed1_type arg)
+  {
+    msg_.hata_speed1 = std::move(arg);
+    return Init_Controller_baketu_speed1(msg_);
   }
 
 private:
@@ -478,10 +542,10 @@ public:
   explicit Init_Controller_hoju_turn_theta(::controller::msg::Controller & msg)
   : msg_(msg)
   {}
-  Init_Controller_hata_speed hoju_turn_theta(::controller::msg::Controller::_hoju_turn_theta_type arg)
+  Init_Controller_hata_speed1 hoju_turn_theta(::controller::msg::Controller::_hoju_turn_theta_type arg)
   {
     msg_.hoju_turn_theta = std::move(arg);
-    return Init_Controller_hata_speed(msg_);
+    return Init_Controller_hata_speed1(msg_);
   }
 
 private:

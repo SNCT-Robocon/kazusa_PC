@@ -30,9 +30,17 @@ module controller {
 
       float hoju_turn_theta;
 
-      float hata_speed;
+      float hata_speed1;
 
-      float baketu_speed;
+      float baketu_speed1;
+
+      float hata_speed2;
+
+      float baketu_speed2;
+
+      float hata_speed3;
+
+      float baketu_speed3;
 
       string fieldcolor;
 
