@@ -62,6 +62,8 @@ typedef struct controller__msg__Controller
   bool firehata;
   bool firebaketu;
   bool hojuposition;
+  bool release;
+  bool interrupt;
   bool left;
   bool right;
   bool up;

@@ -174,6 +174,16 @@ pub struct Controller {
 
     // This member is not documented.
     #[allow(missing_docs)]
+    pub release: bool,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub interrupt: bool,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
     pub left: bool,
 
 
@@ -279,6 +289,8 @@ impl rosidl_runtime_rs::Message for Controller {
         firehata: msg.firehata,
         firebaketu: msg.firebaketu,
         hojuposition: msg.hojuposition,
+        release: msg.release,
+        interrupt: msg.interrupt,
         left: msg.left,
         right: msg.right,
         up: msg.up,
@@ -325,6 +337,8 @@ impl rosidl_runtime_rs::Message for Controller {
       firehata: msg.firehata,
       firebaketu: msg.firebaketu,
       hojuposition: msg.hojuposition,
+      release: msg.release,
+      interrupt: msg.interrupt,
       left: msg.left,
       right: msg.right,
       up: msg.up,
@@ -375,6 +389,8 @@ impl rosidl_runtime_rs::Message for Controller {
       firehata: msg.firehata,
       firebaketu: msg.firebaketu,
       hojuposition: msg.hojuposition,
+      release: msg.release,
+      interrupt: msg.interrupt,
       left: msg.left,
       right: msg.right,
       up: msg.up,

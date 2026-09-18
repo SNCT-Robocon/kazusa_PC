@@ -324,6 +324,26 @@
           "default_value": ""
         },
         {
+          "name": "release",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "interrupt",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
           "name": "left",
           "type": {
             "type_id": 15,
@@ -450,7 +470,7 @@
   "type_hashes": [
     {
       "type_name": "controller/msg/Controller",
-      "hash_string": "RIHS01_4755b6b3f49e7f5f409149b9e98434c32d10408f9fb33acc12de9ffa22408b5c"
+      "hash_string": "RIHS01_0a2831f25c822e527c119bb5be32a3a55010d98b6461fd5b1a4cec5101cf2084"
     }
   ]
 }

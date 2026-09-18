@@ -96,6 +96,8 @@ class Controller(metaclass=Metaclass_Controller):
         '_firehata',
         '_firebaketu',
         '_hojuposition',
+        '_release',
+        '_interrupt',
         '_left',
         '_right',
         '_up',
@@ -144,6 +146,8 @@ class Controller(metaclass=Metaclass_Controller):
         'firehata': 'boolean',
         'firebaketu': 'boolean',
         'hojuposition': 'boolean',
+        'release': 'boolean',
+        'interrupt': 'boolean',
         'left': 'boolean',
         'right': 'boolean',
         'up': 'boolean',
@@ -185,6 +189,8 @@ class Controller(metaclass=Metaclass_Controller):
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -248,6 +254,8 @@ class Controller(metaclass=Metaclass_Controller):
         self.firehata = kwargs.get('firehata', bool())
         self.firebaketu = kwargs.get('firebaketu', bool())
         self.hojuposition = kwargs.get('hojuposition', bool())
+        self.release = kwargs.get('release', bool())
+        self.interrupt = kwargs.get('interrupt', bool())
         self.left = kwargs.get('left', bool())
         self.right = kwargs.get('right', bool())
         self.up = kwargs.get('up', bool())
@@ -354,6 +362,10 @@ class Controller(metaclass=Metaclass_Controller):
         if self.firebaketu != other.firebaketu:
             return False
         if self.hojuposition != other.hojuposition:
+            return False
+        if self.release != other.release:
+            return False
+        if self.interrupt != other.interrupt:
             return False
         if self.left != other.left:
             return False
@@ -837,6 +849,32 @@ class Controller(metaclass=Metaclass_Controller):
                 isinstance(value, bool), \
                 "The 'hojuposition' field must be of type 'bool'"
         self._hojuposition = value
+
+    @builtins.property
+    def release(self):
+        """Message field 'release'."""
+        return self._release
+
+    @release.setter
+    def release(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'release' field must be of type 'bool'"
+        self._release = value
+
+    @builtins.property
+    def interrupt(self):
+        """Message field 'interrupt'."""
+        return self._interrupt
+
+    @interrupt.setter
+    def interrupt(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'interrupt' field must be of type 'bool'"
+        self._interrupt = value
 
     @builtins.property
     def left(self):

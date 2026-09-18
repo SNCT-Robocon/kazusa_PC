@@ -77,6 +77,8 @@ controller__msg__Controller__init(controller__msg__Controller * msg)
   // firehata
   // firebaketu
   // hojuposition
+  // release
+  // interrupt
   // left
   // right
   // up
@@ -135,6 +137,8 @@ controller__msg__Controller__fini(controller__msg__Controller * msg)
   // firehata
   // firebaketu
   // hojuposition
+  // release
+  // interrupt
   // left
   // right
   // up
@@ -293,6 +297,14 @@ controller__msg__Controller__are_equal(const controller__msg__Controller * lhs, 
   if (lhs->hojuposition != rhs->hojuposition) {
     return false;
   }
+  // release
+  if (lhs->release != rhs->release) {
+    return false;
+  }
+  // interrupt
+  if (lhs->interrupt != rhs->interrupt) {
+    return false;
+  }
   // left
   if (lhs->left != rhs->left) {
     return false;
@@ -436,6 +448,10 @@ controller__msg__Controller__copy(
   output->firebaketu = input->firebaketu;
   // hojuposition
   output->hojuposition = input->hojuposition;
+  // release
+  output->release = input->release;
+  // interrupt
+  output->interrupt = input->interrupt;
   // left
   output->left = input->left;
   // right

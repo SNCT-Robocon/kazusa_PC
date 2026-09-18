@@ -11,10 +11,10 @@ controller__msg__Controller__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x47, 0x55, 0xb6, 0xb3, 0xf4, 0x9e, 0x7f, 0x5f,
-      0x40, 0x91, 0x49, 0xb9, 0xe9, 0x84, 0x34, 0xc3,
-      0x2d, 0x10, 0x40, 0x8f, 0x9f, 0xb3, 0x3a, 0xcc,
-      0x12, 0xde, 0x9f, 0xfa, 0x22, 0x40, 0x8b, 0x5c,
+      0x0a, 0x28, 0x31, 0xf2, 0x5c, 0x82, 0x2e, 0x52,
+      0x7c, 0x11, 0x9b, 0xb5, 0xbe, 0x32, 0xa3, 0xa5,
+      0x50, 0x10, 0xd9, 0x8b, 0x64, 0x61, 0xfd, 0x5b,
+      0x1a, 0x4c, 0xec, 0x51, 0x01, 0xcf, 0x20, 0x84,
     }};
   return &hash;
 }
@@ -63,6 +63,8 @@ static char controller__msg__Controller__FIELD_NAME__reload3[] = "reload3";
 static char controller__msg__Controller__FIELD_NAME__firehata[] = "firehata";
 static char controller__msg__Controller__FIELD_NAME__firebaketu[] = "firebaketu";
 static char controller__msg__Controller__FIELD_NAME__hojuposition[] = "hojuposition";
+static char controller__msg__Controller__FIELD_NAME__release[] = "release";
+static char controller__msg__Controller__FIELD_NAME__interrupt[] = "interrupt";
 static char controller__msg__Controller__FIELD_NAME__left[] = "left";
 static char controller__msg__Controller__FIELD_NAME__right[] = "right";
 static char controller__msg__Controller__FIELD_NAME__up[] = "up";
@@ -398,6 +400,26 @@ static rosidl_runtime_c__type_description__Field controller__msg__Controller__FI
     {NULL, 0, 0},
   },
   {
+    {controller__msg__Controller__FIELD_NAME__release, 7, 7},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {controller__msg__Controller__FIELD_NAME__interrupt, 9, 9},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
     {controller__msg__Controller__FIELD_NAME__left, 4, 4},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
@@ -528,7 +550,7 @@ controller__msg__Controller__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {controller__msg__Controller__TYPE_NAME, 25, 25},
-      {controller__msg__Controller__FIELDS, 44, 44},
+      {controller__msg__Controller__FIELDS, 46, 46},
     },
     {NULL, 0, 0},
   };
@@ -572,6 +594,8 @@ static char toplevel_type_raw_source[] =
   "bool firehata\n"
   "bool firebaketu\n"
   "bool hojuposition\n"
+  "bool release\n"
+  "bool interrupt\n"
   "\n"
   "bool left\n"
   "bool right\n"
@@ -598,7 +622,7 @@ controller__msg__Controller__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {controller__msg__Controller__TYPE_NAME, 25, 25},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 679, 679},
+    {toplevel_type_raw_source, 707, 707},
   };
   return &source;
 }

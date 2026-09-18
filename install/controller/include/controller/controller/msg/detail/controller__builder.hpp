@@ -216,16 +216,48 @@ private:
   ::controller::msg::Controller msg_;
 };
 
+class Init_Controller_interrupt
+{
+public:
+  explicit Init_Controller_interrupt(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_left interrupt(::controller::msg::Controller::_interrupt_type arg)
+  {
+    msg_.interrupt = std::move(arg);
+    return Init_Controller_left(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
+class Init_Controller_release
+{
+public:
+  explicit Init_Controller_release(::controller::msg::Controller & msg)
+  : msg_(msg)
+  {}
+  Init_Controller_interrupt release(::controller::msg::Controller::_release_type arg)
+  {
+    msg_.release = std::move(arg);
+    return Init_Controller_interrupt(msg_);
+  }
+
+private:
+  ::controller::msg::Controller msg_;
+};
+
 class Init_Controller_hojuposition
 {
 public:
   explicit Init_Controller_hojuposition(::controller::msg::Controller & msg)
   : msg_(msg)
   {}
-  Init_Controller_left hojuposition(::controller::msg::Controller::_hojuposition_type arg)
+  Init_Controller_release hojuposition(::controller::msg::Controller::_hojuposition_type arg)
   {
     msg_.hojuposition = std::move(arg);
-    return Init_Controller_left(msg_);
+    return Init_Controller_release(msg_);
   }
 
 private:

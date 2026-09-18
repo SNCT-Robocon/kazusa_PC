@@ -237,6 +237,12 @@ class UDPToCmdVel(Node):
             ctrl.hojuposition = msg_dict.get(
                 "HojuPosition", False
             )
+            ctrl.release = msg_dict.get(
+                "release", False
+            )
+            ctrl.interrupt = msg_dict.get(
+                "interrupt", False
+            )
 
             ctrl.fieldcolor = msg_dict.get(
                 "map_id", "none"

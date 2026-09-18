@@ -38,7 +38,7 @@ void Controller_fini_function(void * message_memory)
   typed_message->~Controller();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_message_member_array[44] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_message_member_array[46] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -616,6 +616,42 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
     nullptr  // resize(index) function pointer
   },
   {
+    "release",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, release),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "interrupt",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(controller::msg::Controller, interrupt),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "left",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
@@ -836,7 +872,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Controller_me
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Controller_message_members = {
   "controller::msg",  // message namespace
   "Controller",  // message name
-  44,  // number of fields
+  46,  // number of fields
   sizeof(controller::msg::Controller),
   false,  // has_any_key_member_
   Controller_message_member_array,  // message members

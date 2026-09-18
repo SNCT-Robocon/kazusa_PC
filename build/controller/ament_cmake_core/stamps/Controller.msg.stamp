@@ -31,6 +31,8 @@ bool reload3
 bool firehata
 bool firebaketu
 bool hojuposition
+bool release
+bool interrupt
 
 bool left
 bool right

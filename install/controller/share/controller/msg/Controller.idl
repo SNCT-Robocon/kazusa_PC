@@ -70,6 +70,10 @@ module controller {
 
       boolean hojuposition;
 
+      boolean release;
+
+      boolean interrupt;
+
       boolean left;
 
       boolean right;

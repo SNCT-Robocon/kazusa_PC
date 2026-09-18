@@ -188,6 +188,16 @@ pub struct Controller {
 
     // This member is not documented.
     #[allow(missing_docs)]
+    pub release: bool,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub interrupt: bool,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
     pub left: bool,
 
 

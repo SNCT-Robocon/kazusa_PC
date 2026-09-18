@@ -74,6 +74,8 @@ struct Controller_
       this->firehata = false;
       this->firebaketu = false;
       this->hojuposition = false;
+      this->release = false;
+      this->interrupt = false;
       this->left = false;
       this->right = false;
       this->up = false;
@@ -131,6 +133,8 @@ struct Controller_
       this->firehata = false;
       this->firebaketu = false;
       this->hojuposition = false;
+      this->release = false;
+      this->interrupt = false;
       this->left = false;
       this->right = false;
       this->up = false;
@@ -243,6 +247,12 @@ struct Controller_
   using _hojuposition_type =
     bool;
   _hojuposition_type hojuposition;
+  using _release_type =
+    bool;
+  _release_type release;
+  using _interrupt_type =
+    bool;
+  _interrupt_type interrupt;
   using _left_type =
     bool;
   _left_type left;
@@ -473,6 +483,18 @@ struct Controller_
     this->hojuposition = _arg;
     return *this;
   }
+  Type & set__release(
+    const bool & _arg)
+  {
+    this->release = _arg;
+    return *this;
+  }
+  Type & set__interrupt(
+    const bool & _arg)
+  {
+    this->interrupt = _arg;
+    return *this;
+  }
   Type & set__left(
     const bool & _arg)
   {
@@ -682,6 +704,12 @@ struct Controller_
       return false;
     }
     if (this->hojuposition != other.hojuposition) {
+      return false;
+    }
+    if (this->release != other.release) {
+      return false;
+    }
+    if (this->interrupt != other.interrupt) {
       return false;
     }
     if (this->left != other.left) {

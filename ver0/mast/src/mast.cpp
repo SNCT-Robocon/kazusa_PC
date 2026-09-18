@@ -12,6 +12,7 @@
 #include <future>
 #include <fstream>
 #include <mutex>
+#include <rclcpp/timer.hpp>
 #include <sstream>
 #include <string>
 #include <thread>
@@ -86,6 +87,9 @@ public:
                 auto_baketsu_speed0 = std::clamp(current_controller_val.baketu_speed1, 4.0f, 5.0f);
                 auto_baketsu_speed1 = std::clamp(current_controller_val.baketu_speed2, 4.0f, 5.0f);
                 auto_baketsu_speed2 = std::clamp(current_controller_val.baketu_speed3, 4.0f, 5.0f);
+                auto_turn_hata_x = std::clamp(current_controller_val.hata_turn_x, - 500.0f, 500.0f);
+                auto_turn_hata_y = std::clamp(current_controller_val.hata_turn_y, - 500.0f, 500.0f);
+                auto_turn_hata_yaw = std::clamp(current_controller_val.hata_turn_theta, - 500.0f, 500.0f);
             }
         );
 
@@ -238,7 +242,7 @@ private:
 
             geometry_msgs::msg::Pose2D hoju_pose{};
             hoju_pose.x = 4080.0 + current_controller_val.hoju_turn_y;
-            hoju_pose.y = 500.0 - current_controller_val.hoju_turn_x;
+            hoju_pose.y = 500.0 - current_controller_val.hoju_turn_x * ((field_color == "red") ? - 1.0f : 1.0f);
             hoju_pose.theta = 0.0 + current_controller_val.hoju_turn_theta * (M_PI / 180.0);
 
             hoju_pose = target_pose_for_field(hoju_pose);
@@ -285,6 +289,10 @@ private:
 
         const auto fail = [this](const std::string & message) {
             RCLCPP_ERROR(this -> get_logger(), "automatic sequence stopped: %s", message.c_str());
+            if(hata_hold_timer){
+                hata_hold_timer -> cancel();
+                hata_hold_timer.reset();
+            }
             can_pub -> publish(omni::stop_packet());
             control_mode.store(ControlMode::JOY);
         };
@@ -322,6 +330,15 @@ private:
             return;
         }
 
+
+        geometry_msgs::msg::Pose2D hata_hold_pose = flag_pose;
+        hata_hold_timer = this -> create_wall_timer(
+            std::chrono::milliseconds(10),
+            [this, hata_hold_pose]() {
+                hata_ichigime(hata_hold_pose);
+            }
+        );
+
         interruptible_delay(std::chrono::milliseconds(500));
 
         if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
@@ -350,6 +367,12 @@ private:
             fail("second flag shooting sequence was interrupted");
             return;
         }
+
+        if(hata_hold_timer){
+            hata_hold_timer -> cancel();
+            hata_hold_timer.reset();
+        }
+        can_pub -> publish(omni::stop_packet());
 
         if(!send_path_goal_and_wait("flag_to_start")){
             fail("flag_to_start failed");
@@ -382,6 +405,10 @@ private:
 
         const auto fail = [this](const std::string & message) {
             RCLCPP_ERROR(this -> get_logger(), "automatic sequence stopped: %s", message.c_str());
+            if(hata_hold_timer){
+                hata_hold_timer -> cancel();
+                hata_hold_timer.reset();
+            }
             can_pub -> publish(omni::stop_packet());
             control_mode.store(ControlMode::JOY);
         };
@@ -479,6 +506,14 @@ private:
             return;
         }
 
+        geometry_msgs::msg::Pose2D hata_hold_pose = flag_pose;
+        hata_hold_timer = this -> create_wall_timer(
+            std::chrono::milliseconds(10),
+            [this, hata_hold_pose]() {
+                hata_ichigime(hata_hold_pose);
+            }
+        );
+
         interruptible_delay(std::chrono::milliseconds(500));
         
         if(!shoot_three(auto_hata_speed0, auto_hata_speed1, auto_hata_speed2)){
@@ -496,6 +531,13 @@ private:
             fail("second flag shooting sequence was interrupted");
             return;
         }
+
+
+        if(hata_hold_timer){
+            hata_hold_timer -> cancel();
+            hata_hold_timer.reset();
+        }
+        can_pub -> publish(omni::stop_packet());
 
         if(!send_path_goal_and_wait("flag_to_start")){
             fail("flag_to_start failed");
@@ -989,6 +1031,17 @@ private:
     }
 
 
+    void hata_ichigime(geometry_msgs::msg::Pose2D target_pose){
+
+        target_pose.x += auto_turn_hata_x;
+        target_pose.y -= auto_turn_hata_y * ((field_color == "red") ? - 1.0f : 1.0f);
+        target_pose.theta += auto_turn_hata_yaw * (M_PI / 180.0);
+        target_pose = target_pose_for_field(target_pose);
+        positioning(target_pose);
+
+    }
+
+
 
     std::atomic<ControlMode> control_mode{ControlMode::JOY};
     std::string field_color{"blue"};
@@ -1025,6 +1078,13 @@ private:
     std::atomic<float> auto_baketsu_speed1{4.2f};
     std::atomic<float> auto_baketsu_speed2{4.2f};
     std::atomic<bool> auto_is_field_red{false};
+
+    std::atomic<float> auto_turn_hata_x{0.0f};
+    std::atomic<float> auto_turn_hata_y{0.0f};
+    std::atomic<float> auto_turn_hata_yaw{0.0f};
+
+
+    rclcpp::TimerBase::SharedPtr hata_hold_timer;
 
 };
 

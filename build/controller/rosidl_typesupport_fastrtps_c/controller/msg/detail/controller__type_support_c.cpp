@@ -255,6 +255,16 @@ bool cdr_serialize_controller__msg__Controller(
     cdr << (ros_message->hojuposition ? true : false);
   }
 
+  // Field name: release
+  {
+    cdr << (ros_message->release ? true : false);
+  }
+
+  // Field name: interrupt
+  {
+    cdr << (ros_message->interrupt ? true : false);
+  }
+
   // Field name: left
   {
     cdr << (ros_message->left ? true : false);
@@ -554,6 +564,20 @@ bool cdr_deserialize_controller__msg__Controller(
     uint8_t tmp;
     cdr >> tmp;
     ros_message->hojuposition = tmp ? true : false;
+  }
+
+  // Field name: release
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->release = tmp ? true : false;
+  }
+
+  // Field name: interrupt
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->interrupt = tmp ? true : false;
   }
 
   // Field name: left
@@ -868,6 +892,20 @@ size_t get_serialized_size_controller__msg__Controller(
   // Field name: hojuposition
   {
     size_t item_size = sizeof(ros_message->hojuposition);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: release
+  {
+    size_t item_size = sizeof(ros_message->release);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: interrupt
+  {
+    size_t item_size = sizeof(ros_message->interrupt);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1245,6 +1283,20 @@ size_t max_serialized_size_controller__msg__Controller(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: release
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: interrupt
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   // Field name: left
   {
     size_t array_size = 1;
@@ -1555,6 +1607,16 @@ bool cdr_serialize_key_controller__msg__Controller(
     cdr << (ros_message->hojuposition ? true : false);
   }
 
+  // Field name: release
+  {
+    cdr << (ros_message->release ? true : false);
+  }
+
+  // Field name: interrupt
+  {
+    cdr << (ros_message->interrupt ? true : false);
+  }
+
   // Field name: left
   {
     cdr << (ros_message->left ? true : false);
@@ -1843,6 +1905,20 @@ size_t get_serialized_size_key_controller__msg__Controller(
   // Field name: hojuposition
   {
     size_t item_size = sizeof(ros_message->hojuposition);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: release
+  {
+    size_t item_size = sizeof(ros_message->release);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: interrupt
+  {
+    size_t item_size = sizeof(ros_message->interrupt);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -2212,6 +2288,20 @@ size_t max_serialized_size_key_controller__msg__Controller(
   }
 
   // Field name: hojuposition
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: release
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: interrupt
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);

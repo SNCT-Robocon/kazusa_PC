@@ -371,6 +371,24 @@ bool controller__msg__controller__convert_from_py(PyObject * _pymsg, void * _ros
     ros_message->hojuposition = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // release
+    PyObject * field = PyObject_GetAttrString(_pymsg, "release");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->release = (Py_True == field);
+    Py_DECREF(field);
+  }
+  {  // interrupt
+    PyObject * field = PyObject_GetAttrString(_pymsg, "interrupt");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->interrupt = (Py_True == field);
+    Py_DECREF(field);
+  }
   {  // left
     PyObject * field = PyObject_GetAttrString(_pymsg, "left");
     if (!field) {
@@ -877,6 +895,28 @@ PyObject * controller__msg__controller__convert_to_py(void * raw_ros_message)
     field = PyBool_FromLong(ros_message->hojuposition ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "hojuposition", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // release
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->release ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "release", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // interrupt
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->interrupt ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "interrupt", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
